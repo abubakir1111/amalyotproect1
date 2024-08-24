@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.header {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    .header-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 33px;
+
+            .navbar-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .navbar-right-p {
+                    width: 117px;
+                    height: 52px;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 17px;
+                }
+            }
+
+            .navbar-center {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                    .link {
+                        color: rgb(34, 34, 34);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        text-decoration: none;
+                }
+            }
+
+            .navbar-left {
+                display: flex;
+
+                .navbar-left-link {
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
+
+            .navbar-icon-left {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .navbar-btn {
+                display: flex;
+                align-items: center;
+                gap: 33px;
+
+                button {
+                    width: 182px;
+                    height: 38px;
+                    border: 1px solid rgb(220, 63, 63);
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .header-background-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        .header-background-div {
+            background-image: url(../../assets/img/backgorund/Frame152.png);
+            width: 1170px;
+            height: 426px;
+
+            .header-card {
+                padding: 26px;
+
+                .header-card-box {
+                    width: 501px;
+                    height: 367px;
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 30px;
+                    backdrop-filter: blur(15px);
+                    background: rgba(255, 255, 255, 0.5);
+                    padding: 90px 40px;
+
+                    .header-card-box-p {
+                        width: 421px;
+                        height: 110px;
+                        color: rgb(34, 34, 34);
+                        font-size: 45px;
+                        font-weight: 600;
+                        line-height: 55px;
+                    }
+
+                    .header-card-box-btn {
+                        padding-top: 30px;
+
+                        .header-button {
+                            width: 269px;
+                            height: 47px;
+                            border-radius: 10px;
+                            background: rgb(220, 63, 63);
+                            border: none;
+                            color: rgb(255, 255, 255);
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-button-div-top {
+        .header-button-div-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .header-button-box-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px 25px 10px 25px;
+                box-sizing: border-box;
+                border: 1px solid rgb(220, 63, 63);
+                border-radius: 10px;
+                background-color: transparent;
+                color: rgb(168, 168, 168);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+            }
+        }
+
+    }
+
+    .room {
+        width: 1170px;
+        margin-top: 37px;
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+
+        .room-div {
+            padding: 14px 18px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            .room-text-div {
+
+                p {
+                    color: rgb(34, 34, 34);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+
+                .room-btn {
+                    display: flex;
+                    margin: 10px 0;
+                    gap: 3px;
+
+                    button {
+                        width: 24px;
+                        height: 31px;
+                        border-radius: 5px;
+                        background: rgb(248, 248, 248);
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .room-price {
+
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .room-text-p {
+                    color: rgb(34, 34, 34);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+
+                .room-slider {
+                    .room-slider-text {
+                        .room-slider-text1 {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            p {
+                                color: rgb(34, 34, 34);
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .room-sdan {
+
+                .room-sdan2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+
+                    p {
+                        color: rgb(34, 34, 34);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+
+                    .room-sdan-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+
+                        button {
+                            padding: 4px;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: transparent;
+                            background: rgb(248, 248, 248);
+                            color: rgb(34, 34, 34);
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .room-finish {
+                .room-finish-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+
+                    .room-finish-box-p-text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        p {
+                            color: rgb(34, 34, 34);
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 150%;
+                        }
+                    }
+
+                    .room-finish-btn {
+                        display: flex;
+
+                        gap: 9px;
+
+                        button {
+                            padding: 8px;
+                            border-radius: 5px;
+                            background: rgb(248, 248, 248);
+                            color: rgb(34, 34, 34);
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .mebel {
+                .mebel-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+
+                    p {
+                        color: rgb(34, 34, 34);
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+
+                    .mebel-button {
+                        display: flex;
+                        align-items: center;
+
+                        button {
+                            width: 73px;
+                            height: 31px;
+                            border-radius: 5px;
+                            background: rgb(248, 248, 248);
+                            border: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .icons-left {
+                .icons-left-box {
+                    display: flex;
+                    gap: 13px;
+                }
+            }
+        }
+    }
+    .kalss-button-container{
+        margin-top: 25px;
+        .klass-button-box{
+            .btn-bottom-div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                button{
+                    padding: 10px 25px 10px 25px;
+                    border: 1px solid rgb(219, 219, 219);
+                    border-radius: 8px;
+                    color: rgb(168, 168, 168);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    background-color: transparent;
+                    display: flex;
+                    align-content: center;
+                    gap: 10px;
+                }
+            }
+            .btn-top-div{
+                width: 1210px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 54px;
+                .top-btn{
+                    padding: 10px 25px 10px 25px;
+                    border: 1px solid rgb(219, 219, 219);
+                    border-radius: 8px;
+                    color: rgb(168, 168, 168);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    background-color: transparent;
+                    display: flex;
+                    align-content: center;
+                    gap: 10px; 
+                    margin: 7px;
+                }
+            }
+        }
+    }
+}

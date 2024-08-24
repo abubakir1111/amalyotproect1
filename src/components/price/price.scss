@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.price {
+    border: 1px solid red;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 29px;
+
+    .price-box {
+        .price-text-card {
+            .price-text-card-p {
+                color: rgb(34, 34, 34);
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 44px;
+            }
+        }
+    }
+}
