@@ -3,17 +3,113 @@
 .price {
     border: 1px solid red;
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 100px auto;
     font-family: "Montserrat", sans-serif;
-    padding-top: 29px;
 
     .price-box {
-        .price-text-card {
-            .price-text-card-p {
-                color: rgb(34, 34, 34);
-                font-size: 36px;
-                font-weight: 500;
-                line-height: 44px;
+        .price-card {
+            border-radius: 30px;
+            background: rgb(248, 248, 248);
+            padding: 42px 24px;
+
+            .price-text-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .price-text-card-div1 {
+                    .price-text-card-p1 {
+                        color: rgb(34, 34, 34);
+                        font-size: 36px;
+                        font-weight: 500;
+                        line-height: 44px;
+                    }
+                }
+
+                .price-text-card-div2 {
+                    width: 265px;
+                    height: 63px;
+
+                    .price-text-card-p2 {
+                        color: rgb(34, 34, 34);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 150%;
+                    }
+                }
+            }
+
+            .price-div-programma {
+                margin-top: 43px;
+
+                .price-div-programma-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 55px;
+
+                    .price-text1 {
+                        p {
+                            color: rgb(168, 168, 168);
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 150%;
+                        }
+                    }
+
+                    .price-text-card {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
+
+                        .price-text {
+                            color: rgb(168, 168, 168);
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 150%;
+                        }
+
+                        .price-text-card-gap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+
+                            p {
+                                color: rgb(168, 168, 168);
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bank {
+                .bank-box {
+                    .bank-box-text-card {
+                        display: flex;
+                        align-items: center;
+
+                        .bank-logo {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 15px;
+                        }
+
+                        .bank-logo-text {
+                            p {
+                                color: rgb(34, 34, 34);
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
