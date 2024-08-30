@@ -1,0 +1,123 @@
+.header {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    .header-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 33px;
+
+            .navbar-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .navbar-right-p {
+                    width: 117px;
+                    height: 52px;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 17px;
+                    text-decoration: none;
+                }
+            }
+
+            .navbar-center {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                    .link {
+                        color: rgb(34, 34, 34);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        text-decoration: none;
+                }
+            }
+
+            .navbar-left {
+                display: flex;
+
+                .navbar-left-link {
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
+
+            .navbar-icon-left {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .navbar-btn {
+                display: flex;
+                align-items: center;
+                gap: 33px;
+
+                button {
+                    width: 182px;
+                    height: 38px;
+                    border: 1px solid rgb(220, 63, 63);
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .header-background-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        .header-background-div {
+            background-image: url(../../../assets/img/backgorund/Frame152.png);
+            width: 1170px;
+            height: 426px;
+
+            .header-card {
+                padding: 26px;
+
+                .page2-header-card-box {
+                    width: 501px;
+                    height: 235px;  
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 30px;
+                    backdrop-filter: blur(15px);
+                    background: rgba(255, 255, 255, 0.5);
+                    padding: 90px 40px;
+
+                    .header-card-box-p {
+                        width: 421px;
+                        height: 110px;
+                        color: rgb(34, 34, 34);
+                        font-size: 45px;
+                        font-weight: 600;
+                        line-height: 55px;
+                    }
+
+                  
+                }
+            }
+        }
+    }}

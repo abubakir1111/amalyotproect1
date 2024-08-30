@@ -162,9 +162,9 @@
                                         width: 135px;
                                         height: 37px;
                                         background-color: transparent;
-                                        border: 1px solid rgb(220, 63, 63);
                                         border-radius: 10px;
                                         color: rgb(220, 63, 63);
+                                        border: 1px solid rgb(220, 63, 63);
                                         font-size: 14px;
                                         font-weight: 500;
                                         line-height: 17px;
@@ -195,6 +195,279 @@
                         font-weight: 500;
                         line-height: 17px;
                         border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        margin-top: 100px;
+        border: 1px solid red solid red;
+
+        .contact-box {
+            .contact-card {
+                width: 1170px;
+                height: 216px;
+                background: rgb(220, 63, 63);
+                border-radius: 30px;
+                padding: 64px 66px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-image: url(../../assets/img/contact/_.png);
+                background-repeat: no-repeat;
+                background-position: right;
+
+                .contact-box-title {
+                    width: 427px;
+                    height: 88px;
+
+                    p {
+                        color: rgb(255, 255, 255);
+                        font-size: 36px;
+                        font-weight: 500;
+                        line-height: 44px;
+                    }
+                }
+
+                .btn-card {
+                    .btn-box-card {
+                        display: flex;
+                        gap: 20px;
+
+                        input {
+                            width: 185px;
+
+                            height: 47px;
+
+                            border: 1px solid red;
+                            border-radius: 10px;
+
+                            background: rgb(219, 219, 219);
+                            
+                            color: rgb(34, 34, 34);
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 17px;
+                            text-align: center;
+                        }
+
+                        input:focus {
+                            border: none;
+                            outline: none;
+                        }
+
+                        button {
+                            width: 185px;
+                            height: 47px;
+                            border: 1px solid rgb(220, 63, 63);
+                            border-radius: 10px;
+                            background: rgb(255, 255, 255);
+                            color: rgb(220, 63, 63);
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 17px;
+                            text-align: center;
+                        }
+                    }
+
+                    .btn-card-p {
+                        color: rgb(219, 219, 219);
+                        font-family: Montserrat, sans-serif;
+                        font-size: 11px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+
+        .contact-text {
+            margin: 100px 0 60px 0;
+
+            p {
+                color: rgb(34, 34, 34);
+                font-family: Montserrat, sans-serif;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 44px;
+            }
+        }
+    }
+
+    .footer-card {
+        overflow: hidden;
+
+        .footer-box {
+            .footer-card {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .footer-card1 {
+                    padding: 28px 25px;
+                    width: 370px;
+                    height: 401px;
+                    border-radius: 30px;
+                    background: rgb(248, 248, 248);
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .footer-text-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .footer-img1 {}
+
+                        .footer-text-p {
+                            width: 101px;
+                            height: 48px;
+                            color: rgb(34, 34, 34);
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .footer-text-desc {
+                        p {
+                            width: 317px;
+                            height: 216px;
+                            color: rgb(34, 34, 34);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+
+                    .footer-card-text-red {
+                        p {
+                            color: rgb(220, 63, 63);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+                .footer-card2 {
+                    width: 370px;
+                    height: 401px;
+                    border-radius: 30px;
+                    background: rgb(248, 248, 248);
+                    padding: 28px 25px;
+
+                    .footer-text-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .footer-img1 {}
+
+                        .footer-text-p {
+                            width: 101px;
+                            height: 48px;
+                            color: rgb(34, 34, 34);
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .footer-text-desc {
+                        p {
+                            width: 317px;
+                            height: 216px;
+                            color: rgb(34, 34, 34);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+
+                    .footer-card-text-red {
+                        p {
+                            color: rgb(220, 63, 63);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+                .footer-card3 {
+                    width: 370px;
+                    height: 401px;
+                    border-radius: 30px;
+                    background: rgb(248, 248, 248);
+                    padding: 28px 25px;
+
+                    .footer-text-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        .footer-img1 {}
+
+                        .footer-text-p {
+                            width: 101px;
+                            height: 48px;
+                            color: rgb(34, 34, 34);
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .footer-text-desc {
+                        p {
+                            width: 317px;
+                            height: 216px;
+                            color: rgb(34, 34, 34);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+
+                    .footer-card-text-red {
+                        p {
+                            color: rgb(220, 63, 63);
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+
+            .footer-button-div {
+
+                .footer-button-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    .footer-button {
+                        padding: 40px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+
+                        button {
+                            width: 30px;
+                            height: 30px;
+                            background: rgb(220, 63, 63);
+                            border: none;
+                            border-radius: 50%;
+
+                        }
                     }
                 }
             }

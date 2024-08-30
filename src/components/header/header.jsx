@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './header.scss'; // Ensure SCSS file is properly linked
-import { Link } from 'react-scroll'; // Ensure correct usage or replace if not needed
+import { Link } from 'react-router-dom'; // Ensure correct usage or replace if not needed
 import logo from '../../assets/img/logo/logo.png';
 import wk from '../../assets/icons/VK.svg';
 import wh from '../../assets/icons/WhatsApp.svg';
@@ -38,13 +38,13 @@ function Header() {
                         <p className="navbar-right-p">центр новостроек в Тюмени</p>
                     </div>
                     <div className="navbar-center">
-                        <Link to="/">Главная</Link>
-                        <Link >Все ЖК Тюмени</Link>
-                        <Link >Карта новостроек</Link>
-                        <Link to="/page">О компании</Link>
+                        <Link className='link'> Главная</Link>
+                        <Link className='link'>Все ЖК Тюмени</Link>
+                        <Link className='link'>Карта новостроек</Link>
+                        <Link to="/page" className='link'>О компании</Link>
                     </div>
                     <div className="navbar-left">
-                        <Link className='navbar-left-link' to="contact">8 800 000 00 00</Link>
+                        <Link className='navbar-left-link'>8 800 000 00 00</Link>
                     </div>
                     <div className="navbar-icon-left">
                         <img src={wk} alt="VK" />
