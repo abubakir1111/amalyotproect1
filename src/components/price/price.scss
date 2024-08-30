@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .price {
-    border: 1px solid red;
     max-width: 1170px;
     margin: 100px auto;
     font-family: "Montserrat", sans-serif;
@@ -46,7 +45,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: end;
-                    gap: 55px;
+                    padding: 0 160px;
+                    gap: 100px;
 
                     .price-text1 {
                         p {
@@ -74,7 +74,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            gap: 8px;
+                            gap: 16px;
 
                             p {
                                 color: rgb(168, 168, 168);
@@ -88,7 +88,13 @@
             }
 
             .bank {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+
                 .bank-box {
+
                     .bank-box-text-card {
                         display: flex;
                         align-items: center;
@@ -97,17 +103,98 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            gap: 15px;
-                        }
+                            gap: 15rem;
 
-                        .bank-logo-text {
-                            p {
-                                color: rgb(34, 34, 34);
-                                font-size: 18px;
-                                font-weight: 500;
-                                line-height: 22px;
+                            .bank-text-gap {
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+                            }
+
+                            .bank-logo-text {
+                                p {
+                                    color: rgb(34, 34, 34);
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 22px;
+                                }
+                            }
+
+                            .bank-text-center {
+                                display: flex;
+                                align-items: center;
+                                gap: 15px;
+
+                                .bank-text-center-div {
+                                    display: flex;
+                                    gap: 50px;
+
+                                    .bank-text-left {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 15px;
+
+                                        p {
+                                            color: rgb(34, 34, 34);
+                                            font-size: 18px;
+                                            font-weight: 500;
+                                            line-height: 22px;
+                                        }
+                                    }
+
+                                    .bank-left {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .bank-text-left {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+
+                                .bank-left-btn {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 30px;
+
+                                    .bank-left-btn-info {
+                                        width: 135px;
+                                        height: 37px;
+                                        background-color: transparent;
+                                        border: 1px solid rgb(220, 63, 63);
+                                        border-radius: 10px;
+                                        color: rgb(220, 63, 63);
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        line-height: 17px;
+                                    }
+                                }
                             }
                         }
+                    }
+
+                    .bank-border-div {
+                        .div-border {
+                            width: 1121px;
+                            height: 1px;
+                            border: 1px solid rgb(168, 168, 168);
+                            margin-top: 15px;
+                        }
+                    }
+                }
+
+                .bank-btn {
+                    button {
+                        width: 153px;
+                        height: 37px;
+                        border-radius: 10px;
+                        background: rgb(220, 63, 63);
+                        color: rgb(255, 255, 255);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 17px;
+                        border: none;
                     }
                 }
             }
