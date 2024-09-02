@@ -97,6 +97,8 @@ function Price() {
                         <p>Отзывы</p>
                     </div>
                 </div>
+
+
                 <div className="footer-card">
                     <div className="footer-box">
                         <div className="footer-card">
@@ -172,6 +174,7 @@ function Price() {
                         </div>
                     </div>
                 </div>
+                
 
             </div>
            

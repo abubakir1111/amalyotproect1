@@ -2,6 +2,7 @@
     max-width: 1170px;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
+
     .header-box {
         display: flex;
         align-items: center;
@@ -35,12 +36,12 @@
                 align-items: center;
                 gap: 15px;
 
-                    .link {
-                        color: rgb(34, 34, 34);
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 17px;
-                        text-decoration: none;
+                .link {
+                    color: rgb(34, 34, 34);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    text-decoration: none;
                 }
             }
 
@@ -100,7 +101,7 @@
 
                 .page2-header-card-box {
                     width: 501px;
-                    height: 235px;  
+                    height: 235px;
                     border: 1px solid rgb(255, 255, 255);
                     border-radius: 30px;
                     backdrop-filter: blur(15px);
@@ -116,8 +117,441 @@
                         line-height: 55px;
                     }
 
-                  
+
                 }
             }
         }
-    }}
+    }
+
+    .glavniy-o-kompnay {
+        p {
+            color: rgb(168, 168, 168);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+
+    .o-kompany-main {
+        margin-top: 54px;
+
+        .o-kompany-main-box {
+
+            .o-kompany-main-box-text-img-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 34px;
+
+                .o-kompany-text {
+                    p {
+                        width: 568px;
+                        height: 360px;
+                        color: rgb(55, 55, 55);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 160%;
+                    }
+                }
+            }
+
+            .o-kompany-main-card {
+                margin: 100px 0px 60px 0px;
+
+                .o-kompany-main-box-card-box {
+
+                    .o-kompany-card-title {
+
+                        p {
+                            color: rgb(34, 34, 34);
+                            font-size: 36px;
+                            font-weight: 500;
+                            line-height: 44px;
+                        }
+                    }
+
+                    .o-kompany-card-div {
+                        margin-top: 60px;
+                        display: flex;
+
+                        .o-kompany-card-div-box {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 28px;
+
+                            .o-kompany-card {
+                                width: 369px;
+                                height: 212px;
+                                border-radius: 30px;
+                                background: rgb(248, 248, 248);
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                padding: 0 30px;
+                                gap: 15px;
+
+                                .o-kompany-card-text {
+                                    p {
+                                        width: 309px;
+                                        height: 60px;
+                                        color: rgb(34, 34, 34);
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        line-height: 150%;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .o-kompany-contact {
+                        margin-top: 100px;
+
+                        .o-kompany-box {
+                            .o-komapny-contact-div {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .o-komapny-contact-div-right {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 60px;
+
+                                    .contact-text-p-div {
+                                        p {
+                                            color: rgb(34, 34, 34);
+                                            font-size: 36px;
+                                            font-weight: 500;
+                                            line-height: 44px;
+                                        }
+                                    }
+
+                                    .contact-text-api-div {
+                                        .contact-img-text-div {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 9px;
+                                            margin: 10px 0;
+
+
+                                            p {
+                                                color: rgb(34, 34, 34);
+                                                font-size: 20px;
+                                                font-weight: 400;
+                                                line-height: 150%;
+                                            }
+                                        }
+
+                                        .contact-ilovasi {
+                                            margin-top: 30px;
+                                        }
+                                    }
+
+                                    .contact-ilovasi {
+                                        .contact-ilovasi-box {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact {
+                        margin-top: 100px;
+
+                        .contact-box {
+                       
+
+                            .contact-card {
+                                width: 1170px;
+                                height: 216px;
+                                background: rgb(220, 63, 63);
+                                border-radius: 30px;
+                                padding: 64px 66px;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                background-image: url(../../../assets/img/contact/_.png);
+                                background-repeat: no-repeat;
+                                background-position: right;
+
+                                .contact-box-title {
+                                    width: 427px;
+                                    height: 88px;
+
+                                    p {
+                                        color: rgb(255, 255, 255);
+                                        font-size: 36px;
+                                        font-weight: 500;
+                                        line-height: 44px;
+                                    }
+                                }
+
+                                .btn-card {
+                                    .btn-box-card {
+                                        display: flex;
+                                        gap: 20px;
+
+                                        input {
+                                            width: 185px;
+
+                                            height: 47px;
+
+                                            border: 1px solid red;
+                                            border-radius: 10px;
+
+                                            background: rgb(219, 219, 219);
+
+                                            color: rgb(34, 34, 34);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 17px;
+                                            text-align: center;
+                                        }
+
+                                        input:focus {
+                                            border: none;
+                                            outline: none;
+                                        }
+
+                                        button {
+                                            width: 185px;
+                                            height: 47px;
+                                            border: 1px solid rgb(220, 63, 63);
+                                            border-radius: 10px;
+                                            background: rgb(255, 255, 255);
+                                            color: rgb(220, 63, 63);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 17px;
+                                            text-align: center;
+                                        }
+                                    }
+
+                                    .btn-card-p {
+                                        color: rgb(219, 219, 219);
+                                        font-size: 11px;
+                                        font-weight: 400;
+                                        line-height: 150%;
+                                        margin-top: 3px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact-text {
+                            margin: 100px 0 60px 0;
+
+                            p {
+                                color: rgb(34, 34, 34);
+                                font-size: 36px;
+                                font-weight: 500;
+                                line-height: 44px;
+                            }
+                        }
+                    }
+
+
+
+                    .footer-card {
+                        overflow: scroll;
+                        margin: 60px 0;
+
+                        .footer-box {
+                            .contact-text {
+                                margin: 100px 0 60px 0;
+
+                                p {
+                                    color: rgb(34, 34, 34);
+                                    font-size: 36px;
+                                    font-weight: 500;
+                                    line-height: 44px;
+                                }
+                            }
+                            .footer-card {
+                                display: flex;
+                                align-items: center;
+                                gap: 30px;
+
+                                .footer-card1 {
+                                    padding: 28px 25px;
+                                    width: 370px;
+                                    height: 401px;
+                                    border-radius: 30px;
+                                    background: rgb(248, 248, 248);
+                                    display: flex;
+                                    align-items: start;
+                                    flex-direction: column;
+                                    gap: 15px;
+
+                                    .footer-text-div {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        // .footer-img1 {}
+
+                                        .footer-text-p {
+                                            width: 101px;
+                                            height: 48px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            line-height: 24px;
+                                        }
+                                    }
+
+                                    .footer-text-desc {
+                                        p {
+                                            width: 317px;
+                                            height: 216px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+
+                                    .footer-card-text-red {
+                                        p {
+                                            color: rgb(220, 63, 63);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+                                }
+
+
+                                .footer-card2 {
+                                    width: 370px;
+                                    height: 401px;
+                                    border-radius: 30px;
+                                    background: rgb(248, 248, 248);
+                                    padding: 28px 25px;
+
+                                    .footer-text-div {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        // .footer-img1 {}
+
+                                        .footer-text-p {
+                                            width: 101px;
+                                            height: 48px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            line-height: 24px;
+                                        }
+                                    }
+
+                                    .footer-text-desc {
+                                        p {
+                                            width: 317px;
+                                            height: 216px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+
+                                    .footer-card-text-red {
+                                        p {
+                                            color: rgb(220, 63, 63);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+                                }
+
+                                .footer-card3 {
+                                    width: 370px;
+                                    height: 401px;
+                                    border-radius: 30px;
+                                    background: rgb(248, 248, 248);
+                                    padding: 28px 25px;
+
+                                    .footer-text-div {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        // .footer-img1 {}
+
+                                        .footer-text-p {
+                                            width: 101px;
+                                            height: 48px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            line-height: 24px;
+                                        }
+                                    }
+
+                                    .footer-text-desc {
+                                        p {
+                                            width: 317px;
+                                            height: 216px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+
+                                    .footer-card-text-red {
+                                        p {
+                                            color: rgb(220, 63, 63);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .footer-button-div {
+
+                                .footer-button-box {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: end;
+
+                                    .footer-button {
+                                        padding: 40px 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 30px;
+
+                                        button {
+                                            width: 30px;
+                                            height: 30px;
+                                            background: rgb(220, 63, 63);
+                                            border: none;
+                                            border-radius: 50%;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+}

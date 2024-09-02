@@ -2,14 +2,20 @@ import React from 'react';
 import './main.scss';
 import { Link } from 'react-scroll';
 import { mainApi } from './mainjs';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
+  const navigate = useNavigate()
+
+  const Click = () => {
+    navigate('/page4')
+  }
   return (
     <div className='main'>
       <div className="main-box">
         <div className="main-box-div">
           {mainApi.map((card) =>
-            <div className="main-box-card"  key={card.id}>
+            <div className="main-box-card" key={card.id} onClick={Click}>
               <div className="main-box-card2">
                 <div className="main-box-card-right">
                   <div className='main-card-btn'>
@@ -22,7 +28,7 @@ function Main() {
                     <div className="main-left-box-text-card">
                       <div className="main-left-right-text">
                         <p className='main-left-right-p1'>{card.mainTextP1}</p>
-                          <p className='main-left-right-p2'>{card.mainTextaction}</p>
+                        <p className='main-left-right-p2'>{card.mainTextaction}</p>
                       </div>
                     </div>
                     <div className="main-box-text-left-box">
@@ -49,7 +55,7 @@ function Main() {
                       <div className="main-center-p">
                         <p>{card.mainCenterP}</p>
                         <p>{card.mainCenterP}</p>
-                        <p>{card.mainCenterP}</p> 
+                        <p>{card.mainCenterP}</p>
                       </div>
                       <div className="main-left-p">
                         <p>{card.mainleftptext1}</p>
@@ -66,7 +72,7 @@ function Main() {
               <div className="main-top">
                 <div className="main-top-box">
                   <div className="main-right-btn">
-                  {card.mainRightBtn.map((btn, index) => 
+                    {card.mainRightBtn.map((btn, index) =>
                       <button key={btn.id}><img src={card.imgbtn[index]} alt={`Button ${index + 1}`} />{btn}</button>
                     )}
                   </div>

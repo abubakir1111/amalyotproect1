@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.price::-webkit-scrollbar {
+    list-style: none;
+    outline: none1;
+}
+
 .price {
     max-width: 1170px;
     margin: 100px auto;
@@ -245,7 +250,7 @@
                             border-radius: 10px;
 
                             background: rgb(219, 219, 219);
-                            
+
                             color: rgb(34, 34, 34);
                             font-size: 14px;
                             font-weight: 500;
@@ -298,7 +303,7 @@
     }
 
     .footer-card {
-        overflow: hidden;
+        overflow: scroll;
 
         .footer-box {
             .footer-card {
@@ -322,7 +327,7 @@
                         align-items: center;
                         gap: 20px;
 
-                        .footer-img1 {}
+                        // .footer-img1 {}
 
                         .footer-text-p {
                             width: 101px;
@@ -355,6 +360,7 @@
                     }
                 }
 
+
                 .footer-card2 {
                     width: 370px;
                     height: 401px;
@@ -367,7 +373,7 @@
                         align-items: center;
                         gap: 20px;
 
-                        .footer-img1 {}
+                        // .footer-img1 {}
 
                         .footer-text-p {
                             width: 101px;
@@ -412,7 +418,7 @@
                         align-items: center;
                         gap: 20px;
 
-                        .footer-img1 {}
+                        // .footer-img1 {}
 
                         .footer-text-p {
                             width: 101px;
@@ -473,4 +479,10 @@
             }
         }
     }
+}
+
+.footer-card::-webkit-scrollbar {
+    border: none;
+    outline: none;
+    list-style: none;
 }
