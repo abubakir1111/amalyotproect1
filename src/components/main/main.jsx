@@ -15,7 +15,7 @@ function Main() {
       <div className="main-box">
         <div className="main-box-div">
           {mainApi.map((card) =>
-            <div className="main-box-card" key={card.id} onClick={Click}>
+            <div className="main-box-card" key={card.id} >
               <div className="main-box-card2">
                 <div className="main-box-card-right">
                   <div className='main-card-btn'>
@@ -81,7 +81,7 @@ function Main() {
                     <Link className='main-center-location-link'>{card.mainCenterLocation}</Link>
                   </div>
                   <div className="main-center-left">
-                    <button>{card.mainCenterLeftbtn}</button>
+                    <button onClick={Click}>{card.mainCenterLeftbtn}</button>
                   </div>
                 </div>
               </div>
@@ -98,3 +98,66 @@ function Main() {
 }
 
 export default Main;
+
+
+// .page4-srok {
+
+//   border: 1px solid red;
+//   margin-top: 40px;
+
+//   .srok-box {
+//       display: flex;
+//       align-items: center;
+//       gap: 29px;
+
+//       .srok-card {
+//           width: 371px;
+//           height: 137px;
+//           border-radius: 30px;
+//           background: rgb(248, 248, 248);
+//           padding: 30px 30px;
+       
+
+//           .srok-text-div {
+//               display: flex;
+//               align-items: center;
+
+//               gap: 15px;
+
+//               p {
+//                   width: 219px;
+//                   height: 61px;
+//                   color: rgb(34, 34, 34);
+//                   font-size: 16px;
+//                   font-weight: 700;
+//                   line-height: 150%;
+//               }
+//           }
+//       }
+//   }
+// }
+// <div className="page4-srok">
+//           <div className="srok-box">
+//             <div className="srok-card">
+//             <div className="srok-box">
+//             <div className="srok-card">
+//               <div className='srok-text-div'>
+//                 <img src={srok} alt="" />
+//                 <p>Сроки сдачи 1 кв. 2025–2 кв. 2026</p>
+//               </div>
+//             </div>
+//             <div className="srok-card">
+//               <div className='srok-text-div'>
+//                 <img src={foiz} alt="" />
+//                 <p>Акции от застройщика 6 предложений</p>
+//               </div>
+//             </div>
+//             <div className="srok-card">
+//               <div className='srok-text-div'>
+//                 <img src={samalyot} alt="" />
+//                 <p>ГК Самолет Застройщик</p>
+//               </div>
+//             </div>
+//           </div>
+//             </div>
+//           </div>

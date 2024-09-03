@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+
+    .header-box {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        .navbar-page4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 33px;
+
+            .navbar-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .navbar-right-p {
+                    width: 117px;
+                    height: 52px;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 17px;
+                    text-decoration: none;
+                }
+            }
+
+            .navbar-center {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .link {
+                    color: rgb(34, 34, 34);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    text-decoration: none;
+                }
+            }
+
+
+
+            .navbar-icon-left {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .navbar-btn {
+                display: flex;
+                align-items: center;
+                gap: 33px;
+
+                button {
+                    width: 182px;
+                    height: 38px;
+                    border: 1px solid rgb(220, 63, 63);
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+        .header-background-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+
+            .header-background-div {
+                background-image: url(../../../assets/img/backgorund/Frame152.png);
+                width: 1170px;
+                height: 426px;
+
+                .header-card {
+                    padding: 26px;
+
+                    .header-card-box2 {
+                        width: 501px;
+                        height: 364px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-radius: 30px;
+                        backdrop-filter: blur(15px);
+                        background: rgba(255, 255, 255, 0.5);
+                        padding: 30px 40px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+
+                        .header-card-box-p72 {
+                            width: 421px;
+                            height: 55px;
+                            color: rgb(34, 34, 34);
+                            font-size: 45px;
+                            font-weight: 600;
+                            line-height: 55px;
+                        }
+
+                        .header-card-box-p73 {
+                            width: 318px;
+                            height: 54px;
+                            color: rgb(34, 34, 34);
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 150%;
+
+                        }
+
+                        .header-card-box-p2 {
+                            width: 421px;
+                            height: 110px;
+                            color: rgb(34, 34, 34);
+                            font-size: 45px;
+                            font-weight: 600;
+                            line-height: 55px;
+                        }
+
+                        .header-card-box-btn {
+                            .header-button-72 {
+                                width: 235px;
+                                height: 47px;
+                                border-radius: 10px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                color: rgb(255, 255, 255);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .page4-srok {
+        margin-top: 40px;
+
+        .srok-box {
+            display: flex;
+
+            .srok-card {
+                width: 370px;
+                height: 137px;
+                border-radius: 30px;
+                background: rgb(248, 248, 248);
+                display: flex;
+                align-items: center;
+
+                .srok-box2 {
+                    display: flex;
+                    align-items: center;
+                    gap: 29px;
+
+                    .srok-text-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        padding: 30px;
+
+
+                        p {
+
+                            color: rgb(34, 34, 34);
+                            font-size: 16px;
+                            font-weight: 700;
+
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .dom-price {
+        border: 2px solid red;
+        margin-top: 40px;
+
+        .dom-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .dom-price-card-div {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+
+                .dom-card {
+                    width: 570px;
+                    height: 607px;
+                    border-radius: 30px;
+                    background: rgb(248, 248, 248);
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}
