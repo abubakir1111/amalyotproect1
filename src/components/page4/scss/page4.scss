@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.header {
+.page4-header {
     max-width: 1170px;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
 
-    .header-box {
+    .page4-header-box {
         display: flex;
         align-items: start;
         justify-content: center;
@@ -34,7 +34,7 @@
                 }
             }
 
-            .navbar-center {
+            .page4-navbar-center {
                 display: flex;
                 align-items: center;
                 gap: 15px;
@@ -195,7 +195,6 @@
     }
 
     .dom-price {
-        border: 2px solid red;
         margin-top: 40px;
 
         .dom-box {
@@ -213,7 +212,341 @@
                     height: 607px;
                     border-radius: 30px;
                     background: rgb(248, 248, 248);
-                    border: 1px solid red;
+                    padding: 26px 25px;
+
+                    .dom-div-text1 {
+
+                        .dom-div-text-studiy {
+                            display: flex;
+                            align-items: center;
+                            gap: 58px;
+
+                            .dom-text-study-right-p1 {
+                                color: rgb(34, 34, 34);
+                                font-size: 22px;
+                                font-weight: 700;
+                                line-height: 150%;
+                            }
+
+                            .dom-text-study-right-p2 {
+                                color: rgb(34, 34, 34);
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
+                        }
+
+                        .dom-div-button-study {
+                            button {
+                                width: 193px;
+                                height: 37px;
+                                border-radius: 10px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                color: rgb(255, 255, 255);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                            }
+                        }
+
+                        .dom-div-text2 {
+                            margin-top: 30px;
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 20px;
+
+                            .dom-text2-img-p-div {
+                                display: flex;
+                                gap: 20px;
+
+                                .dom-text2-img {
+                                    background-image: url(../../../assets/img/page4/study-img.png);
+                                    width: 90px;
+                                    height: 90px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+
+                                .dom-text-left-p-div {
+                                    .dom-text-left-p-div-gap {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+
+                                        .dom-text-left-p-div1 {
+                                            .dom-text-left-p-div1-p1 {
+                                                color: rgb(34, 34, 34);
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                                line-height: 150%;
+                                            }
+
+                                            .dom-text-left-p-div1-p2 {
+                                                color: rgb(34, 34, 34);
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: 150%;
+                                            }
+                                        }
+
+                                        .dom-text-left-p-div2 {
+                                            p {
+                                                width: 140px;
+                                                height: 84px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: 150%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dom-malumot {
+        margin: 100px 0 60px 0;
+
+        .dom-malumot-box {
+            .dom-malumot-text-img-div {
+                display: flex;
+                gap: 32px;
+
+                .dom-malumot-text-div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 42px;
+
+                    .dom-malumot-text1 {
+                        color: rgb(34, 34, 34);
+                        font-size: 36px;
+                        font-weight: 500;
+                        line-height: 44px;
+                    }
+
+                    .dom-malumot-text2 {
+                        width: 568px;
+                        height: 306px;
+                        color: rgb(34, 34, 34);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+
+                .dom-malumot-img-div {
+
+                    .main-box-card-right {
+                        background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                        width: 546px;
+                        height: 370px;
+                        position: relative;
+
+                        .main-card-btn {
+                            left: -50px;
+
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                top: 170px;
+                            }
+
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                right: -15px;
+                                top: 170px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .dom-malumot-text-xarakter {
+                margin-top: 40px;
+
+                .dom-malumot-xarakter-box {
+                    .xarakter-right-text-div {
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+
+                        .xarakter-right-text-box-div {
+                            .xarakter {
+                                color: rgb(34, 34, 34);
+                                font-size: 22px;
+                                font-weight: 700;
+                                line-height: 150%;
+                            }
+
+                            .xarakter-srok-text-div {
+                                margin-top: 35px;
+
+                                .xarakter-srok-text-div-box {
+                                    display: flex;
+                                    gap: 58px;
+
+                                    .xarakter-srok-text-div-tex-right {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                    }
+
+                                    .xarakter-srok-text-div-tex-right p:nth-child(1) {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 20px;
+                                    }
+
+                                    .xarakter-srok-text-div-tex-right p:nth-child(2) {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 20px;
+                                    }
+
+                                    .xarakter-srok-text-div-tex-left {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                    }
+
+                                    .xarakter-srok-text-div-tex-left p:nth-child(1) {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 20px;
+                                    }
+
+                                    .xarakter-srok-text-div-tex-left p:nth-child(2) {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 20px;
+                                    }
+                                }
+
+                                .xarakter-border {
+                                    margin-top: 19px;
+                                    width: 570px;
+                                    height: 1px;
+                                    border: 1px solid rgb(219, 219, 219);
+                                }
+                            }
+                        }
+
+                        .uy-turi {
+                            margin-top: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            p:nth-child(1) {
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                            }
+
+                            p:nth-child(2) {
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 20px;
+                            }
+                        }
+
+                    }
+
+                    .main-right-btn {
+
+                        .main-right-btn-button {
+                            margin-top: 27px;
+                            width: 29rem;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            button {
+                                margin: 3.5px;
+                                border: 1px solid rgb(168, 168, 168);
+                                border-radius: 10px;
+                                background-color: transparent;
+                                padding: 10px 15px 10px 15px;
+                                color: rgb(34, 34, 34);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+
+
+                            }
+                        }
+                    }
+
+                    .dokument {
+                        margin-top: 42px;
+
+                        .dokument-box {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+
+                            .dokument-text-div {
+                                p {
+                                    color: rgb(34, 34, 34);
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    line-height: 150%;
+                                }
+                            }
+
+                            .dokument-btn-div {
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+
+                                button {
+                                    width: 224px;
+                                    height: 38px;
+                                    border: 1px solid rgb(220, 63, 63);
+                                    border-radius: 10px;
+                                    background-color: transparent;
+                                    color: rgb(220, 63, 63);
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 17px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

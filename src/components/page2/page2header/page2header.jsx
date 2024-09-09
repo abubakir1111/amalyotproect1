@@ -15,14 +15,14 @@ import footerImg2 from '../../../assets/img/footer/Vector2.png'
 
 function Page2header() {
   return (
-    <div className='header'>
-      <div className="header-box">
-        <div className="navbar">
+    <div className='page2-header'>
+      <div className="page2header-box">
+        <div className="page2header-navbar">
           <div className="navbar-right">
             <img src={page1Logo} alt="logo" />
             <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
           </div>
-          <div className="navbar-center">
+          <div className="page2header-navbar-center">
             <Link className='link'> Главная</Link>
             <Link className='link'>Все ЖК Тюмени</Link>
             <Link className='link'>Карта новостроек</Link>

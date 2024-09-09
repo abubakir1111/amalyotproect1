@@ -1,14 +1,14 @@
-.header {
+.page2-header {
     max-width: 1170px;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
 
-    .header-box {
+    .page2header-box {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .navbar {
+        .page2header-navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,7 +31,7 @@
                 }
             }
 
-            .navbar-center {
+            .page2header-navbar-center {
                 display: flex;
                 align-items: center;
                 gap: 15px;

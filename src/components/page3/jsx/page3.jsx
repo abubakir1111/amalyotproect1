@@ -8,14 +8,14 @@ import '../scss/page3.scss'
 import { aksiya } from '../js/page3'
 function Page3() {
     return (
-        <div className='header'>
-            <div className="header-box">
-                <div className="navbar">
+        <div className='page3-header'>
+            <div className="page3-header-box">
+                <div className="page3-navbar">
                     <div className="navbar-right">
                         <img src={page1Logo} alt="logo" />
                         <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                     </div>
-                    <div className="navbar-center">
+                    <div className="page3-navbar-center">
                         <Link className='link'> Главная</Link>
                         <Link className='link'>Все ЖК Тюмени</Link>
                         <Link className='link'>Карта новостроек</Link>
