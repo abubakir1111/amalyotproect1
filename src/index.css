@@ -160,3 +160,10 @@ button {
     height: 34px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .home-components {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}

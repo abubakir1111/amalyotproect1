@@ -15,7 +15,7 @@
             width: 100%;
             gap: 33px;
 
-            .navbar-right {
+            .page2-navbar-right {
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -85,18 +85,18 @@
         }
     }
 
-    .header-background-image {
+    .page2-header-background-image {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 20px 0;
 
-        .header-background-div {
+        .page2-header-background-div {
             background-image: url(../../../assets/img/backgorund/Frame152.png);
             width: 1170px;
             height: 426px;
 
-            .header-card {
+            .page2-header-card {
                 padding: 26px;
 
                 .page2-header-card-box {
@@ -108,7 +108,7 @@
                     background: rgba(255, 255, 255, 0.5);
                     padding: 90px 40px;
 
-                    .header-card-box-p {
+                    .page2-header-card-box-p {
                         width: 421px;
                         height: 110px;
                         color: rgb(34, 34, 34);
@@ -123,7 +123,7 @@
         }
     }
 
-    .glavniy-o-kompnay {
+    .page2-glavniy-o-kompnay {
         p {
             color: rgb(168, 168, 168);
             font-size: 14px;

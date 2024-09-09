@@ -18,7 +18,7 @@ function Page2header() {
     <div className='page2-header'>
       <div className="page2header-box">
         <div className="page2header-navbar">
-          <div className="navbar-right">
+          <div className="page2-navbar-right">
             <img src={page1Logo} alt="logo" />
             <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
           </div>
@@ -40,18 +40,16 @@ function Page2header() {
           </div>
         </div>
       </div>
-      <div className="header-background-image">
-        <div className="header-background-div">
-          <div className="header-card">
+      <div className="page2-header-background-image">
+        <div className="page2-header-background-div">
+          <div className="page2-header-card">
             <div className="page2-header-card-box">
-              <p className='header-card-box-p'>О компании</p>
+              <p className='page2-header-card-box-p'>О компании</p>
             </div>
           </div>
         </div>
       </div>
-
-
-      <div className='glavniy-o-kompnay'>
+      <div className='page2-glavniy-o-kompnay'>
         <p>Главная / О компании</p>
       </div>
       <div className='o-kompany-main'>

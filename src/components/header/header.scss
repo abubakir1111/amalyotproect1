@@ -85,9 +85,11 @@
             }
         }
 
-        .navbar-menu {
-            display: none;
-        }
+    }
+
+    .na11vbar-menu {
+        display: none;
+
     }
 
     .header-background-image {
@@ -411,7 +413,7 @@
 
 @media (max-width: 1024px) {
     .header {
-        max-width: 1024px;
+        width: 964px;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
 
@@ -422,6 +424,7 @@
 
             .navbar {
                 display: none;
+
 
                 .navbar-right {
                     display: flex;
@@ -491,25 +494,32 @@
                 }
             }
 
-            .navbar-menu {
+        }
+
+        .na11vbar-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            // gap: 33px;
+
+            .menu-navbar-right {
                 display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 117px;
 
-                .menu-navbar-right {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    width: 117px;
-
-                    .menu-navbar-right-p {
-                        height: 52px;
-                        color: rgb(220, 63, 63);
-                        font-size: 14px;
-                        font-weight: 900;
-                        line-height: 17px;
-                    }
-
+                .menu-navbar-right-p {
+                    height: 52px;
+                    color: rgb(220, 63, 63);
+                    font-size: 14px;
+                    font-weight: 900;
+                    line-height: 17px;
                 }
+
             }
+
+
         }
 
         .header-background-image {
@@ -520,7 +530,8 @@
 
             .header-background-div {
                 background-image: url(../../assets/img/backgorund/Frame152.png);
-                width: 1170px;
+                width: 964px;
+                border-radius: 20px;
                 height: 426px;
 
                 .header-card {
@@ -589,15 +600,16 @@
         }
 
         .room {
-            width: 1170px;
+            width: 964px;
             margin-top: 37px;
             border: 1px solid rgb(219, 219, 219);
             border-radius: 10px;
             background: rgb(255, 255, 255);
 
+
             .room-div {
                 padding: 14px 18px;
-                justify-content: center;
+                justify-content: space-between;
                 display: flex;
                 align-items: center;
                 gap: 50px;
@@ -695,6 +707,8 @@
                 }
 
                 .room-finish {
+                    display: none;
+
                     .room-finish-box {
                         display: flex;
                         flex-direction: column;
@@ -735,6 +749,8 @@
                 }
 
                 .mebel {
+                    display: none;
+
                     .mebel-box {
                         display: flex;
                         flex-direction: column;
@@ -796,6 +812,10 @@
                         align-items: center;
                         justify-content: center;
                     }
+                }
+
+                .btn-top-div {
+                    width: 890px;
                 }
             }
         }
