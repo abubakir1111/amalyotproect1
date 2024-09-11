@@ -115,9 +115,7 @@ function Page4() {
           </div>
         </div>
       </div>
-      {/* <div className="dom-malumot-wrap">
 
-      </div> */}
       <div className="dom-malumot">
         <div className="dom-malumot-box">
           <div className="dom-malumot-text-img-div">
@@ -210,5 +208,4 @@ function Page4() {
     </div>
   )
 }
-
 export default Page4
