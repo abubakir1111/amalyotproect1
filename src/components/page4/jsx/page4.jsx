@@ -115,6 +115,9 @@ function Page4() {
           </div>
         </div>
       </div>
+      {/* <div className="dom-malumot-wrap">
+
+      </div> */}
       <div className="dom-malumot">
         <div className="dom-malumot-box">
           <div className="dom-malumot-text-img-div">
@@ -149,7 +152,6 @@ function Page4() {
                           <p>{xarak.text3}</p>
                           <p>{xarak.text4}</p>
                         </div>
-
                       </div>
                       <div className='xarakter-border'></div>
                     </div>
@@ -188,23 +190,22 @@ function Page4() {
           </div>
         </div>
       </div>
-      <div className="contact-aksiya">
-        <div className="contact-box">
-          <div className="contact-card">
-            <div className="contact-box-title">
+      <div className="page4_contact-aksiya">
+        <div className="page4_contact-box">
+          <div className="page4_contact-card">
+            <div className="page4_contact-box-title">
               <p> Мы готовы ответить на все Ваши вопросы</p>
             </div>
-            <div className="btn-card">
-              <div className="btn-box-card">
+            <div className="page4_btn-card">
+              <div className="page4_btn-box-card">
                 <input type="text" placeholder='Имя' />
                 <input type="text" placeholder='+7 --- -- --' />
                 <button>Отправить</button>
               </div>
-              <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
+              <p className='page4_btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )

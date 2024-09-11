@@ -199,19 +199,19 @@ function Page2header() {
               </div>
 
 
-              <div className="contact">
-                <div className="contact-box">
-                  <div className="contact-card">
-                    <div className="contact-box-title">
+              <div className="page2_contact">
+                <div className="page2_contact-box">
+                  <div className="page2_contact-card">
+                    <div className="page2_contact-box-title">
                       <p> Мы готовы ответить на все Ваши вопросы</p>
                     </div>
-                    <div className="btn-card">
-                      <div className="btn-box-card">
+                    <div className="page2_btn-card">
+                      <div className="page2_btn-box-card">
                         <input type="text" placeholder='Имя' />
                         <input type="text" placeholder='+7 --- -- --' />
                         <button>Отправить</button>
                       </div>
-                      <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
+                      <p className='page2_btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
                     </div>
                   </div>
                 </div>

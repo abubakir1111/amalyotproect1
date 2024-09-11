@@ -44,7 +44,7 @@ function Page() {
                     <p>Пункт меню</p>
                     <p>Пункт меню</p>
                   </div>
-                   <div className="rec-text-card3">
+                  <div className="rec-text-card3">
                     <p>Пункт меню</p>
                     <p>Пункт меню</p>
                     <p>Пункт меню</p>

@@ -18,9 +18,7 @@ function App() {
                 </Routes>
             </div>
             <Page />
-
         </>
     );
 }
-
 export default App;
