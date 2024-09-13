@@ -157,35 +157,43 @@
         margin-top: 40px;
 
         .srok-box {
-            display: flex;
+            border: 1px solid red;
 
-            .srok-card {
-                width: 308px;
-                height: 137px;
-                border-radius: 30px;
-                background: rgb(248, 248, 248);
+            .srok-card2 {
+
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
                 .srok-box2 {
                     display: flex;
                     align-items: center;
                     gap: 29px;
 
-                    .srok-text-div {
+                    .srok-card {
+                        width: 308px;
+                        height: 137px;
+                        border-radius: 30px;
+                        background: rgb(248, 248, 248);
                         display: flex;
                         align-items: center;
-                        gap: 15px;
-                        padding: 30px;
+
+                        .srok-text-div {
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            padding: 30px;
 
 
-                        p {
+                            p {
 
-                            color: rgb(34, 34, 34);
-                            font-size: 16px;
-                            font-weight: 700;
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 700;
 
-                            line-height: 150%;
+                                line-height: 150%;
+                            }
                         }
                     }
                 }
@@ -319,6 +327,7 @@
         .dom-malumot-box {
             display: flex;
             flex-direction: column;
+
             .dom-malumot-text-img-div {
                 display: flex;
                 flex-wrap: wrap;
@@ -489,9 +498,9 @@
 
                     }
 
-                    .main-right-btn {
+                    .page4-main-right-btn {
 
-                        .main-right-btn-button {
+                        .page4-main-right-btn-button {
                             margin-top: 27px;
                             width: 29rem;
                             display: flex;
@@ -646,14 +655,14 @@
 @media (max-width: 1024px) {
 
     .page4-header {
-        max-width: 1170px;
-        margin: 0 auto;
+        max-width: 1024px;
+        border: 1px solid red;
         font-family: "Montserrat", sans-serif;
 
         .page4-header-box {
             display: flex;
-            align-items: start;
-            justify-content: center;
+            align-items: center;
+            border: 01px solid red;
             flex-direction: column;
 
             .page4-navbar {
@@ -795,13 +804,17 @@
                     }
                 }
             }
+
         }
 
         .page4-srok {
             margin-top: 40px;
+            display: flex;
+            flex-direction: column;
 
             .srok-box {
                 display: flex;
+
 
                 .srok-card {
                     width: 308px;
@@ -850,6 +863,8 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 25px;
+                    align-items: center;
+                    justify-content: center;
 
                     .dom-card {
                         width: 570px;
@@ -963,39 +978,49 @@
             .dom-malumot-box {
                 .dom-malumot-text-img-div {
                     // display: flex;
-                    // flex-direction: column;
+                    // align-items: center;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+
+
                     gap: 32px;
-                    
+
                     .dom-malumot-text-div {
-                        // display: flex;
-                        // flex-direction: c    olumn;
-                        gap: 42px;
+                        margin: 0 auto;
+                        border: 1px solid red;
 
-                        .dom-malumot-text1 {
-                            color: rgb(34, 34, 34);
-                            font-size: 36px;
-                            font-weight: 500;
-                            line-height: 44px;
-                        }
+                        .dom-malumot-text1-div {
+                            .dom-malumot-text1 {
+                                color: rgb(34, 34, 34);
+                                font-size: 36px;
+                                font-weight: 500;
+                                line-height: 44px;
+                            }
 
-                        .dom-malumot-text2 {
-                            width: 568px;
-                            height: 306px;
-                            color: rgb(34, 34, 34);
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 150%;
+                            .dom-malumot-text2 {
+                                width: 568px;
+                                height: 306px;
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
                         }
                     }
+
                     .dom-malumot-img-div {
-                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         .main-box-card-right {
                             background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 441px;
+                            width: 570px;
                             height: 370px;
                             border-radius: 30px;
-                            position: absolute;
+                            position: relative;
 
                             .main-card-btn {
                                 left: -50px;
@@ -1024,7 +1049,7 @@
                                     align-items: center;
                                     justify-content: center;
                                     position: absolute;
-                                    right: -15px;
+                                    right: 10px;
                                     top: 170px;
                                 }
 
@@ -1040,6 +1065,8 @@
                         .xarakter-right-text-div {
                             display: flex;
                             align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
                             gap: 30px;
 
                             .xarakter-right-text-box-div {
@@ -1130,9 +1157,9 @@
 
                         }
 
-                        .main-right-btn {
+                        .page-main-right-btn {
 
-                            .main-right-btn-button {
+                            .page-main-right-btn-button {
                                 margin-top: 27px;
                                 width: 27rem;
                                 display: flex;
@@ -1168,9 +1195,13 @@
 
                         .dokument {
                             margin-top: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
                             .dokument-box {
-                                display: flex;
+                                // display: flex;
+                                // align-items: center;
                                 flex-direction: column;
                                 gap: 30px;
 
@@ -1185,7 +1216,6 @@
 
                                 .dokument-btn-div {
                                     display: flex;
-                                    align-items: center;
                                     gap: 20px;
 
                                     button {
@@ -1211,6 +1241,10 @@
             margin: 100px 0;
 
             .page4_contact-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 .page4_contact-card {
                     width: 979px;
                     height: 354px;

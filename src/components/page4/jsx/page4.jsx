@@ -10,6 +10,7 @@ import studyimg from '../../../assets/img/page4/Vector.png'
 import right from '../../../assets/icons/mian.icons/main-right-btn-icons.png'
 import left from '../../../assets/icons/mian.icons/main-left-icons.png'
 import backImg from '../../../assets/img/o-Kompany-img/contact/Screenshot-xarita.png'
+// import { PagE2 } from '../../rec/page'
 // import { Card } from '@mui/material'
 
 
@@ -18,11 +19,9 @@ function Page4() {
     <div className='page4-header'>
       <div className="page4-header-box">
         <div className="page4-navbar">
-
           <div className="navbar-right">
             <img src={page1Logo} alt="Logo" />
             <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
-
           </div>
           <div className="page4-navbar-center">
             <Link className='link'> Главная</Link>
@@ -40,6 +39,7 @@ function Page4() {
             <button>Перезвоните мне</button>
           </div>
         </div>
+   
         <div className="header-background-image">
           <div className="header-background-div">
             <div className="header-card">
@@ -54,13 +54,13 @@ function Page4() {
             </div>
           </div>
         </div>
-        <div className='glavniy-o-kompnay'>
-          <p>Главная / ЖК Тюмени / ЖК Чаркова 72</p>
-        </div>
+      </div>
+      <div className='glavniy-o-kompnay'>
+        <p>Главная / ЖК Тюмени / ЖК Чаркова 72</p>
       </div>
       <div className="page4-srok">
         <div className="srok-box">
-          <div className="srok-card">
+          <div className="srok-card2">
             <div className="srok-box2">
               {srok.map((srok) =>
                 <div className="srok-card" key={srok.id}>
@@ -120,8 +120,10 @@ function Page4() {
         <div className="dom-malumot-box">
           <div className="dom-malumot-text-img-div">
             <div className='dom-malumot-text-div'>
-              <p className="dom-malumot-text1">Подробнее о ЖК</p>
-              <p className="dom-malumot-text2">Новый жилой комплекс расположен в экологически чистом районе на северо-востоке Тюмени, в 11 км от центра и в 1 км от Тобольского тракта. Развитая транспортная инфраструктура позволит быстро добраться в любую точку города как на общественном транспорте, так и на автомобиле. «Чаркова 72» - проект комфорт-класса с собственной инфраструктурой - вам не придется уезжать далеко, чтобы купить все необходимое или хорошо провести время. Для жителей мы построим школу и детский сад. На первых этажах откроются магазины и кафе. Мы постарались предугадать все пожелания наших будущих жителей и спроектировали дома с приватными зелеными дворами.</p>
+              <div className='dom-malumot-text1-div'>
+                <p className="dom-malumot-text1">Подробнее о ЖК</p>
+                <p className="dom-malumot-text2">Новый жилой комплекс расположен в экологически чистом районе на северо-востоке Тюмени, в 11 км от центра и в 1 км от Тобольского тракта. Развитая транспортная инфраструктура позволит быстро добраться в любую точку города как на общественном транспорте, так и на автомобиле. «Чаркова 72» - проект комфорт-класса с собственной инфраструктурой - вам не придется уезжать далеко, чтобы купить все необходимое или хорошо провести время. Для жителей мы построим школу и детский сад. На первых этажах откроются магазины и кафе. Мы постарались предугадать все пожелания наших будущих жителей и спроектировали дома с приватными зелеными дворами.</p>
+              </div>
             </div>
             <div className='dom-malumot-img-div'>
               <div className="main-box-card-right">
@@ -158,16 +160,16 @@ function Page4() {
                     <p>Тип дома</p>
                     <p>Кирпично-монолитный</p>
                   </div>
+
                 </div>
-                <div className="main-right-btn">
-                  <div className='main-right-btn-img'>
+                <div className="page4-main-right-btn">
+                  <div className='page4-main-right-btn-img'>
                     <img src={backImg} alt="" />
                   </div>
-                  <div className='main-right-btn-button'>
+
+                  <div className='page4-main-right-btn-button'>
                     {btn.map((btn) =>
-                      <div>
-                        <button><img src={btn.img} alt="" />{btn.text}</button>
-                      </div>
+                      <button><img src={btn.img} alt="" />{btn.text}</button>
                     )}
                   </div>
                 </div>
@@ -179,11 +181,11 @@ function Page4() {
                   </div>
                   <div className='dokument-btn-div'>
                     <button>Проектная декларация</button>
-
                     <button>Разрешение на строительство</button>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

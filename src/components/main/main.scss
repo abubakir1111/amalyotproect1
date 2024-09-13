@@ -217,6 +217,12 @@
                                 font-size: 14px;
                                 font-weight: 500;
                                 line-height: 17px;
+                                img {
+                                    filter: brightness(1.5) contrast(2);
+                                    position: relative;
+                                    left: -2px;
+                                    top: 2px;
+                                }
                             }
                         }
 
@@ -306,14 +312,13 @@
 
 
                     .main-box-card2 {
-
                         display: flex;
                         gap: 32px;
 
                         .main-box-card-right {
                             background-image: url(../../assets/img/backgorund/main-right-img.png);
                             border-radius: 30px;
-                            width: 353px;
+                            max-width: 353px;
                             height: 370px;
                             position: relative;
 
@@ -471,11 +476,12 @@
                         margin-top: 29px;
 
                         .main-top-box {
-                            display: flex;
-                            gap: 15px;
+                            // display: flex;
+                            // gap: 15px;
 
                             .main-right-btn {
-                                width: 28rem;
+                                // width: 28rem;
+                                
 
                                 button {
                                     margin: 3.5px;
@@ -487,6 +493,14 @@
                                     font-size: 14px;
                                     font-weight: 500;
                                     line-height: 17px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    img {
+                                        filter: brightness(1.5) contrast(2);
+                                      }
+                                      
+                                      margin: 10px;
                                 }
                             }
 

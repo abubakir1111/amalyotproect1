@@ -84,6 +84,9 @@
                 }
             }
         }
+        .nav-res1{
+            display: none;
+        }
 
     }
 
@@ -493,8 +496,11 @@
                     }
                 }
             }
-
         }
+        .nav-res1{
+            display: flex;
+        }
+
 
         .na11vbar-menu {
             display: flex;

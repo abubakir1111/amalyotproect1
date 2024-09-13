@@ -702,9 +702,10 @@
         .contact {
             margin-top: 100px;
 
+            border: 1px solid red;
             .contact-box {
                 .contact-card {
-                    width: 979px;
+                    width: auto;
                     height: 354px;
                     background: rgb(220, 63, 63);
                     border-radius: 30px;
