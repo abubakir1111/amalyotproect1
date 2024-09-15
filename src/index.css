@@ -39,10 +39,10 @@ button {
     justify-content: center;
 }
 
-.rec-div-text {
+/* .rec-div-text { */
     /* width: 1170px; */
     /* height: 374px; */
-}
+/* } */
 
 .rec-div-text1 {
     display: flex;
