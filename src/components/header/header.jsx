@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './header.scss'; // Ensure SCSS file is properly linked
-import { Link } from 'react-router-dom'; // Ensure correct usage or replace if not needed
+import './header.scss';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import wk from '../../assets/icons/VK.svg';
 import wh from '../../assets/icons/WhatsApp.svg';
@@ -27,6 +27,10 @@ function Header() {
     const tumaClick = (id) => {
         setTumanX(id);
     };
+    const [menuVisible, setMenuVisible] = useState(false);
+    const menuNav = () => {
+        setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
+    }
 
     return (
 
@@ -55,21 +59,52 @@ function Header() {
                         <button>Перезвоните мне</button>
                     </div>
                 </div>
-                <div className="nav-res1">
-                    <div className="nav-res-box">
-sadad
-                    </div>
-                </div>
             </div>
+
             <div className="na11vbar-menu">
                 <div className="menu-navbar-right">
-                    <img src={logo} alt="Logo" />
-                    <p className="menu-navbar-right-p">центр новостроек в Тюмени</p>
+                    <div>
+                        {/* <img src={logo} alt="Logo" /> */}
+                    </div>
+                    <div className='menu'>
+                        <button onClick={menuNav}><img src={menu} alt="burder-menu"/></button>
+                    </div>
                 </div>
-                <div className='menu'>
-                    <img src={menu} alt="" />
+
+                <div className={`menu-navbar2122 ${menuVisible ? 'menu-navbar2121' : 'menu-navbar2122'}`}>
+                    <div className="menu-header-box">
+                        <div className="menu-navbar">
+                            <div className='menu-x-btn'>
+                            <button onClick={menuNav}>&times;</button>
+                            </div>
+                            <div className="navbar-right">
+                                <img src={logo} alt="Logo" />
+                                <p className="navbar-right-p">центр новостроек в Тюмени</p> 
+                            </div>
+                            <div className="navbar-center">
+                                <Link className='link'> Главная</Link>
+                                <Link className='link'>Все ЖК Тюмени</Link>
+                                <Link className='link'>Карта новостроек</Link>
+                                <Link to="/page" className='link'>О компании</Link>
+                            </div>
+                            <div className="navbar-left">
+                                <Link className='navbar-left-link'>8 800 000 00 00</Link>
+                            </div>
+                            <div className="navbar-icon-left">
+                                <img src={wk} alt="VK" />
+                                <img src={wh} alt="WhatsApp" />
+                                <img src={tg} alt="Telegram" />
+                            </div>
+                            <div className="navbar-btn">
+                                <button>Перезвоните мне</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+
             <div className="header-background-image">
                 <div className="header-background-div">
                     <div className="header-card">
