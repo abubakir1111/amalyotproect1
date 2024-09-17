@@ -39,7 +39,8 @@ function Header() {
                 <div className="navbar">
                     <div className="navbar-right">
                         <img src={logo} alt="Logo" />
-                        <p className="navbar-right-p">центр новостроек в Тюмени</p>
+                        <Link className='navbar-right-link'>центр новостроек в Тюмени</Link>
+
                     </div>
                     <div className="navbar-center">
                         <Link className='link'> Главная</Link>
@@ -64,24 +65,24 @@ function Header() {
             <div className="na11vbar-menu">
                 <div className="menu-navbar-right">
                     <div>
-                        {/* <img src={logo} alt="Logo" /> */}
+                        <img src={logo}  alt="Logo" />
+                        <Link className='navbar-right-p'>центр новостроек в Тюмени</Link>
                     </div>
                     <div className='menu'>
-                        <button onClick={menuNav}><img src={menu} alt="burder-menu"/></button>
+                        <button onClick={menuNav}><img src={menu} alt="burder-menu" /></button>
                     </div>
                 </div>
-
                 <div className={`menu-navbar2122 ${menuVisible ? 'menu-navbar2121' : 'menu-navbar2122'}`}>
                     <div className="menu-header-box">
                         <div className="menu-navbar">
                             <div className='menu-x-btn'>
-                            <button onClick={menuNav}>&times;</button>
+                                <button onClick={menuNav}>&times;</button>
                             </div>
                             <div className="navbar-right">
                                 <img src={logo} alt="Logo" />
-                                <p className="navbar-right-p">центр новостроек в Тюмени</p> 
+                                <p className="navbar-right-p">центр новостроек в Тюмени</p>
                             </div>
-                            <div className="navbar-center">
+                            <div className="menu-navbar-center">
                                 <Link className='link'> Главная</Link>
                                 <Link className='link'>Все ЖК Тюмени</Link>
                                 <Link className='link'>Карта новостроек</Link>
@@ -100,9 +101,7 @@ function Header() {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
             <div className="header-background-image">

@@ -22,13 +22,15 @@
                 align-items: center;
                 gap: 10px;
 
-                .navbar-right-p {
+                .navbar-right-link {
                     width: 117px;
                     height: 52px;
                     color: rgb(220, 63, 63);
                     font-size: 14px;
                     font-weight: 900;
                     line-height: 17px;
+                    text-decoration: none;
+
                 }
             }
 
@@ -472,13 +474,13 @@
             padding: 0 50px;
             // left: 0;
             right: 0;
-            transition: 1s linear;
+
             .menu-navbar-right {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 gap: 10px;
-                position: relative  ;
+                position: relative;
                 top: 10px;
                 right: 0;
                 width: 964px;
@@ -494,6 +496,7 @@
                 .menu {
                     // position: absolute;
                     right: 0;
+
                     button {
                         background: none;
                         border: none;
@@ -507,13 +510,13 @@
                 height: 100vh;
                 position: fixed;
                 z-index: 5;
-                left: 0px;
+                left: 0; // Boshlang'ich holat
                 top: 0;
                 // border: 1px solid rgb(255, 255, 255);
                 // backdrop-filter: blur(55px);
                 // background: rgba(255, 255, 255, 0.404);
-                background: rgba(0, 0, 0, 0.912); 
-                border-right: 3px double white;
+                background: rgba(0, 0, 0, 0.912);
+                border-right: 1px double red;
 
                 .menu-header-box {
                     display: flex;
@@ -527,21 +530,22 @@
                         align-items: start;
                         flex-direction: column;
                         padding: 30px 50px;
+                        transition: 1s linear;
                         gap: 33px;
-                     .menu-x-btn{
-                        background-color: none;
-                        border: none;
-                        
-                        position: absolute;
-                        right: -100px;
-                        button{
-                            background-color: transparent;
-                            color: white;
+                        .menu-x-btn {
+                            background-color: none;
                             border: none;
-                            font-size: 30px;
-                            
+                            position: absolute;
+                            right: -100px;
+
+                            button {
+                                background-color: transparent;
+                                color: white;
+                                border: none;
+                                font-size: 30px;
+
+                            }
                         }
-                     }
 
 
                         .navbar-right {
@@ -559,11 +563,12 @@
                             }
                         }
 
-                        .navbar-center {
+                        .menu-navbar-center {
                             display: flex;
                             align-items: start;
                             flex-direction: column;
                             gap: 15px;
+                            transition: 1s linear;
 
                             .link {
                                 color: rgb(255, 255, 255);
@@ -679,12 +684,14 @@
                 height: 100vh;
                 position: fixed;
                 z-index: 5;
-                left: -500px;
+                left: 500px;
                 top: 0;
                 // border: 1px solid rgb(255, 255, 255);
                 // backdrop-filter: blur(55px);
                 // background: rgba(255, 255, 255, 0.404);
                 background: rgba(0, 0, 0, 0.912);
+                transition: 0.5s linear;
+
                 .header-box {
                     display: flex;
                     align-items: center;
@@ -692,12 +699,13 @@
                     // position: fixed;
                     z-index: 6;
 
-                    .navbar {
+                    .menu-navbar {
                         display: flex;
                         align-items: start;
                         flex-direction: column;
                         padding: 30px 50px;
 
+                        transition: 1s linear;
 
                         .navbar-right {
                             display: flex;
@@ -714,7 +722,7 @@
                             }
                         }
 
-                        .navbar-center {
+                        .menu-navbar-center {
                             display: flex;
                             align-items: start;
                             flex-direction: column;

@@ -303,32 +303,31 @@
     }
 
     .footer-card {
-        overflow: scroll;
-
+        overflow: hidden;
+    
         .footer-box {
             .footer-card {
                 display: flex;
                 align-items: center;
-                gap: 30px;
-
-                .footer-card1 {
+                overflow: hidden;
+                gap: 50px;
+    
+                .footer-card1, .footer-card2, .footer-card3 {
                     padding: 28px 25px;
                     width: 370px;
                     height: 401px;
                     border-radius: 30px;
-                    background: rgb(248, 248, 248);
+                    background: rgb(248, 248, 248); /* Rangni ko'rsatish */
                     display: flex;
                     align-items: start;
                     flex-direction: column;
-                    gap: 15px;
-
+                    gap: 50px;
+    
                     .footer-text-div {
                         display: flex;
                         align-items: center;
                         gap: 20px;
-
-                        // .footer-img1 {}
-
+    
                         .footer-text-p {
                             width: 101px;
                             height: 48px;
@@ -338,7 +337,7 @@
                             line-height: 24px;
                         }
                     }
-
+    
                     .footer-text-desc {
                         p {
                             width: 317px;
@@ -349,7 +348,7 @@
                             line-height: 150%;
                         }
                     }
-
+    
                     .footer-card-text-red {
                         p {
                             color: rgb(220, 63, 63);
@@ -359,126 +358,59 @@
                         }
                     }
                 }
-
-
-                .footer-card2 {
-                    width: 370px;
-                    height: 401px;
-                    border-radius: 30px;
-                    background: rgb(248, 248, 248);
-                    padding: 28px 25px;
-
-                    .footer-text-div {
+    
+                .footer-button-div {
+                    .footer-button-box {
                         display: flex;
                         align-items: center;
-                        gap: 20px;
-
-                        // .footer-img1 {}
-
-                        .footer-text-p {
-                            width: 101px;
-                            height: 48px;
-                            color: rgb(34, 34, 34);
-                            font-size: 20px;
-                            font-weight: 500;
-                            line-height: 24px;
-                        }
-                    }
-
-                    .footer-text-desc {
-                        p {
-                            width: 317px;
-                            height: 216px;
-                            color: rgb(34, 34, 34);
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 150%;
-                        }
-                    }
-
-                    .footer-card-text-red {
-                        p {
-                            color: rgb(220, 63, 63);
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 150%;
-                        }
-                    }
-                }
-
-                .footer-card3 {
-                    width: 370px;
-                    height: 401px;
-                    border-radius: 30px;
-                    background: rgb(248, 248, 248);
-                    padding: 28px 25px;
-
-                    .footer-text-div {
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-
-                        // .footer-img1 {}
-
-                        .footer-text-p {
-                            width: 101px;
-                            height: 48px;
-                            color: rgb(34, 34, 34);
-                            font-size: 20px;
-                            font-weight: 500;
-                            line-height: 24px;
-                        }
-                    }
-
-                    .footer-text-desc {
-                        p {
-                            width: 317px;
-                            height: 216px;
-                            color: rgb(34, 34, 34);
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 150%;
-                        }
-                    }
-
-                    .footer-card-text-red {
-                        p {
-                            color: rgb(220, 63, 63);
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 150%;
+                        justify-content: end;
+    
+                        .footer-button {
+                            padding: 40px 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 30px;
+    
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                            }
                         }
                     }
                 }
             }
-
-            .footer-button-div {
-
-                .footer-button-box {
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-
-                    .footer-button {
-                        padding: 40px 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 30px;
-
-                        button {
-                            width: 30px;
-                            height: 30px;
-                            background: rgb(220, 63, 63);
-                            border: none;
-                            border-radius: 50%;
-
-                        }
-                    }
-                }
+    
+            /* Swiper umumiy uslublari */
+            .swiper {
+                overflow: hidden;
+            }
+    
+            .swiper-slide {
+                box-shadow: none;
+                transition: transform 0.5s ease-in-out;
+                transform: scale(1);
+                background-color: transparent; /* Rangni ko'rsatish */
+            }
+    
+            .swiper-slide-active {
+                box-shadow: none;
+                transform: scale(1);
+                background-color: transparent; /* Rangni ko'rsatish */
+            }
+    
+            /* Hover holatida */
+            .swiper-slide:hover {
+                box-shadow: none;
+                transform: scale(1);
+                background-color: transparent; /* Rangni ko'rsatish */
             }
         }
     }
+    
 }
 
 
@@ -804,8 +736,8 @@
 
                     .footer-card1 {
                         padding: 28px 25px;
-                        width: 370px;
-                        height: 401px;
+                        // width: 370px;
+                        // height: 401px;
                         border-radius: 30px;
                         background: rgb(248, 248, 248);
                         display: flex;
