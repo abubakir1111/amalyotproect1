@@ -641,7 +641,8 @@
                     border-radius: 30px;
                     padding: 64px 66px;
                     display: flex;
-                    align-items: center;
+                    align-items: start;
+                    flex-direction: column;
                     gap: 10px;
                     background-image: url(../../assets/img/contact/_.png);
                     background-repeat: no-repeat;
@@ -665,15 +666,11 @@
                             gap: 20px;
 
                             input {
-                                width: 185px;
-
+                                width: 266px;
                                 height: 47px;
-
                                 border: 1px solid red;
                                 border-radius: 10px;
-
                                 background: rgb(219, 219, 219);
-
                                 color: rgb(34, 34, 34);
                                 font-size: 14px;
                                 font-weight: 500;
@@ -687,7 +684,7 @@
                             }
 
                             button {
-                                width: 185px;
+                                width: 266px;
                                 height: 47px;
                                 border: 1px solid rgb(220, 63, 63);
                                 border-radius: 10px;

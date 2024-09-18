@@ -85,6 +85,15 @@
         }
     }
 
+    .na11vbar-menu {
+        display: none;
+
+    }
+
+    .menu-navbar {
+        display: none;
+    }
+
     .page2-header-background-image {
         display: flex;
         align-items: center;
@@ -265,6 +274,9 @@
                         margin-top: 100px;
 
                         .page2_contact-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
 
                             .page2_contact-card {
@@ -302,7 +314,6 @@
 
                                             height: 47px;
 
-                                            border: 1px solid red;
                                             border-radius: 10px;
 
                                             background: rgb(219, 219, 219);
@@ -359,8 +370,9 @@
 
 
                     .footer-card {
-                        overflow: scroll;
+                        overflow: hidden;
                         margin: 60px 0;
+                        width: auto;
 
                         .footer-box {
                             .contact-text {
@@ -374,10 +386,10 @@
                                 }
                             }
 
-                            .footer-card {
+                            .footer-card-box2 {
                                 display: flex;
                                 align-items: center;
-                                gap: 30px;
+                                // flex-direction: column;
 
                                 .footer-card1 {
                                     padding: 28px 25px;

@@ -14,7 +14,6 @@ function App() {
                     <Route path='/' element={<Page1 />} />
                     <Route path='/page' element={<Page2 />} />
                     <Route path='/page3' element={<Page3 />} />
-                    <Route path='/page3' element={<Page3 />} />
                     <Route path='/page4' element={<Page4 />} />
                 </Routes>
             </div>

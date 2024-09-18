@@ -10,6 +10,7 @@ import RangeSlider from './headerjs/header-silder';
 import vec1 from '../../assets/icons/Vector.svg';
 import vec2 from '../../assets/icons/Union.png';
 import menu from '../../assets/img/header-navbar-responsive/burger-menu.png'
+import './headerresponsive.scss';
 
 function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -64,9 +65,9 @@ function Header() {
 
             <div className="na11vbar-menu">
                 <div className="menu-navbar-right">
-                    <div>
-                        <img src={logo}  alt="Logo" />
-                        <Link className='navbar-right-p'>центр новостроек в Тюмени</Link>
+                    <div className='menu-text-div'>
+                        <img src={logo} alt="Logo" />
+                        <Link className='menu-navbar-right-link' to='/'>центр новостроек в Тюмени</Link>
                     </div>
                     <div className='menu'>
                         <button onClick={menuNav}><img src={menu} alt="burder-menu" /></button>
@@ -80,7 +81,7 @@ function Header() {
                             </div>
                             <div className="navbar-right">
                                 <img src={logo} alt="Logo" />
-                                <p className="navbar-right-p">центр новостроек в Тюмени</p>
+                                <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                             </div>
                             <div className="menu-navbar-center">
                                 <Link className='link'> Главная</Link>

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './page2header.scss'
+import './page2responsive.scss'
 import page1Logo from '../../../assets/img/logo/logo.png'
 import page1wk from '../../../assets/icons/VK.svg'
 import page2wh from '../../../assets/icons/WhatsApp.svg'
@@ -9,11 +10,37 @@ import kompanyImg from '../../../assets/img/o-Kompany-img/O-kompany-Img.png'
 import kompanycard from '../page2header/page2headerjs'
 import kompanyLeftImg from '../../../assets/img/o-Kompany-img/contact/Screenshot-xarita.png'
 import { contact, contactIlovasi } from './adres'
-import footerIcons from '../../../assets/img/footer//footer.png'
 import footerImg1 from '../../../assets/img/footer/Vector1.png'
 import footerImg2 from '../../../assets/img/footer/Vector2.png'
+import { footer } from '../../price/priceApi'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // To'liq Swiper CSS
+import 'swiper/css/effect-coverflow'; // Coverflow effekt CSS
+import 'swiper/css/pagination'; // Pagination CSS
+import 'swiper/css/navigation'; // Navigation CSS
+import logo from '../../../assets/img/logo/logo.png';
+import wk from '../../../assets/icons/VK.svg';
+import wh from '../../../assets/icons/WhatsApp.svg';
+import tg from '../../../assets/icons/Tg.svg';
+import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 function Page2header() {
+
+  const swiperRef = useRef(null);
+
+  const handlePrevClick = () => {
+    swiperRef.current.swiper.slidePrev();
+  };
+
+  const handleNextClick = () => {
+    swiperRef.current.swiper.slideNext();
+  };
+  const [menuVisible, setMenuVisible] = useState(false);
+  const menuNav = () => {
+    setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
+  }
+
   return (
     <div className='page2-header'>
       <div className="page2header-box">
@@ -40,6 +67,50 @@ function Page2header() {
           </div>
         </div>
       </div>
+
+      <div className="na11vbar-menu">
+        <div className="menu-navbar-right">
+          <div className='menu-text-div'>
+            <img src={logo} alt="Logo" />
+            <Link className='menu-navbar-right-link' to='/'>центр новостроек в Тюмени</Link>
+          </div>
+          <div className='menu'>
+            <button onClick={menuNav}><img src={menu} alt="burder-menu" /></button>
+          </div>
+        </div>
+        <div className={`menu-navbar2122 ${menuVisible ? 'menu-navbar2121' : 'menu-navbar2122'}`}>
+          <div className="menu-header-box">
+            <div className="menu-navbar">
+              <div className='menu-x-btn'>
+                <button onClick={menuNav}>&times;</button>
+              </div>
+              <div className="navbar-right">
+                <img src={logo} alt="Logo" />
+                <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
+              </div>
+              <div className="menu-navbar-center">
+                <Link className='link'> Главная</Link>
+                <Link className='link'>Все ЖК Тюмени</Link>
+                <Link className='link'>Карта новостроек</Link>
+                <Link to="/page" className='link'>О компании</Link>
+                <Link to="/page3" className='link'>Акции</Link>
+              </div>
+              <div className="navbar-left">
+                <Link className='navbar-left-link'>8 800 000 00 00</Link>
+              </div>
+              <div className="navbar-icon-left">
+                <img src={wk} alt="VK" />
+                <img src={wh} alt="WhatsApp" />
+                <img src={tg} alt="Telegram" />
+              </div>
+              <div className="navbar-btn">
+                <button>Перезвоните мне</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="page2-header-background-image">
         <div className="page2-header-background-div">
           <div className="page2-header-card">
@@ -50,7 +121,9 @@ function Page2header() {
         </div>
       </div>
       <div className='page2-glavniy-o-kompnay'>
+
         <p>Главная / О компании</p>
+
       </div>
       <div className='o-kompany-main'>
         <div className="o-kompany-main-box">
@@ -71,7 +144,7 @@ function Page2header() {
                 <div className="o-kompany-card-div-box">
 
                   {kompanycard.map((kompanycard) =>
-                    <div className="o-kompany-card">
+                    <div className="o-kompany-card" key={kompanycard.id}>
                       <div className='o-kompany-card-img'>
                         <img src={kompanycard.img} alt="" />
                       </div>
@@ -116,85 +189,56 @@ function Page2header() {
                 </div>
               </div>
 
-
               <div className="footer-card">
                 <div className="footer-box">
-                  <div className='contact-text'>
-                    <p>Отзывы</p>
-                  </div>
-                  <div className="footer-card">
+                  <div className="footer-card-box2">
+                    <Swiper
+                      ref={swiperRef}
+                      grabCursor={true}
+                      centeredSlides={true}
+                      loop={true}
+                      slidesPerView={3} // Har bir qatorada uchta kartani ko'rsatish
+                      spaceBetween={200} // Kartalar orasidagi bo'shliq
+                      coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1
+                      }}
+                      modules={[EffectCoverflow, Pagination, Navigation]}
+                    >
+                      {footer.map((footer) =>
+                        <SwiperSlide>
 
-                    <div className="footer-card1">
+                          <div className="footer-card1">
+                            <div className="footer-text-div">
+                              <img src={footer.logo_img} alt="" className='footer-img1' />
+                              <p className='footer-text-p'>{footer.logo_text}в</p>
+                            </div>
+                            <div className='footer-text-desc'>
+                              <p>{footer.text1}</p>
+                            </div>
+                            <div className='footer-card-text-red'>
+                              <p>{footer.text2}</p>
+                            </div>
+                          </div>
 
-                      <div className="footer-text-div">
-                        <img src={footerIcons} alt="" className='footer-img1' />
-                        <p className='footer-text-p'>Максим Кузнецов</p>
+
+                        </SwiperSlide>
+                      )}
+
+                      <div className="footer-button-div">
+                        <div className="footer-button-box">
+                          <div className="footer-button">
+                            <button onClick={handlePrevClick}><img src={footerImg1} alt="" /></button>
+                            <button onClick={handleNextClick}><img src={footerImg2} alt="" /></button>
+                          </div>
+                        </div>
                       </div>
-                      <div className='footer-text-desc'>
-                        <p>Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил глубокие знания в области недвижимости</p>
-                      </div>
-                      <div className='footer-card-text-red'>
-                        <p>Читать отзыв </p>
-                      </div>
-                    </div>
-                    <div className="footer-card1">
-                      <div className="footer-text-div">
-                        <img src={footerIcons} alt="" className='footer-img1' />
-                        <p className='footer-text-p'>Максим Кузнецов</p>
-                      </div>
-                      <div className='footer-text-desc'>
-                        <p>Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил глубокие знания в области недвижимости</p>
-                      </div>
-                      <div className='footer-card-text-red'>
-                        <p>Читать отзыв </p>
-                      </div>
-                    </div>
-                    <div className="footer-card2">
-                      <div className="footer-text-div">
-                        <img src={footerIcons} alt="" className='footer-img1' />
-                        <p className='footer-text-p'>Максим Кузнецов</p>
-                      </div>
-                      <div className='footer-text-desc'>
-                        <p>Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил глубокие знания в области недвижимости</p>
-                      </div>
-                      <div className='footer-card-text-red'>
-                        <p>Читать отзыв </p>
-                      </div>
-                    </div>
-                    <div className="footer-card3">
-                      <div className="footer-text-div">
-                        <img src={footerIcons} alt="" className='footer-img1' />
-                        <p className='footer-text-p'>Максим Кузнецов</p>
-                      </div>
-                      <div className='footer-text-desc'>
-                        <p>Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил глубокие знания в области недвижимости</p>
-                      </div>
-                      <div className='footer-card-text-red'>
-                        <p>Читать отзыв </p>
-                      </div>
-                    </div>
-                    <div className="footer-card3">
-                      <div className="footer-text-div">
-                        <img src={footerIcons} alt="" className='footer-img1' />
-                        <p className='footer-text-p'>Максим Кузнецов</p>
-                      </div>
-                      <div className='footer-text-desc'>
-                        <p>Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил глубокие знания в области недвижимости</p>
-                      </div>
-                      <div className='footer-card-text-red'>
-                        <p>Читать отзыв </p>
-                      </div>
-                    </div>
+                    </Swiper>
+
                   </div>
 
-                  <div className="footer-button-div">
-                    <div className="footer-button-box">
-                      <div className="footer-button">
-                        <button><img src={footerImg1} alt="" /></button>
-                        <button><img src={footerImg2} alt="" /></button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 

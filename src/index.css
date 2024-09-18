@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+Link{
+    cursor: pointer;
+}
 .home-components {
     max-width: 1440px;
     margin: 0 auto;
