@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+*::-webkit-scrollbar{
+    list-style: none;
+    border: none;
+    display: none;
+}
 Link{
     cursor: pointer;
 }
@@ -15,6 +20,7 @@ Link{
 .home-components1 {
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 button {
