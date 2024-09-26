@@ -10,8 +10,8 @@ Link{
 .home-components {
     max-width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 }
-
 .home-components1 {
     max-width: 1440px;
     margin: 0 auto;
@@ -20,19 +20,16 @@ Link{
 button {
     cursor: pointer;
 }
-
 .rec28 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-
 .rec-box {
     /* max-width: 100%; */
     /* height: 374px; */
     background: rgb(219, 219, 219);
 }
-
 .rec-text-card {
     display: flex;
     align-items: center;
@@ -62,7 +59,6 @@ button {
     display: flex;
     align-items: center;
     gap: 8px;
-
 }
 
 .logo-text-logo p {
@@ -80,8 +76,6 @@ button {
     align-items: center;
     gap: 15px;
 }
-
-
 
 .rec-button-div button {
     width: 182px;
@@ -172,6 +166,17 @@ button {
         max-width: 1024px;
         margin: 0 auto;
         border: none;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 920px) {
+    .home-components {
+        max-width: 920px;
+        margin: 0 auto;
+        border: none;
+        overflow-x: hidden;
+        
     }
 }
 
@@ -369,4 +374,198 @@ button {
 .swiper-slide:hover {
     box-shadow: none;
     transform: scale(1);
+}
+
+
+
+@media (max-width: 920px) {
+    .rec28 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .rec-box {
+        min-width: 800px;
+        /* height: 374px; */
+        background: rgb(219, 219, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rec-text-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .rec-div-text {
+        /* width: 100%; */
+        /* height: 374px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rec-div-text1 {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .rec-card-logo-div {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 36px;
+        margin-top: 49px;
+    }
+
+    .logo-text-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .logo-text-logo p {
+        width: 140px;
+        height: 26.18px;
+        color: rgb(220, 63, 63);
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 17px;
+
+    }
+
+    .rec-icon-text-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+
+    .rec-button-div button {
+        width: 182px;
+        height: 37px;
+        background-color: transparent;
+        border: 1px solid rgb(220, 63, 63);
+        border-radius: 10px;
+        color: rgb(220, 63, 63);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .rec-text-card1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rec-text-card1 p {
+        color: rgb(34, 34, 34);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .rec-text-card2 p {
+        color: rgb(34, 34, 34);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .rec-text-card3 p {
+        color: rgb(34, 34, 34);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .rec-text-box {
+        display: flex;
+        align-items: center;
+        gap: 58px;
+    }
+
+    .rec-text-card2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rec-text-card3 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rec-border-div {
+        margin-top: 39px;
+    }
+
+    .rec-border {
+        width: 780px;
+        height: 1;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .desc-top-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 127px;
+    }
+
+    .desc-top-text p {
+        color: rgb(34, 34, 34);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        width: 700px;
+        height: 34px;
+        text-align: center;
+    }
+
+}
+
+
+.rec29 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.swiper-slide {
+    /* Default shadow va other effectlarni olib tashlash */
+    box-shadow: none;
+    transition: transform 0.5s ease-in-out;
+    /* To'liq o‘tish effekti uchun */
+}
+
+.swiper-slide-active {
+    /* Aktiv holat uchun maxsus uslub yo'q */
+    box-shadow: none;
+    /* Agar shadow ko'rsatilishini xohlamasangiz */
+    transform: scale(1);
+    /* O'tishning oddiy ko'rinishi uchun */
+}
+
+/* Agar hover holatidagi effektlarni o'chirish kerak bo'lsa */
+.swiper-slide:hover {
+    box-shadow: none;
+    transform: scale(1);
+}
+
+input{
+    border: none;
 }

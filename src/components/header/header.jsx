@@ -109,7 +109,7 @@ function Header() {
                 <div className="header-background-div">
                     <div className="header-card">
                         <div className="header-card-box">
-                            <p className='header-card-box-p'>Все новостройки Тюмени</p>
+                            <p className='header-card-box-p header-card-box-p2'>Все новостройки Тюмени</p>
                             <div className="header-card-box-btn">
                                 <button className='header-button'>Записаться на экскурсию</button>
                             </div>
@@ -160,7 +160,7 @@ function Header() {
                             <div className='room-slider'>
                                 <div className='room-slider-text'>
                                     <div className="room-slider-text1">
-                                        <p>от 3,2</p>
+                                        <p >от 3,2</p>
                                         <p>до 121,4</p>
                                     </div>
                                     <div className='slider-wrapper'>

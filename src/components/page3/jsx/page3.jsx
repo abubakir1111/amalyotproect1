@@ -15,7 +15,7 @@ import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
 function Page3() {
     const [menuVisible, setMenuVisible] = useState(false);
     const menuNav = () => {
-        setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
+        setMenuVisible(!menuVisible);
     }
 
     return (

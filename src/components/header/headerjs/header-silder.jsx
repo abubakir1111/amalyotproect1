@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Slider, { SliderThumb } from '@mui/material/Slider';
 import { styled } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
 
@@ -61,8 +60,8 @@ export default function CustomizedSlider() {
     <Box sx={{ width: 160 }}>
       <CustomSlider
         slots={{ thumb: CustomThumbComponent }}
-        valueLabelDisplay="auto"
-        aria-label="custom slider"
+        // valueLabelDisplay="auto"
+        // aria-label="custom slider"
         defaultValue={[1, 100]}
       />
     </Box>

@@ -50,54 +50,53 @@ function Page4() {
         </div>
 
         <div className="na11vbar-menu">
-        <div className="menu-navbar-right">
-          <div className='menu-text-div'>
-            <img src={logo} alt="Logo" />
-            <Link className='menu-navbar-right-link' to='/'>центр новостроек в Тюмени</Link>
+          <div className="menu-navbar-right">
+            <div className='menu-text-div'>
+              <img src={logo} alt="Logo" />
+              <Link className='menu-navbar-right-link' to='/'>центр новостроек в Тюмени</Link>
+            </div>
+            <div className='menu'>
+              <button onClick={menuNav}><img src={menu} alt="burder-menu" /></button>
+            </div>
           </div>
-          <div className='menu'>
-            <button onClick={menuNav}><img src={menu} alt="burder-menu" /></button>
-          </div>
-        </div>
-        <div className={`menu-navbar2121 ${menuVisible ? 'menu-navbar2121' : 'menu-navbar2122'}`}>
-          <div className="menu-header-box">
-            <div className="menu-navbar">
-              <div className='menu-x-btn'>
-                <button onClick={menuNav}>&times;</button>
-              </div>
-              <div className="navbar-right">
-                <img src={logo} alt="Logo" />
-                <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
-              </div>
-              <div className="menu-navbar-center">
-                <Link className='link'> Главная</Link>
-                <Link className='link'>Все ЖК Тюмени</Link>
-                <Link className='link'>Карта новостроек</Link>
-                <Link to="/page" className='link'>О компании</Link>
-                <Link to="/page3" className='link'>Акции</Link>
-              </div>
-              <div className="navbar-left">
-                <Link className='navbar-left-link'>8 800 000 00 00</Link>
-              </div>
-              <div className="navbar-icon-left">
-                <img src={wk} alt="VK" />
-                <img src={wh} alt="WhatsApp" />
-                <img src={tg} alt="Telegram" />
-              </div>
-              <div className="navbar-btn">
-                <button>Перезвоните мне</button>
+          <div className={`menu-navbar2121 ${menuVisible ? 'menu-navbar2121' : 'menu-navbar2122'}`}>
+            <div className="menu-header-box">
+              <div className="menu-navbar">
+                <div className='menu-x-btn'>
+                  <button onClick={menuNav}>&times;</button>
+                </div>
+                <div className="navbar-right">
+                  <img src={logo} alt="Logo" />
+                  <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
+                </div>
+                <div className="menu-navbar-center">
+                  <Link className='link'> Главная</Link>
+                  <Link className='link'>Все ЖК Тюмени</Link>
+                  <Link className='link'>Карта новостроек</Link>
+                  <Link to="/page" className='link'>О компании</Link>
+                  <Link to="/page3" className='link'>Акции</Link>
+                </div>
+                <div className="navbar-left">
+                  <Link className='navbar-left-link'>8 800 000 00 00</Link>
+                </div>
+                <div className="navbar-icon-left">
+                  <img src={wk} alt="VK" />
+                  <img src={wh} alt="WhatsApp" />
+                  <img src={tg} alt="Telegram" />
+                </div>
+                <div className="navbar-btn">
+                  <button>Перезвоните мне</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
         <div className="header-background-image">
           <div className="header-background-div">
             <div className="header-card">
               <div className="header-card-box2">
                 <p className='header-card-box-p72'>ЖК Чаркова 72</p>
                 <p className='header-card-box-p73'>от 3,2 до 9,1 млн ₽ от 105 202,3 до 175 483,7 ₽/м²</p>
-
                 <div className="header-card-box-btn">
                   <button className='header-button-72'>Записаться на экскурсию</button>
                 </div>
@@ -106,7 +105,6 @@ function Page4() {
           </div>
         </div>
       </div>
-
       <div className='glavniy-o-kompnay'>
         <p>Главная / ЖК Тюмени / ЖК Чаркова 72</p>
       </div>
@@ -167,7 +165,6 @@ function Page4() {
           </div>
         </div>
       </div>
-
       <div className="dom-malumot">
         <div className="dom-malumot-box">
           <div className="dom-malumot-text-img-div">
@@ -212,7 +209,6 @@ function Page4() {
                     <p>Тип дома</p>
                     <p>Кирпично-монолитный</p>
                   </div>
-
                 </div>
                 <div className="page4-main-right-btn">
                   <div className='page4-main-right-btn-img'>
@@ -237,7 +233,6 @@ function Page4() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

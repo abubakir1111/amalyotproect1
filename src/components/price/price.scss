@@ -113,6 +113,7 @@
                             .bank-text-gap {
                                 display: flex;
                                 align-items: center;
+                                flex-direction: column;
                                 gap: 12px;
                             }
 
@@ -304,30 +305,33 @@
 
     .footer-card {
         overflow: hidden;
-    
+
         .footer-box {
             .footer-card {
                 display: flex;
                 align-items: center;
                 overflow: hidden;
                 gap: 50px;
-    
-                .footer-card1, .footer-card2, .footer-card3 {
+
+                .footer-card1,
+                .footer-card2,
+                .footer-card3 {
                     padding: 28px 25px;
                     width: 370px;
                     height: 401px;
                     border-radius: 30px;
-                    background: rgb(248, 248, 248); /* Rangni ko'rsatish */
+                    background: rgb(248, 248, 248);
+                    /* Rangni ko'rsatish */
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     gap: 50px;
-    
+
                     .footer-text-div {
                         display: flex;
                         align-items: center;
                         gap: 20px;
-    
+
                         .footer-text-p {
                             width: 101px;
                             height: 48px;
@@ -337,7 +341,7 @@
                             line-height: 24px;
                         }
                     }
-    
+
                     .footer-text-desc {
                         p {
                             width: 317px;
@@ -348,7 +352,7 @@
                             line-height: 150%;
                         }
                     }
-    
+
                     .footer-card-text-red {
                         p {
                             color: rgb(220, 63, 63);
@@ -358,20 +362,20 @@
                         }
                     }
                 }
-    
+
                 .footer-button-div {
                     .footer-button-box {
                         display: flex;
                         align-items: center;
                         justify-content: end;
-    
+
                         .footer-button {
                             padding: 40px 20px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             gap: 30px;
-    
+
                             button {
                                 width: 30px;
                                 height: 30px;
@@ -383,34 +387,37 @@
                     }
                 }
             }
-    
+
             /* Swiper umumiy uslublari */
             .swiper {
                 overflow: hidden;
             }
-    
+
             .swiper-slide {
                 box-shadow: none;
                 transition: transform 0.5s ease-in-out;
                 transform: scale(1);
-                background-color: transparent; /* Rangni ko'rsatish */
+                background-color: transparent;
+                /* Rangni ko'rsatish */
             }
-    
+
             .swiper-slide-active {
                 box-shadow: none;
                 transform: scale(1);
-                background-color: transparent; /* Rangni ko'rsatish */
+                background-color: transparent;
+                /* Rangni ko'rsatish */
             }
-    
+
             /* Hover holatida */
             .swiper-slide:hover {
                 box-shadow: none;
                 transform: scale(1);
-                background-color: transparent; /* Rangni ko'rsatish */
+                background-color: transparent;
+                /* Rangni ko'rsatish */
             }
         }
     }
-    
+
 }
 
 
@@ -663,6 +670,521 @@
                     .btn-card {
                         .btn-box-card {
                             display: flex;
+                            gap: 20px;
+
+                            input {
+                                width: 266px;
+                                height: 47px;
+                                border: 1px solid red;
+                                border-radius: 10px;
+                                background: rgb(219, 219, 219);
+                                color: rgb(34, 34, 34);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                text-align: center;
+                            }
+
+                            input:focus {
+                                border: none;
+                                outline: none;
+                            }
+
+                            button {
+                                width: 266px;
+                                height: 47px;
+                                border: 1px solid rgb(220, 63, 63);
+                                border-radius: 10px;
+                                background: rgb(255, 255, 255);
+                                color: rgb(220, 63, 63);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                text-align: center;
+                            }
+                        }
+
+                        .btn-card-p {
+                            color: rgb(219, 219, 219);
+                            font-family: Montserrat, sans-serif;
+                            font-size: 11px;
+                            font-weight: 400;
+                            line-height: 150%;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+            }
+
+            .contact-text {
+                margin: 100px 0 60px 0;
+
+                p {
+                    color: rgb(34, 34, 34);
+                    font-family: Montserrat, sans-serif;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 44px;
+                }
+            }
+        }
+
+        .footer-card {
+            overflow: scroll;
+
+            .footer-box {
+                .footer-card {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    .footer-card1 {
+                        padding: 28px 25px;
+                        // width: 370px;
+                        // height: 401px;
+                        border-radius: 30px;
+                        background: rgb(248, 248, 248);
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .footer-text-div {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            // .footer-img1 {}
+
+                            .footer-text-p {
+                                width: 101px;
+                                height: 48px;
+                                color: rgb(34, 34, 34);
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 24px;
+                            }
+                        }
+
+                        .footer-text-desc {
+                            p {
+                                width: 317px;
+                                height: 216px;
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+
+                        .footer-card-text-red {
+                            p {
+                                color: rgb(220, 63, 63);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+
+
+                    .footer-card2 {
+                        width: 370px;
+                        height: 401px;
+                        border-radius: 30px;
+                        background: rgb(248, 248, 248);
+                        padding: 28px 25px;
+
+                        .footer-text-div {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            // .footer-img1 {}
+
+                            .footer-text-p {
+                                width: 101px;
+                                height: 48px;
+                                color: rgb(34, 34, 34);
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 24px;
+                            }
+                        }
+
+                        .footer-text-desc {
+                            p {
+                                width: 317px;
+                                height: 216px;
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+
+                        .footer-card-text-red {
+                            p {
+                                color: rgb(220, 63, 63);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+
+                    .footer-card3 {
+                        width: 370px;
+                        height: 401px;
+                        border-radius: 30px;
+                        background: rgb(248, 248, 248);
+                        padding: 28px 25px;
+
+                        .footer-text-div {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            // .footer-img1 {}
+
+                            .footer-text-p {
+                                width: 101px;
+                                height: 48px;
+                                color: rgb(34, 34, 34);
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 24px;
+                            }
+                        }
+
+                        .footer-text-desc {
+                            p {
+                                width: 317px;
+                                height: 216px;
+                                color: rgb(34, 34, 34);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+
+                        .footer-card-text-red {
+                            p {
+                                color: rgb(220, 63, 63);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+
+                .footer-button-div {
+
+                    .footer-button-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+
+                        .footer-button {
+                            padding: 40px 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 30px;
+
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 920px) {
+    .price {
+        max-width: 920px;
+        margin: 100px auto;
+        font-family: "Montserrat", sans-serif;
+
+        .price-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .price-card {
+                border-radius: 30px;
+                background: rgb(248, 248, 248);
+                padding: 42px 24px;
+                width: 750px;
+
+                // width: 964px;
+                // height: 867px;
+                .price-text-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    .price-text-card-div1 {
+                        .price-text-card-p1 {
+                            color: rgb(34, 34, 34);
+                            font-size: 36px;
+                            font-weight: 500;
+                            line-height: 44px;
+                        }
+                    }
+
+                    .price-text-card-div2 {
+                        width: 265px;
+                        height: 63px;
+
+                        .price-text-card-p2 {
+                            color: rgb(34, 34, 34);
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+                .price-div-programma {
+                    margin-top: 43px;
+
+                    .price-div-programma-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        padding: 0 160px;
+                        gap: 100px;
+
+                        .price-text1 {
+                            p {
+                                color: rgb(168, 168, 168);
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
+                        }
+
+                        .price-text-card {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 15px;
+
+                            .price-text {
+                                color: rgb(168, 168, 168);
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 150%;
+                            }
+
+                            .price-text-card-gap {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 16px;
+
+                                p {
+                                    color: rgb(168, 168, 168);
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bank {
+                    display: flex;
+                    align-items: center;
+
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .bank-box {
+                        width: 964px;
+
+
+                        .bank-box-text-card {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .bank-logo {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                justify-content: center;
+                                gap: 1rem;
+                                // margin: 50px 400px;
+
+                                .bank-text-gap {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 12px;
+                                }
+
+                                .bank-logo-text {
+                                    p {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 22px;
+                                    }
+                                }
+
+                                .bank-text-center {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    gap: 15px;
+
+                                    .bank-text-center-div {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        gap: 50px;
+
+                                        .bank-text-left {
+                                            display: flex;
+                                            align-items: center;
+
+                                            gap: 15px;
+
+                                            p {
+                                                color: rgb(34, 34, 34);
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                                line-height: 22px;
+                                            }
+                                        }
+
+                                        .bank-left {
+                                            display: flex;
+                                            align-items: center;
+
+                                            .bank-text-left {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+
+                                    .bank-left-btn {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-left: 30px;
+
+                                        .bank-left-btn-info {
+                                            width: 135px;
+                                            height: 37px;
+                                            background-color: transparent;
+                                            border-radius: 10px;
+                                            color: rgb(220, 63, 63);
+                                            border: 1px solid rgb(220, 63, 63);
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .bank-border-div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .div-border {
+                                width: 700px;
+                                height: 1px;
+                                border: 1px solid rgb(168, 168, 168);
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+
+                    .bank-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // padding: 0 100px;
+                        // margin-left: 40px;
+                        width: 100%;
+
+                        button {
+                            width: 153px;
+                            height: 37px;
+                            border-radius: 10px;
+                            background: rgb(220, 63, 63);
+                            color: rgb(255, 255, 255);
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 17px;
+                            border: none;
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .contact {
+            margin-top: 100px;
+
+            .contact-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .contact-card {
+                    width: 780px;
+                    height: 354px;
+                    background: rgb(220, 63, 63);
+                    border-radius: 30px;
+                    padding: 32px 66px;
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 10px;
+                    background-image: url(../../assets/img/contact/_.png);
+                    background-repeat: no-repeat;
+                    background-position: right top;
+
+                    .contact-box-title {
+                        width: 427px;
+                        height: 88px;
+
+                        p {
+                            color: rgb(255, 255, 255);
+                            font-size: 36px;
+                            font-weight: 500;
+                            line-height: 44px;
+                        }
+                    }
+
+                    .btn-card {
+                        .btn-box-card {
+                            display: flex;
+                            flex-direction: column;
                             gap: 20px;
 
                             input {
