@@ -183,7 +183,7 @@ function Page2header() {
                       </div>
                     </div>
                     <div className="o-komapny-contact-div-left">
-                      <img src={kompanyLeftImg} alt="" />
+                      <img src={kompanyLeftImg} alt="" className='o-komapny-contact-div-left-img'/>
                     </div>
                   </div>
                 </div>

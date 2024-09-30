@@ -59,7 +59,8 @@ function Price() {
                                                     <img src={price.bankLogo} alt="" />
                                                 </div>
                                                 <div className="bank-logo-text">
-                                                    <p>{price.bankLogoText}</p>
+                                                    <p className='pro1'>Программа</p>
+                                                    <p className='pro2'>{price.bankLogoText}</p>
                                                 </div>
                                             </div>
                                             <div className="bank-text-center">

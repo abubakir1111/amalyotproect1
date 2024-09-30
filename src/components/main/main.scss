@@ -7,28 +7,29 @@
 
     .main-box {
 
+        .main-box-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 59px    ; 
+
+            button {
+                width: 183px;
+                height: 48px;
+                border-radius: 10px;
+                background: rgb(220, 63, 63);
+                border: none;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+            }
+        }
         .main-box-div {
             display: flex;
             flex-direction: column;
             gap: 32px;
 
-            .main-box-button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                button {
-                    width: 183px;
-                    height: 48px;
-                    border-radius: 10px;
-                    background: rgb(220, 63, 63);
-                    border: none;
-                    color: rgb(255, 255, 255);
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 17px;
-                }
-            }
 
             .main-box-card {
                 border-radius: 30px;
@@ -1120,30 +1121,32 @@
 
         .main-box {
             display: flex;
+            flex-direction: column;
+            gap: 40px;
 
+            .main-box-button {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+
+                button {
+                    width: 183px;
+                    height: 48px;
+                    border-radius: 10px;
+                    background: rgb(220, 63, 63);
+                    border: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
             .main-box-div {
                 display: flex;
                 flex-direction: row;
                 gap: 32px;
                 margin-top: 40px;
 
-                .main-box-button {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    button {
-                        width: 183px;
-                        height: 48px;
-                        border-radius: 10px;
-                        background: rgb(220, 63, 63);
-                        border: none;
-                        color: rgb(255, 255, 255);
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 17px;
-                    }
-                }
 
                 .main-box-card {
                     border-radius: 30px;
@@ -1370,28 +1373,28 @@
                                 }
                             }
 
-                            .main-center-left {
-                                display: flex;
+                        }
+                        .main-center-left {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            button {
+                                width: 135px;
+                                height: 38px;
+                                border-radius: 10px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                color: rgb(255, 255, 255);
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                margin-left: 214px;
+                                display: flex;      
                                 align-items: center;
                                 justify-content: center;
-
-                                button {
-                                    width: 135px;
-                                    height: 38px;
-                                    border-radius: 10px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    color: rgb(255, 255, 255);
-                                    font-size: 14px;
-                                    font-weight: 500;
-                                    line-height: 17px;
-                                    margin-left: 214px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-
                             }
+
                         }
                     }
                 }

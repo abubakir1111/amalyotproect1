@@ -86,10 +86,10 @@ function Main() {
             </div>
 
           )}
+        </div>
           <div className='main-box-button'>
             <button>Показать еще</button>
           </div>
-        </div>
       </div>
     </div>
   );
