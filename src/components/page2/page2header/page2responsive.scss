@@ -2241,6 +2241,7 @@
         max-width: 550px;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
+        
 
         .page2header-box {
             display: flex;
@@ -2325,7 +2326,7 @@
             }
         }
 
-        .na11vbar-menu {
+            .na11vbar-menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -2390,6 +2391,7 @@
                 // backdrop-filter: blur(55px);
                 // background: rgba(255, 255, 255, 0.404);
                 background: rgb(0, 0, 0);
+                padding: 10px 0;
                 border-right: 1px double red;
 
                 .menu-header-box {
@@ -2403,8 +2405,8 @@
                         display: flex;
                         align-items: start;
                         flex-direction: column;
-                        padding: 8px 30px;
-                        gap: 20px;
+                        padding: 0px 30px;
+                        gap: 10px;
 
                         .menu-x-btn {
                             background-color: none;
@@ -2426,13 +2428,17 @@
                             gap: 10px;
 
                             .navbar-right-p {
-                                width: 117px;
+                                width: 80px;
                                 height: 52px;
                                 color: rgb(220, 63, 63);
-                                font-size: 12px;
+                                font-size: 10px;
                                 font-weight: 900;
                                 line-height: 17px;
                                 text-decoration: none;
+                            }
+                            img {
+                                width: 45px;
+                                height: 45px;
                             }
 
                         }
@@ -2441,7 +2447,7 @@
                             display: flex;
                             align-items: start;
                             flex-direction: column;
-                            gap: 4px;
+                            gap: 0px;
 
                             .link {
                                 color: rgb(255, 255, 255);
@@ -2467,6 +2473,10 @@
                             display: flex;
                             align-items: center;
                             gap: 15px;
+                            img {
+                                width: 20px;
+                                height: 21px;
+                            }
                         }
 
                         .navbar-btn {
@@ -2475,7 +2485,7 @@
                             gap: 33px;
 
                             button {
-                                width: 150px;
+                                width: 130px;
                                 height: 30px;
                                 border: 1px solid rgb(220, 63, 63);
                                 border-radius: 10px;
@@ -2571,8 +2581,9 @@
                             line-height: 160%;
                         }
                     }
-                    .o-kompany-img{
-                        img{
+
+                    .o-kompany-img {
+                        img {
                             width: 330px;
                             height: 254px;
                         }
@@ -2587,6 +2598,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
                             // width: 600px;
                             p {
                                 width: 330px;

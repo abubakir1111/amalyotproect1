@@ -120,8 +120,8 @@ function Price() {
                                 grabCursor={true}
                                 centeredSlides={true}
                                 loop={true}
-                                slidesPerView={3} // Har bir qatorada uchta kartani ko'rsatish
-                                spaceBetween={200} // Kartalar orasidagi bo'shliq
+                                slidesPerView={1.9} // Har bir qatorada uchta kartani ko'rsatish
+                                spaceBetween={0} // Kartalar orasidagi bo'shliq
                                 coverflowEffect={{
                                     rotate: 0,
                                     stretch: 0,

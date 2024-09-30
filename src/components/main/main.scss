@@ -30,7 +30,6 @@
             flex-direction: column;
             gap: 32px;
 
-
             .main-box-card {
                 border-radius: 30px;
                 background: rgb(248, 248, 248);
@@ -272,6 +271,9 @@
     }
 }
 
+.main2{
+    display: none;
+}
 
 @media (max-width: 1024px) {
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -1114,10 +1116,15 @@
 
 
 @media (max-width: 680px) {
-    .main {
+    .main{
+        display: none;
+    }
+    .main2 {
         max-width: 605px;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
+        display: block;
+
 
         .main-box {
             display: flex;
