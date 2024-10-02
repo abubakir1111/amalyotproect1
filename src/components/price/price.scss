@@ -254,7 +254,7 @@
                             border: 1px solid red;
                             border-radius: 10px;
 
-                            background: rgb(219, 219, 219);
+                            // background: rgb(219, 219, 219);
 
                             color: rgb(34, 34, 34);
                             font-size: 14px;
@@ -266,6 +266,9 @@
                         input:focus {
                             border: none;
                             outline: none;
+                        }
+                        .inp3{
+                            color: red;
                         }
 
                         button {
