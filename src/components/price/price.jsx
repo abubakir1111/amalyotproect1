@@ -101,7 +101,7 @@ function Price() {
                             <div className="btn-card">
                                 <div className="btn-box-card">
                                     <input type="text" placeholder='Имя' />
-                                    <input type="text" placeholder='+7 --- -- --' />
+                                    <input type="number" placeholder='+7 --- -- --' />
                                     <button>Отправить</button>
                                 </div>
                                 <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
