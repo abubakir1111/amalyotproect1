@@ -9,7 +9,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import emailjs from '@emailjs/browser';
+import emailjs, { send } from '@emailjs/browser';
 
 function Price() {
     const swiperRef = useRef(null);
@@ -103,7 +103,7 @@ function Price() {
                                         <div className="div-border"></div>
                                     </div>
                                 </div>
-                            ))}
+                            ))}                            
                             <div className='bank-btn'>
                                 <button>Показать еще</button>
                             </div>
@@ -121,7 +121,7 @@ function Price() {
                                     <div className="btn-box-card">
                                         <input type="text" placeholder='Имя' name='from_name'  />
                                         <input type="tel" placeholder='+7 --- -- --' name='from_number'  />
-                                        <button type="submit">Отправить</button>
+                                        <button type="submit" value={send}>Отправить</button>
                                     </div>
                                     <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
                                 </div>

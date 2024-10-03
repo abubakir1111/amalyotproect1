@@ -2238,7 +2238,7 @@
 
 @media (max-width: 550px) {
     .page2-header {
-        max-width: 550px;
+        max-width: 100%;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
 
@@ -2407,8 +2407,8 @@
                         display: flex;
                         align-items: start;
                         flex-direction: column;
-                        padding: 0px 30px;
-                        gap: 10px;
+                        padding: 5px 5px;
+                        gap: 0px;
 
                         .menu-x-btn {
                             background-color: none;
@@ -2426,22 +2426,22 @@
 
                         .navbar-right {
                             display: flex;
-                            align-items: center;
+                            align-items: start;
                             gap: 10px;
 
                             .navbar-right-p {
-                                width: 80px;
+                                width: 40px;
                                 height: 52px;
                                 color: rgb(220, 63, 63);
-                                font-size: 10px;
+                                font-size: 6px;
                                 font-weight: 900;
-                                line-height: 17px;
+                                line-height: 12px;
                                 text-decoration: none;
                             }
 
                             img {
-                                width: 45px;
-                                height: 45px;
+                                width: 30px;
+                                height: 30px;
                             }
 
                         }
@@ -2454,9 +2454,9 @@
 
                             .link {
                                 color: rgb(255, 255, 255);
-                                font-size: 10px;
-                                font-weight: 300;
-                                line-height: 17px;
+                                font-size: 6px;
+                                font-weight: 400;
+                                line-height: 13px;
                                 text-decoration: none;
                             }
                         }
@@ -2466,7 +2466,7 @@
 
                             .navbar-left-link {
                                 color: rgb(220, 63, 63);
-                                font-size: 10px;
+                                font-size: 5px;
                                 font-weight: 500;
                                 line-height: 17px;
                             }
@@ -2475,22 +2475,22 @@
                         .navbar-icon-left {
                             display: flex;
                             align-items: center;
-                            gap: 15px;
+                            gap: 10px;
 
                             img {
-                                width: 20px;
-                                height: 21px;
+                                width: 10px;
+                                height: 10px;
                             }
                         }
 
                         .navbar-btn {
                             display: flex;
                             align-items: center;
-                            gap: 33px;
+                            margin-top: 5px;
 
                             button {
-                                width: 130px;
-                                height: 30px;
+                                width: 120px;
+                                height: 25px;
                                 border: 1px solid rgb(220, 63, 63);
                                 border-radius: 10px;
                                 background-color: transparent;
@@ -2519,6 +2519,789 @@
             .page2-header-background-div {
                 background-image: url(../../../assets/img/backgorund/Frame152.png);
                 width: 500px;
+                height: 426px;
+                border-radius: 30px;
+
+                .page2-header-card {
+                    padding: 26px;
+
+                    .page2-header-card-box {
+                        width: 330px;
+                        height: 115px;
+                        border: 1px solid rgb(255, 255, 255);
+                        border-radius: 30px;
+                        backdrop-filter: blur(15px);
+                        background: rgba(255, 255, 255, 0.5);
+                        padding: 40px;
+
+                        .page2-header-card-box-p {
+                            width: 421px;
+                            height: 110px;
+                            color: rgb(34, 34, 34);
+                            font-size: 29px;
+                            font-weight: 600;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .page2-glavniy-o-kompnay {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            padding: 0 15px;
+            // width: 587px;
+
+            // width: 200px;
+            p {
+                color: rgb(168, 168, 168);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+
+            }
+        }
+
+        .o-kompany-main {
+            margin-top: 54px;
+
+            .o-kompany-main-box {
+
+                .o-kompany-main-box-text-img-div {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 34px;
+
+                    .o-kompany-text {
+                        p {
+                            width: 329px;
+                            height: 600px;
+                            color: rgb(55, 55, 55);
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 160%;
+                        }
+                    }
+
+                    .o-kompany-img {
+                        img {
+                            width: 330px;
+                            height: 254px;
+                        }
+                    }
+                }
+
+                .o-kompany-main-card {
+                    // margin: 100px 0px 60px 0px;
+
+                    .o-kompany-main-box-card-box {
+                        .o-kompany-card-title {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            // width: 600px;
+                            p {
+                                width: 330px;
+                                height: 68px;
+                                color: rgb(34, 34, 34);
+                                font-size: 36px;
+                                font-weight: 500;
+                                line-height: 44px;
+                            }
+                        }
+
+                        .o-kompany-card-div {
+                            margin-top: 60px;
+                            display: flex;
+
+                            .o-kompany-card-div-box {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                gap: 28px;
+
+                                .o-kompany-card {
+                                    width: 369px;
+                                    height: 212px;
+                                    border-radius: 30px;
+                                    background: rgb(248, 248, 248);
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    padding: 0 30px;
+                                    gap: 15px;
+
+                                    .o-kompany-card-text {
+                                        p {
+                                            width: 309px;
+                                            height: 60px;
+                                            color: rgb(34, 34, 34);
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            line-height: 150%;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .o-kompany-contact {
+                            margin-top: 100px;
+
+                            .o-kompany-box {
+                                display: flex;
+                                align-items: center;
+
+                                .o-komapny-contact-div {
+                                    display: flex;
+                                    justify-content: start;
+                                    flex-direction: column;
+                                    align-items: start;
+                                    padding: 0 15px;
+                                    gap: 30px;
+
+                                    .o-komapny-contact-div-right {
+                                        width: 550px;
+                                        display: flex;
+                                        align-items: start;
+                                        justify-content: center;
+                                        flex-direction: column;
+                                        gap: 46px;
+
+                                        .contact-text-p-div {
+                                            p {
+                                                color: rgb(34, 34, 34);
+                                                font-size: 36px;
+                                                font-weight: 500;
+                                                line-height: 44px;
+                                            }
+                                        }
+
+                                        .contact-text-api-div {
+                                            flex-wrap: wrap;
+
+                                            .contact-img-text-div {
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 9px;
+                                                margin: 10px 0;
+
+
+                                                p {
+                                                    color: rgb(34, 34, 34);
+                                                    font-size: 20px;
+                                                    font-weight: 400;
+                                                    line-height: 150%;
+                                                }
+                                            }
+
+                                            .contact-ilovasi {
+                                                margin-top: 30px;
+                                            }
+                                        }
+
+                                        .contact-ilovasi {
+                                            .contact-ilovasi-box {
+                                                display: flex;
+                                                align-items: start;
+                                                gap: 15px;
+                                            }
+                                        }
+                                    }
+
+                                    .o-komapny-contact-div-left {
+                                        display: flex;
+                                        align-items: start;
+                                        justify-content: flex-start;
+
+                                        .o-komapny-contact-div-left-img {
+                                            width: 330px;
+                                            height: 208px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .page2_contact {
+                            margin-top: 100px;
+
+                            .page2_contact-box {
+                                .page2_contact-card {
+                                    width: 380px;
+                                    height: 354px;
+                                    background: rgb(220, 63, 63);
+                                    border-radius: 30px;
+                                    padding: 15px 30px;
+                                    display: flex;
+                                    align-items: start;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    background-image: url(../../../assets/img/contact/_.png);
+                                    background-repeat: no-repeat;
+                                    background-position: top right;
+
+                                    .page2_contact-box-title {
+                                        width: 300px;
+                                        height: 88px;
+
+                                        p {
+                                            color: rgb(255, 255, 255);
+                                            font-size: 30px;
+                                            font-weight: 500;
+                                            line-height: 44px;
+                                        }
+                                    }
+
+                                    .page2_btn-card {
+                                        .page2_btn-box-card {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 20px;
+
+                                            input {
+                                                width: 266px;
+                                                height: 47px;
+                                                border-radius: 10px;
+                                                background: rgb(219, 219, 219);
+                                                color: rgb(34, 34, 34);
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                line-height: 17px;
+                                                text-align: center;
+                                            }
+
+                                            input:focus {
+                                                border: none;
+                                                outline: none;
+                                            }
+
+                                            button {
+                                                width: 266px;
+                                                height: 47px;
+                                                border: 1px solid rgb(220, 63, 63);
+                                                border-radius: 10px;
+                                                background: rgb(255, 255, 255);
+                                                color: rgb(220, 63, 63);
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                line-height: 17px;
+                                                text-align: center;
+                                            }
+                                        }
+
+                                        .page2_btn-card-p {
+                                            color: rgb(219, 219, 219);
+                                            font-size: 11px;
+                                            font-weight: 400;
+                                            line-height: 150%;
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .contact-text {
+                                margin: 100px 0 60px 0;
+
+                                p {
+                                    color: rgb(34, 34, 34);
+                                    font-size: 36px;
+                                    font-weight: 500;
+                                    line-height: 44px;
+                                }
+                            }
+                        }
+
+                        .footer-card {
+                            overflow: scroll;
+                            margin: 60px 0;
+
+                            .footer-box {
+                                .contact-text {
+                                    margin: 100px 0 60px 0;
+
+                                    p {
+                                        color: rgb(34, 34, 34);
+                                        font-size: 36px;
+                                        font-weight: 500;
+                                        line-height: 44px;
+                                    }
+                                }
+
+                                .footer-card2 {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .footer-card1 {
+                                        padding: 28px 25px;
+                                        width: 370px;
+                                        height: 401px;
+                                        border-radius: 30px;
+                                        background: rgb(248, 248, 248);
+                                        display: flex;
+                                        align-items: start;
+                                        flex-direction: column;
+
+                                        // gap: 15px;
+                                        .footer-text-div {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 20px;
+
+                                            // .footer-img1 {}
+                                            .footer-text-p {
+                                                width: 101px;
+                                                height: 48px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                line-height: 24px;
+                                            }
+                                        }
+
+                                        .footer-text-desc {
+                                            p {
+                                                width: 317px;
+                                                height: 216px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+
+                                        .footer-card-text-red {
+                                            p {
+                                                color: rgb(220, 63, 63);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+                                    }
+
+                                    .footer-card2 {
+                                        width: 370px;
+                                        height: 401px;
+                                        border-radius: 30px;
+                                        background: rgb(248, 248, 248);
+                                        padding: 28px 25px;
+
+                                        .footer-text-div {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 20px;
+
+                                            // .footer-img1 {}
+
+                                            .footer-text-p {
+                                                width: 101px;
+                                                height: 48px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                line-height: 24px;
+                                            }
+                                        }
+
+                                        .footer-text-desc {
+                                            p {
+                                                width: 317px;
+                                                height: 216px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+
+                                        .footer-card-text-red {
+                                            p {
+                                                color: rgb(220, 63, 63);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+                                    }
+
+                                    .footer-card3 {
+                                        width: 370px;
+                                        height: 401px;
+                                        border-radius: 30px;
+                                        background: rgb(248, 248, 248);
+                                        padding: 28px 25px;
+
+                                        .footer-text-div {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 20px;
+
+                                            // .footer-img1 {}
+
+                                            .footer-text-p {
+                                                width: 101px;
+                                                height: 48px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                line-height: 24px;
+                                            }
+                                        }
+
+                                        .footer-text-desc {
+                                            p {
+                                                width: 317px;
+                                                height: 216px;
+                                                color: rgb(34, 34, 34);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+
+                                        .footer-card-text-red {
+                                            p {
+                                                color: rgb(220, 63, 63);
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                line-height: 150%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .footer-button-div {
+
+                                    .footer-button-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: end;
+
+                                        .footer-button {
+                                            padding: 40px 20px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            gap: 30px;
+
+                                            button {
+                                                width: 30px;
+                                                height: 30px;
+                                                background: rgb(220, 63, 63);
+                                                border: none;
+                                                border-radius: 50%;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+@media (max-width: 400px) {
+    .page2-header {
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: "Montserrat", sans-serif;
+
+
+        .page2header-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .page2header-navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 60px;
+                gap: 33px;
+
+                .page2-navbar-right {
+                    display: none;
+                    align-items: center;
+                    gap: 10px;
+
+                    .navbar-right-p {
+                        width: 117px;
+                        height: 52px;
+                        color: rgb(220, 63, 63);
+                        font-size: 14px;
+                        font-weight: 900;
+                        line-height: 17px;
+                        text-decoration: none;
+                    }
+                }
+
+                .page2header-navbar-center {
+                    display: none;
+                    align-items: center;
+                    gap: 15px;
+
+                    .link {
+                        color: rgb(34, 34, 34);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        text-decoration: none;
+                    }
+                }
+
+                .navbar-left {
+                    display: none;
+
+                    .navbar-left-link {
+                        color: rgb(220, 63, 63);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 17px;
+                    }
+                }
+
+                .navbar-icon-left {
+                    display: none;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .navbar-btn {
+                    display: none;
+                    align-items: center;
+                    gap: 33px;
+
+                    button {
+                        width: 182px;
+                        height: 38px;
+                        border: 1px solid rgb(220, 63, 63);
+                        border-radius: 10px;
+                        background-color: transparent;
+                        color: rgb(220, 63, 63);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .na11vbar-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 60px;
+            position: fixed;
+            background-color: white;
+            box-shadow: 0px 10px 30px black;
+            // background-color: wheat;
+            // backdrop-filter: blur(20px);
+            z-index: 5;
+            top: 0;
+            padding: 0 20px;
+            // left: 0;
+            right: 0;
+
+            .menu-navbar-right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                position: relative;
+                top: 0px;
+                right: 0;
+                width: 964px;
+
+                .menu-text-div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .menu-navbar-right-link {
+                        width: 116px;
+                        height: 52px;
+                        color: rgb(220, 63, 63);
+                        font-size: 14px;
+                        font-weight: 900;
+                        line-height: 17px;
+                        text-decoration: none;
+                        display: none;
+
+                    }
+                }
+
+                .menu {
+                    // position: absolute;
+                    right: 0;
+
+                    button {
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
+
+            .menu-navbar2121 {
+                width: 40%;
+                height: 100vh;
+                position: fixed;
+                z-index: 5;
+                left: 0; // Boshlang'ich holat
+                top: 0;
+                // border: 1px solid rgb(255, 255, 255);
+                // backdrop-filter: blur(55px);
+                // background: rgba(255, 255, 255, 0.404);
+                background: rgb(0, 0, 0);
+                padding: 10px 0;
+                border-right: 1px double red;
+
+                .menu-header-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    z-index: 6;
+
+                    .menu-navbar {
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        padding: 0px 5px;
+                        gap: 0px;
+
+                        .menu-x-btn {
+                            background-color: none;
+                            border: none;
+                            position: absolute;
+                            right: 0px;
+
+                            button {
+                                background-color: transparent;
+                                color: white;
+                                border: none;
+                                font-size: 30px;
+                            }
+                        }
+
+                        .navbar-right {
+                            display: flex;
+                            align-items: start;
+                            gap: 10px;
+
+                            .navbar-right-p {
+                                width: 40px;
+                                height: 52px;
+                                color: rgb(220, 63, 63);
+                                font-size: 6px;
+                                font-weight: 900;
+                                line-height: 12px;
+                                text-decoration: none;
+                            }
+
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                        }
+
+                        .menu-navbar-center {
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+                            gap: 0px;
+
+                            .link {
+                                color: rgb(255, 255, 255);
+                                font-size: 6px;
+                                font-weight: 400;
+                                line-height: 10px;
+                                text-decoration: none;
+                            }
+                        }
+
+                        .navbar-left {
+                            display: flex;
+
+                            .navbar-left-link {
+                                color: rgb(220, 63, 63);
+                                font-size: 5px;
+                                font-weight: 500;
+                                line-height: 17px;
+                            }
+                        }
+
+                        .navbar-icon-left {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            img {
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+
+                        .navbar-btn {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 5px;
+
+                            button {
+                                width: 100px;
+                                height: 17px;
+                                border: 1px solid rgb(220, 63, 63);
+                                border-radius: 7px;
+                                background-color: transparent;
+                                color: rgb(220, 63, 63);
+                                font-size: 8px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .page2-header-background-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+
+            .page2-header-background-div {
+                background-image: url(../../../assets/img/backgorund/Frame152.png);
+                width: 370px;
                 height: 426px;
                 border-radius: 30px;
 

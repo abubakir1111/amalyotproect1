@@ -1961,9 +1961,9 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
     .price {
-        max-width: 400px;
+        max-width: 100%;
         margin: 100px auto;
         font-family: "Montserrat", sans-serif;
 
@@ -2219,26 +2219,27 @@
                 justify-content: center;
 
                 .contact-card {
-                    width: 390px;
+                    width: 380px;
                     height: 354px;
                     background: rgb(220, 63, 63);
                     border-radius: 30px;
-                    padding: 15px 50px;
+                    padding: 15px 30px;
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     gap: 10px;
                     background-image: url(../../assets/img/contact/_.png);
+
                     background-repeat: no-repeat;
-                    background-position: right top;
+                    background-position: top right;
 
                     .contact-box-title {
-                        width: 427px;
+                        width: 300px;
                         height: 88px;
 
                         p {
                             color: rgb(255, 255, 255);
-                            font-size: 36px;
+                            font-size: 30px;
                             font-weight: 500;
                             line-height: 44px;
                         }
@@ -2260,6 +2261,7 @@
                                 font-weight: 500;
                                 line-height: 17px;
                                 text-align: center;
+                                border: none;
                             }
 
                             input:focus {
@@ -2270,7 +2272,6 @@
                             button {
                                 width: 266px;
                                 height: 47px;
-                                border: 1px solid rgb(220, 63, 63);
                                 border-radius: 10px;
                                 background: rgb(255, 255, 255);
                                 color: rgb(220, 63, 63);
