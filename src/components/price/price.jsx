@@ -27,7 +27,7 @@ function Price() {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'YOUR_PUBLIC_KEY')
+            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'ug9-0QW64JJPnBjKF') // Public Key ni shu yerga joylashtiring
             .then(
                 () => {
                     console.log('SUCCESS!');
@@ -103,7 +103,7 @@ function Price() {
                                         <div className="div-border"></div>
                                     </div>
                                 </div>
-                            ))}                            
+                            ))}
                             <div className='bank-btn'>
                                 <button>Показать еще</button>
                             </div>
@@ -119,15 +119,16 @@ function Price() {
                                 </div>
                                 <div className="btn-card">
                                     <div className="btn-box-card">
-                                        <input type="text" placeholder='Имя' name='from_name'  />
-                                        <input type="tel" placeholder='+7 --- -- --' name='from_number'  />
-                                        <button type="submit" value={send}>Отправить</button>
+                                        <input type="text" placeholder='Имя' name='from_name' required />
+                                        <input type="tel" placeholder='+7 --- -- --' name='from_number' required />
+                                        <button type="submit">Отправить</button>
                                     </div>
                                     <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
                                 </div>
                             </div>
                         </div>
                     </form>
+
                     <div className='contact-text'>
                         <p>Отзывы</p>
                     </div>
