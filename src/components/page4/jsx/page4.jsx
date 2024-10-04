@@ -202,7 +202,12 @@ function Page4() {
                           <p>{xarak.text4}</p>
                         </div>
                       </div>
-                      <div className='xarakter-border'></div>
+                      <div className='xarakter-border-div'>
+                        <div className="xarakter-border">
+                          
+                        </div>
+
+                      </div>
                     </div>
                   )}
                   <div className='uy-turi'>
