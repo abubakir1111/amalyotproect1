@@ -4702,14 +4702,14 @@
                             display: flex;
                             align-items: start;
                             flex-direction: column;
-                            padding: 0px 30px;
+                            padding: 0px 10px;
                             gap: 10px;
 
                             .menu-x-btn {
                                 background-color: none;
                                 border: none;
                                 position: absolute;
-                                right: 0px;
+                                right: -10px;
 
                                 button {
                                     background-color: transparent;
@@ -5469,11 +5469,11 @@
 
 
                 .page4_contact-card {
-                    width: 500px;
+                    width: 400px;
                     height: 354px;
                     background: rgb(220, 63, 63);
                     border-radius: 30px;
-                    padding: 32px 66px;
+                    padding: 20px 50px;
                     display: flex;
                     align-items: start;
                     flex-direction: column;
@@ -5483,7 +5483,7 @@
                     background-position: right top;
 
                     .page4_contact-box-title {
-                        width: 427px;
+                        width: 357px;
                         height: 88px;
 
                         p {
@@ -5720,7 +5720,7 @@
                                 background-color: none;
                                 border: none;
                                 position: absolute;
-                                right: 0px;
+                                right: -5px;
 
                                 button {
                                     background-color: transparent;
@@ -5941,7 +5941,7 @@
 
                 .header-background-div {
                     background-image: url(../../../assets/img/backgorund/Frame152.png);
-                    width: 300px;
+                    width: 360px;
                     height: 426px;
                     border-radius: 30px;
 
@@ -6032,7 +6032,7 @@
                         gap: 29px;
 
                         .srok-card {
-                            width: 308px;
+                            width: 360px;
                             height: 137px;
                             border-radius: 30px;
                             background: rgb(248, 248, 248);
@@ -6078,7 +6078,7 @@
                     justify-content: center;
 
                     .dom-card {
-                        width: 380px;
+                        width: 360px;
                         height: 383px;
                         border-radius: 30px;
                         background: rgb(248, 248, 248);
@@ -6187,7 +6187,7 @@
         }
 
         .dom-malumot {
-            margin: 100px 0 60px 0;
+            margin: 100px  0;
 
             .dom-malumot-box {
                 .dom-malumot-text-img-div {
@@ -6213,7 +6213,7 @@
                             }
 
                             .dom-malumot-text2 {
-                                width: 330px;
+                                width: 290px;
                                 height: 480px;
                                 color: rgb(34, 34, 34);
                                 font-size: 16px;
@@ -6230,7 +6230,7 @@
 
                         .main-box-card-right {
                             background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 302px;
+                            width: 270px;
                             height: 253px;
                             border-radius: 30px;
                             position: relative;
@@ -6299,11 +6299,16 @@
 
                                     .xarakter-srok-text-div-box {
                                         display: flex;
+                                        flex-direction: column;
+                                        align-items: start;
+                                        justify-content: center;
                                         gap: 58px;
 
                                         .xarakter-srok-text-div-tex-right {
                                             display: flex;
                                             flex-direction: column;
+                                            align-items: start;
+                                            justify-content: center;
                                             gap: 5px;
                                         }
 
@@ -6378,7 +6383,7 @@
 
                             .page4-main-right-btn-img {
                                 margin-top: 27px;
-                                width: 27rem;
+                                width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -6481,26 +6486,28 @@
 
 
                 .page4_contact-card {
-                    width: 500px;
+                 
+                    width: 350px;
+                    
                     height: 354px;
                     background: rgb(220, 63, 63);
                     border-radius: 30px;
-                    padding: 32px 66px;
+                    padding: 15px 30px;
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     gap: 10px;
                     background-image: url(../../../assets/img/contact/_.png);
                     background-repeat: no-repeat;
-                    background-position: right top;
+                    background-position: top right; 
 
                     .page4_contact-box-title {
-                        width: 427px;
+                        width: 300px;
                         height: 88px;
 
                         p {
                             color: rgb(255, 255, 255);
-                            font-size: 36px;
+                            font-size: 30px;
                             font-weight: 500;
                             line-height: 44px;
                         }

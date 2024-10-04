@@ -3422,7 +3422,6 @@
         max-width: 100%;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
-
         .header-box {
 
             .navbar {
@@ -4087,7 +4086,7 @@
 }
 
 
-@media (max-width: 330px) {
+@media (max-width: 360px) {
     .header {
         max-width: 100%;
         margin: 0 auto;
@@ -4213,7 +4212,7 @@
                             background-color: none;
                             border: none;
                             position: absolute;
-                            right: 0px;
+                            right: -10px;
                             top: 0;
 
 
