@@ -55,14 +55,20 @@ function CustomThumbComponent(props) {
 CustomThumbComponent.propTypes = {
   children: PropTypes.node,
 };
-export default function CustomizedSlider() {
+export default function CustomizedSlider({ setRangeVAlue, rangeValue}) {
+
+  const handleChange = (event, newValue) => {
+    setRangeVAlue(newValue)
+  }
+
   return (
     <Box sx={{ width: 160 }}>
       <CustomSlider
         slots={{ thumb: CustomThumbComponent }}
         // valueLabelDisplay="auto"
         // aria-label="custom slider"
-        defaultValue={[1, 100]}
+        value={rangeValue}
+        onChange={handleChange}
       />
     </Box>
   );

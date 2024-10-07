@@ -2,7 +2,7 @@
 
 .price::-webkit-scrollbar {
     list-style: none;
-    outline: none1;
+    outline: none;
 }
 
 .price {
@@ -213,7 +213,7 @@
 
     .contact {
         margin-top: 100px;
-        border: 1px solid red solid red;
+        border: none;
 
         .contact-box {
             .contact-card {
@@ -251,7 +251,7 @@
 
                             height: 47px;
 
-                            border: 1px solid red;
+                            border: none;
                             border-radius: 10px;
 
                             // background: rgb(219, 219, 219);

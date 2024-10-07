@@ -16,6 +16,7 @@ function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
     const [klass1, setKlass] = useState(null);
     const [tumanX, setTumanX] = useState(null);
+    const [rangeValue, setRangeVAlue] = useState([1, 121.4])
 
     const handleButtonClick = (id) => {
         setSelectedImage(id);
@@ -32,16 +33,13 @@ function Header() {
     const menuNav = () => {
         setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
     }
-
     return (
-
         <div className='header'>
             <div className="header-box">
                 <div className="navbar">
                     <div className="navbar-right">
                         <img src={logo} alt="Logo" />
                         <Link className='navbar-right-link'>центр новостроек в Тюмени</Link>
-
                     </div>
                     <div className="navbar-center">
                         <Link className='link'> Главная</Link>
@@ -62,7 +60,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-
             <div className="na11vbar-menu">
                 <div className="menu-navbar-right">
                     <div className='menu-text-div'>
@@ -104,7 +101,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-
             <div className="header-background-image">
                 <div className="header-background-div">
                     <div className="header-card">
@@ -160,11 +156,11 @@ function Header() {
                             <div className='room-slider'>
                                 <div className='room-slider-text'>
                                     <div className="room-slider-text1">
-                                        <p >от 3,2</p>
-                                        <p>до 121,4</p>
+                                        <p >от {rangeValue[0]}</p>
+                                        <p>до {rangeValue[1]}</p>
                                     </div>
                                     <div className='slider-wrapper'>
-                                        <RangeSlider />
+                                        <RangeSlider setRangeVAlue={setRangeVAlue} rangeValue={rangeValue} />
                                     </div>
                                 </div>
                             </div>
