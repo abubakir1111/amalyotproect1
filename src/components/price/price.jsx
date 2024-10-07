@@ -179,6 +179,53 @@ function Price() {
                         </div>
                     </div>
                 </div>
+
+                <div className="footer-card2">
+                    <div className="footer-box">
+                        <div className="footer-card">
+                            <Swiper
+                                ref={swiperRef}
+                                grabCursor={true}
+                                centeredSlides={true}
+                                loop={true}
+                                slidesPerView={1.1}
+                                spaceBetween={0}
+                                coverflowEffect={{
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                }}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
+                            >
+                                {footer.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="footer-card1">
+                                            <div className="footer-text-div">
+                                                <img src={item.logo_img} alt="" className='footer-img1' />
+                                                <p className='footer-text-p'>{item.logo_text}в</p>
+                                            </div>
+                                            <div className='footer-text-desc'>
+                                                <p>{item.text1}</p>
+                                            </div>
+                                            <div className='footer-card-text-red'>
+                                                <p>{item.text2}</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                                <div className="footer-button-div">
+                                    <div className="footer-button-box">
+                                        <div className="footer-button">
+                                            <button onClick={handlePrevClick}><img src={footerImg1} alt="" /></button>
+                                            <button onClick={handleNextClick}><img src={footerImg2} alt="" /></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Fragment>
     );

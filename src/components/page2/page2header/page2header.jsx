@@ -197,7 +197,7 @@ function Page2header() {
                       grabCursor={true}
                       centeredSlides={true}
                       loop={true}
-                      slidesPerView={1.4} // Har bir qatorada uchta kartani ko'rsatish
+                      slidesPerView={1.3} // Har bir qatorada uchta kartani ko'rsatish
                       spaceBetween={200} // Kartalar orasidagi bo'shliq
                       coverflowEffect={{
                         rotate: 0,

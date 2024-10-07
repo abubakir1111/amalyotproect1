@@ -3157,6 +3157,7 @@
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
         display: block;
+
         .main-box {
             display: flex;
             flex-direction: column;
@@ -4281,6 +4282,7 @@
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
         display: block;
+
         .main-box {
             display: flex;
             flex-direction: column;
@@ -4841,7 +4843,7 @@
 
 
 
-@media (max-width: 415px) {
+@media (max-width: 360px) {
     .main {
         display: none;
     }
@@ -5411,6 +5413,7 @@
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
         display: block;
+
         .main-box {
             display: flex;
             flex-direction: column;
@@ -5446,9 +5449,9 @@
                     border-radius: 30px;
                     background: rgb(248, 248, 248);
                     padding: 25px;
-                    width: 300px;
+                    width: 280px;
                     height: 600px;
-                    margin: 0 10rem;
+                    margin: 0 7.4rem;
 
                     .main-box-card2 {
                         display: flex;
@@ -5967,3 +5970,54 @@
 }
 
 
+@media (max-width: 379px) {
+    .main3 {
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: "Montserrat", sans-serif;
+        display: block;
+
+        .main-box {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .main-box-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 5px;
+
+                button {
+                    width: 183px;
+                    height: 48px;
+                    border-radius: 10px;
+                    background: rgb(220, 63, 63);
+                    border: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
+
+            .main-box-div {
+                display: flex;
+                flex-direction: row;
+                gap: 32px;
+                margin-top: 40px;
+                align-items: center;
+                justify-content: center;
+
+                .main-box-card {
+                    border-radius: 30px;
+                    background: rgb(248, 248, 248);
+                    padding: 25px;
+                    width: 280px;
+                    height: 600px;
+                    // margin: 0 8rem;
+                }
+            }
+        }
+    }
+}
