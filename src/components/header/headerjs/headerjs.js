@@ -28,19 +28,19 @@ export const headerjsApi = [
 export const sdanbtn = [
     {
         id: 0,
-        text: 'Сдан'
+        text: 'Сдан',
     },
     {
         id: 1,
-        text: '2023'
+        text: '2023',
     },
     {
         id: 2,
-        text: '2024'
+        text: '2024',
     },
     {
         id: 3,
-        text: '2025+'
+        text: '2025+',
     },
 ]
 

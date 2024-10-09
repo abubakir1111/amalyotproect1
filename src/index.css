@@ -928,3 +928,24 @@ input{
 input{
     border: none;
 }
+
+
+.button-remove{
+    background-color: transparent;
+    color: red;
+    border: none;
+}
+.data-removebtn{
+    background-color: transparent;
+    color: red;
+    border: none; 
+}
+.data2-remove{
+    background-color: transparent;
+    color: red;
+    border: none; 
+    width: 0px;
+    height: 0px;
+    outline: none;
+    list-style: none;
+}

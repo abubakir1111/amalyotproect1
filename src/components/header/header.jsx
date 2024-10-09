@@ -16,22 +16,35 @@ function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
     const [klass1, setKlass] = useState(null);
     const [tumanX, setTumanX] = useState(null);
-    const [rangeValue, setRangeVAlue] = useState([1, 121.4])
-
+    const [items, setItems] = useState(klassbtn);
+    const [rangeValue, setRangeVAlue] = useState([3.2, 121.4])
+    const [removeBtn, setRemoveBtn] = useState(headerjsApi)
+    const [tuman, setTuman] = useState(tumanapi)
     const handleButtonClick = (id) => {
         setSelectedImage(id);
     };
-
     const klasclick = (id) => {
         setKlass(id);
     };
-
     const tumaClick = (id) => {
         setTumanX(id);
     };
     const [menuVisible, setMenuVisible] = useState(false);
     const menuNav = () => {
-        setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
+        setMenuVisible(!menuVisible);
+    }
+
+    const handleDelete = (id) => {
+        const filteredItems = removeBtn.filter((itemss) => itemss.id !== id);
+        setRemoveBtn(filteredItems);
+    };
+    const data2Delete = (id) => {
+        const newDataFiltrs = items.filter((itemsfilter) => itemsfilter.id !== id)
+        setItems(newDataFiltrs)
+    }
+    const tumanDelete = (id) => {
+        const newTumanFilters = tuman.filter((tumanfilter) => tumanfilter.id !== id)
+        setTuman(newTumanFilters)
     }
     return (
         <div className='header'>
@@ -115,7 +128,7 @@ function Header() {
             </div>
             <div className="header-button-div-top">
                 <div className="header-button-div-box">
-                    {headerjsApi.map((data) => (
+                    {removeBtn.map((data) => (
                         <button
                             className='header-button-box-btn'
                             key={data.id}
@@ -131,7 +144,7 @@ function Header() {
                             }}
                         >
                             {data.text}
-                            {selectedImage === data.id && <p>{data.img[0]}</p>}
+                            <button className='button-remove' onClick={() => handleDelete(data.id)}>{selectedImage === data.id && <p>{data.img}</p>}</button>
                         </button>
                     ))}
                 </div>
@@ -170,8 +183,13 @@ function Header() {
                         <div className="room-sdan2">
                             <p>Срок сдачи</p>
                             <div className="room-sdan-div">
-                                {sdanbtn.map((item) => (
-                                    <button key={item.id}>{item.text}</button>
+                                {sdanbtn.map((sdanbtn) => (
+                                    <button key={sdanbtn.id}
+
+                                    >
+                                        {sdanbtn.text}
+
+                                    </button>
                                 ))}
                             </div>
                         </div>
@@ -208,27 +226,31 @@ function Header() {
             <div className='kalss-button-container'>
                 <div className="klass-button-box">
                     <div className="btn-bottom-div">
-                        {klassbtn.map((klass) => (
+                        {items.map((data2) => (
                             <button
-                                key={klass.id}
-                                onClick={() => klasclick(klass.id)}
+                                key={data2.id}
+                                onClick={() => klasclick(data2.id)}
+                                className='btn-bottom-div22'
                                 style={{
-                                    border: klass1 === klass.id ? '1px solid rgb(220, 63, 63)' : '1px solid rgb(219, 219, 219)',
+                                    border: klass1 === data2.id ? '1px solid rgb(220, 63, 63)' : '1px solid rgb(219, 219, 219)',
                                     background: 'none',
                                     cursor: 'pointer',
-                                    color: klass1 === klass.id ? 'rgb(220, 63, 63)' : 'rgb(168, 168, 168)',
+                                    color: klass1 === data2.id ? 'rgb(220, 63, 63)' : 'rgb(168, 168, 168)',
                                     fontSize: '14px',
                                     fontWeight: '500',
-                                    lineHeight: '17px'
-                                }}
-                            >
-                                {klass.text}
-                                {klass1 === klass.id && <p>{klass.klass2}</p>}
+                                    lineHeight: '0px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center'
+
+                                }}>
+                                {data2.text}
+                                    {klass1 === data2.id && <p onClick={() => data2Delete(data2.id)}>{data2.klass2}</p>}
                             </button>
                         ))}
                     </div>
                     <div className="btn-top-div">
-                        {tumanapi.map((tuman) => (
+                        {tuman.map((tuman) => (
                             <button
                                 key={tuman.id}
                                 className='top-btn'
@@ -244,7 +266,15 @@ function Header() {
                                 }}
                             >
                                 {tuman.text}
-                                {tumanX === tuman.id && <p>{tuman.tuman2}</p>}
+                                <button
+                                    onClick={() => tumanDelete(tuman.id)}
+                                    style={{
+                                        background: 'none',
+                                        border: 'none',
+                                        color: 'red',
+                                        width: '0px',
+                                        height: '0px'
+                                    }}>{tumanX === tuman.id && <p>{tuman.tuman2}</p>}</button>
                             </button>
                         ))}
                     </div>
