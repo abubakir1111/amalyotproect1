@@ -64,6 +64,7 @@ function Header() {
                         <Link className='navbar-left-link'>8 800 000 00 00</Link>
                     </div>
                     <div className="navbar-icon-left">
+                        
                         <img src={wk} alt="VK" />
                         <img src={wh} alt="WhatsApp" />
                         <img src={tg} alt="Telegram" />

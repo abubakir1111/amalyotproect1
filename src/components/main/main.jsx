@@ -24,8 +24,32 @@ function Main() {
             {mainApi.map((card) =>
               <div className="main-box-card" key={card.id} >
                 <div className="main-box-card2">
-                  <div className="main-box-card-right">
-                    <div className='main-card-btn'>
+                  <div className='main-card-btn'>
+                  <Swiper
+              ref={swiperRef}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              slidesPerView={1.1} // Har bir qatorada uchta kartani ko'rsatish
+              spaceBetween={55} // Kartalar orasidagi bo'shliq
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1
+              }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+            >
+                <SwiperSlide>
+                    <div className="main-box-card-right">
+
+                      <div className="main-box-card-right-img"></div>
+
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+
+                    <div className="main-btn-card-slide">
                       <button className='main-btn1'><img src={card.right} alt="" /></button>
                       <button className='main-btn2'><img src={card.left} alt="" /></button>
                     </div>
@@ -98,7 +122,7 @@ function Main() {
           </div>
         </div>
       </div>
-      
+
       <div className='main2'>
         <div className="main-box">
           <div className="main-box-div">
