@@ -6,7 +6,6 @@
     font-family: "Montserrat", sans-serif;
 
     .main-box {
-
         .main-box-button {
             display: flex;
             align-items: center;
@@ -45,16 +44,17 @@
 
                         .main-box-card-right {
                             overflow: hidden;
-                            
+                            gap: 50px;
+                            display: flex;
+
                             .main-box-card-right-img {
-                                background-image: url(../../assets/img/backgorund/main-right-img.png);
                                 border-radius: 30px;
-                                width: 546px;
-                                height: 370px;
                             }
                         }
+
                         .main-btn-card-slide {
                             position: relative;
+
                             .main-btn1 {
                                 width: 30px;
                                 height: 30px;
@@ -65,7 +65,7 @@
                                 align-items: center;
                                 justify-content: center;
                                 position: absolute;
-                                left: -15px;
+                                left: 15px;
                                 bottom: 170px;
                                 z-index: 4;
                             }
@@ -80,7 +80,7 @@
                                 align-items: center;
                                 justify-content: center;
                                 position: absolute;
-                                right: -15px;
+                                right: 15px;
                                 bottom: 170px;
                                 z-index: 4;
 
@@ -589,6 +589,7 @@
         max-width: 800px;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
+        
 
         .main-box {
 
@@ -668,6 +669,9 @@
                         }
 
                         .main-box-card-left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 58px;
                             .main-left-box {
                                 display: flex;
                                 // width: 10%;
@@ -677,8 +681,9 @@
                                     .main-left-right-text {
 
                                         .main-left-right-p1 {
+                                            width: 150px;
                                             color: rgb(34, 34, 34);
-                                            font-size: 22px;
+                                            font-size: 18px;
                                             font-weight: 700;
                                             line-height: 150%;
                                         }
@@ -706,7 +711,8 @@
 
                                             .bottom-text-p1 {
                                                 color: rgb(34, 34, 34);
-                                                font-size: 22px;
+                                                font-size: 18px;
+                                                width: 154px;
                                                 font-weight: 700;
                                                 line-height: 150%;
                                             }
@@ -716,7 +722,7 @@
                                                 font-size: 14px;
                                                 font-weight: 400;
                                                 line-height: 150%;
-                                                width: 176px;
+                                                width: 100px;
                                                 border-bottom: 1px dashed rgb(220, 63, 63);
                                                 ;
                                             }
@@ -738,7 +744,8 @@
                             }
 
                             .main-center-div {
-                                margin: 58px 32px;
+                                margin:  0px;
+                                
 
                                 .main-box-center-div {
                                     display: flex;
@@ -959,14 +966,15 @@
                             .main-left-box {
                                 display: flex;
                                 // width: 10%;
-                                gap: 51px;
+                                gap: 30px;
 
                                 .main-left-box-text-card {
                                     .main-left-right-text {
 
                                         .main-left-right-p1 {
+                                            width: 130px;
                                             color: rgb(34, 34, 34);
-                                            font-size: 22px;
+                                            font-size: 20px;
                                             font-weight: 700;
                                             line-height: 150%;
                                         }
@@ -1004,9 +1012,9 @@
                                                 font-size: 14px;
                                                 font-weight: 400;
                                                 line-height: 150%;
-                                                width: 176px;
+                                                width: 146px;
                                                 border-bottom: 1px dashed rgb(220, 63, 63);
-                                                ;
+                                                
                                             }
                                         }
                                     }
@@ -1031,6 +1039,8 @@
                                 .main-box-center-div {
                                     display: flex;
                                     // align-items: center;
+                                    flex-wrap: wrap;
+                                    width: 200px;
                                     gap: 28px;
 
                                     // width: 103%; 
@@ -4433,11 +4443,9 @@
                                             }
                                         }
                                     }
-
                                     .top-text {
                                         width: 141px;
                                         height: 42px;
-
                                         p {
                                             color: rgb(34, 34, 34);
                                             font-size: 14px;

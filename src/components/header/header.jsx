@@ -11,7 +11,7 @@ import vec1 from '../../assets/icons/Vector.svg';
 import vec2 from '../../assets/icons/Union.png';
 import menu from '../../assets/img/header-navbar-responsive/burger-menu.png'
 import './headerresponsive.scss';
-
+import Main from '../main/main';
 function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
     const [klass1, setKlass] = useState(null);
@@ -20,6 +20,10 @@ function Header() {
     const [rangeValue, setRangeVAlue] = useState([3.2, 121.4])
     const [removeBtn, setRemoveBtn] = useState(headerjsApi)
     const [tuman, setTuman] = useState(tumanapi)
+    const [xonali, setxonali] = useState("1-комнатные")
+    const [rubl, setRubl] = useState("от 4,4 млн р")
+    const [xona2, setXona2] = useState("1-комнатные")
+    const [rub2, setRub2] = useState("от 4,4 млн р")
     const handleButtonClick = (id) => {
         setSelectedImage(id);
     };
@@ -46,6 +50,49 @@ function Header() {
         const newTumanFilters = tuman.filter((tumanfilter) => tumanfilter.id !== id)
         setTuman(newTumanFilters)
     }
+    const [xona, setXona] = useState('4 377 600')
+
+    const handleClick0 = () => {
+        // setXona(''); // Birinchi tugma bosilganda
+        // setxonali('')
+    };
+
+    const handleClick1 = () => {
+        setXona('4 377 600'); // Birinchi tugma bosilganda
+        setxonali('1-комнатные')
+        setXona2('1-комнатные')
+        setRubl('от 4,4 млн р')
+        setRub2('от 4,4 млн р')
+
+
+    };
+
+    const handleClick2 = () => {
+        setXona('8 755 200'); // Ikkinchi tugma bosilganda
+        setxonali('2-комнатные')
+        setXona2('2-комнатные')
+        setRubl('от 8,8 млн р')
+        setRub2('от 8,8 млн р')
+    };
+
+    const handleClick3 = () => {
+        setXona('13 132 800');
+        setxonali('3-комнатные')
+        setXona2('3-комнатные')
+        setRubl('от 12,12 млн р')
+        setRub2('от 12,12 млн р')
+    };
+
+    const handleClick4 = () => {
+        setXona('17 510 400'); // Ikkinchi tugma bosilganda
+        setxonali('4-комнатные +')
+        setXona2('4-комнатные +')
+        setRubl('от 16,16 млн р')
+        setRub2('от 16,16 млн р')
+    };
+
+    console.log(xona);
+
     return (
         <div className='header'>
             <div className="header-box">
@@ -64,7 +111,7 @@ function Header() {
                         <Link className='navbar-left-link'>8 800 000 00 00</Link>
                     </div>
                     <div className="navbar-icon-left">
-                        
+
                         <img src={wk} alt="VK" />
                         <img src={wh} alt="WhatsApp" />
                         <img src={tg} alt="Telegram" />
@@ -155,11 +202,11 @@ function Header() {
                     <div className="room-text-div">
                         <p>Комнатность</p>
                         <div className='room-btn'>
-                            <button>C</button>
-                            <button>1</button>
-                            <button>2</button>
-                            <button>3</button>
-                            <button>4+</button>
+                            <button onClick={handleClick0}>C</button>
+                            <button onClick={handleClick1}>1</button>
+                            <button onClick={handleClick2}>2</button>
+                            <button onClick={handleClick3}>3</button>
+                            <button onClick={handleClick4}>4+</button>
                         </div>
                     </div>
                     <div className='room-price'>
@@ -246,7 +293,7 @@ function Header() {
 
                                 }}>
                                 {data2.text}
-                                    {klass1 === data2.id && <p onClick={() => data2Delete(data2.id)}>{data2.klass2}</p>}
+                                {klass1 === data2.id && <p onClick={() => data2Delete(data2.id)}>{data2.klass2}</p>}
                             </button>
                         ))}
                     </div>
@@ -281,6 +328,8 @@ function Header() {
                     </div>
                 </div>
             </div>
+            <Main xona={xona} xonali={xonali} rubl={rubl} xona2={xona2} rub2={rub2}/>
+
         </div>
 
 

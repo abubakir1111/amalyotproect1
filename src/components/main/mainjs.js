@@ -33,6 +33,8 @@ export const mainApi = [
         mainCenterLeftbtn: 'Подробнее',
         loactionimg: loactionImg,
         MainImg: img1,
+        completion: 2025,
+        repair: "withRepair"
     },
     {
         id: 1,
@@ -58,6 +60,8 @@ export const mainApi = [
         mainCenterLeftbtn: 'Подробнее',
         loactionimg: loactionImg,
         MainImg: img1,
+        completion: 2024,
+        repair: "withoutRepair"
     },
     {
         id: 2,

@@ -949,3 +949,15 @@ input{
     outline: none;
     list-style: none;
 }
+.silder-div-container{
+    width: 600px;
+    background-color: transparent;
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    .silder-div-container{
+        width: 400px;
+        background-color: transparent;
+    }
+    
+}

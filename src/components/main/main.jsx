@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from 'react';
+import React, { Fragment, useRef, useState } from 'react';
 import './main.scss';
 import { Link } from 'react-scroll';
 import { mainApi } from './mainjs';
@@ -9,9 +9,14 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-function Main() {
+import Slider from './slider';
+
+
+function Main({xona, xonali, rubl, xona2, rub2}) {
   const navigate = useNavigate()
   const swiperRef = useRef(null);
+  const [data, setData] = useState(mainApi)
+  
 
   const Click = () => {
     navigate('/page4')
@@ -21,38 +26,11 @@ function Main() {
       <div className='main'>
         <div className="main-box">
           <div className="main-box-div">
-            {mainApi.map((card) =>
+            {data.map((card) =>
               <div className="main-box-card" key={card.id} >
                 <div className="main-box-card2">
                   <div className='main-card-btn'>
-                  <Swiper
-              ref={swiperRef}
-              grabCursor={true}
-              centeredSlides={true}
-              loop={true}
-              slidesPerView={1.1} // Har bir qatorada uchta kartani ko'rsatish
-              spaceBetween={55} // Kartalar orasidagi bo'shliq
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 1
-              }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
-            >
-                <SwiperSlide>
-                    <div className="main-box-card-right">
-
-                      <div className="main-box-card-right-img"></div>
-
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-
-                    <div className="main-btn-card-slide">
-                      <button className='main-btn1'><img src={card.right} alt="" /></button>
-                      <button className='main-btn2'><img src={card.left} alt="" /></button>
-                    </div>
+                    <Slider card={card}/>
                   </div>
                   <div className="main-box-card-left">
                     <div className="main-left-box">
@@ -65,7 +43,7 @@ function Main() {
                       <div className="main-box-text-left-box">
                         <div className="main-box-left-bottom-text">
                           <div className="bottom-text">
-                            <p className='bottom-text-p1'>{card.bottomTextP1}</p>
+                            <p className='bottom-text-p1'>от {xona} р</p>
                             <p className='bottom-text-p2'>{card.bottomTextP2}</p>
                           </div>
                           <div className="top-text">
@@ -78,21 +56,21 @@ function Main() {
                       <div className="main-box-center-div">
                         <div className="main-right-p">
                           <p>{card.mainRigh1text}</p>
-                          <p>{card.mainRigh2text}</p>
-                          <p>{card.mainRigh3text}</p>
+                          <p>{xonali}</p>
+                          <p>{xonali}</p>
                         </div>
                         <div className="main-center-p">
-                          <p>{card.mainCenterP}</p>
-                          <p>{card.mainCenterP}</p>
-                          <p>{card.mainCenterP}</p>
+                          <p>{rubl}</p>
+                          <p>{rubl}</p>
+                          <p>{rubl}</p>
                         </div>
                         <div className="main-left-p">
-                          <p>{card.mainleftptext1}</p>
-                          <p>{card.mainleftptext2}</p>
+                          <p>{xona2}</p>
+                          <p>{xona2}</p>
                         </div>
                         <div className="main-left-p2">
-                          <p>{card.mainLeftP1}</p>
-                          <p>{card.mainLeftP2}</p>
+                          <p>{rub2}</p>
+                          <p>{rub2}</p>
                         </div>
                       </div>
                     </div>
