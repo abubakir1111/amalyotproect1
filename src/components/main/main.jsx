@@ -1,7 +1,7 @@
-import React, { Fragment, useRef, useState } from 'react';
+import React, { Fragment, useRef } from 'react';
 import './main.scss';
 import { Link } from 'react-scroll';
-import { mainApi } from './mainjs';
+import { mainApi } from './mainApi.js';
 import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -9,15 +9,10 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import Slider from './slider';
-
-
-function Main({xona, xonali, rubl, xona2, rub2}) {
+import Slider from './slider.jsx';
+function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
   const navigate = useNavigate()
   const swiperRef = useRef(null);
-  const [data, setData] = useState(mainApi)
-  
-
   const Click = () => {
     navigate('/page4')
   }
@@ -26,11 +21,11 @@ function Main({xona, xonali, rubl, xona2, rub2}) {
       <div className='main'>
         <div className="main-box">
           <div className="main-box-div">
-            {data.map((card) =>
+            {mainData && mainData.map((card) =>
               <div className="main-box-card" key={card.id} >
                 <div className="main-box-card2">
                   <div className='main-card-btn'>
-                    <Slider card={card}/>
+                    <Slider card={card} mainData={mainData}/>
                   </div>
                   <div className="main-box-card-left">
                     <div className="main-left-box">
@@ -308,4 +303,4 @@ function Main({xona, xonali, rubl, xona2, rub2}) {
 
   );
 }
-export default Main;
+export default Main

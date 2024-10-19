@@ -550,28 +550,6 @@ button {
 }
 
 
-
-.swiper-slide {
-    /* Default shadow va other effectlarni olib tashlash */
-    box-shadow: none;
-    transition: transform 0.5s ease-in-out;
-    /* To'liq o‘tish effekti uchun */
-}
-
-.swiper-slide-active {
-    /* Aktiv holat uchun maxsus uslub yo'q */
-    box-shadow: none;
-    /* Agar shadow ko'rsatilishini xohlamasangiz */
-    transform: scale(1);
-    /* O'tishning oddiy ko'rinishi uchun */
-}
-
-/* Agar hover holatidagi effektlarni o'chirish kerak bo'lsa */
-.swiper-slide:hover {
-    box-shadow: none;
-    transform: scale(1);
-}
-
 input{
     border: none;
 }

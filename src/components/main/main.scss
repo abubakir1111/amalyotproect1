@@ -49,6 +49,8 @@
 
                             .main-box-card-right-img {
                                 border-radius: 30px;
+                                width: 600px;
+                                height: 400px;
                             }
                         }
 
@@ -157,12 +159,12 @@
                         }
 
                         .main-center-div {
-                            margin: 58px 32px;
+                            margin: 58px 10px;
 
                             .main-box-center-div {
                                 display: flex;
                                 // align-items: center;
-                                gap: 28px;
+                                gap: 20px;
 
                                 .main-right-p {
                                     p {
@@ -589,7 +591,7 @@
         max-width: 800px;
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
-        
+
 
         .main-box {
 
@@ -672,6 +674,7 @@
                             display: flex;
                             flex-direction: column;
                             gap: 58px;
+
                             .main-left-box {
                                 display: flex;
                                 // width: 10%;
@@ -744,8 +747,8 @@
                             }
 
                             .main-center-div {
-                                margin:  0px;
-                                
+                                margin: 0px;
+
 
                                 .main-box-center-div {
                                     display: flex;
@@ -1014,7 +1017,7 @@
                                                 line-height: 150%;
                                                 width: 146px;
                                                 border-bottom: 1px dashed rgb(220, 63, 63);
-                                                
+
                                             }
                                         }
                                     }
@@ -4443,9 +4446,11 @@
                                             }
                                         }
                                     }
+
                                     .top-text {
                                         width: 141px;
                                         height: 42px;
+
                                         p {
                                             color: rgb(34, 34, 34);
                                             font-size: 14px;

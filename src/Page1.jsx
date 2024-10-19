@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from './components/header/header'
+
 import Main from './components/main/main'
 import Price from './components/price/price'
+import Header from './components/header/Header';
 
 function Page1() {
   return (

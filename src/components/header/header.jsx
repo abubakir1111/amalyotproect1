@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import wk from '../../assets/icons/VK.svg';
 import wh from '../../assets/icons/WhatsApp.svg';
 import tg from '../../assets/icons/Tg.svg';
-import { headerjsApi, klassbtn, roomFinish, sdanbtn, tumanapi } from './headerjs/headerjs';
-import RangeSlider from './headerjs/header-silder';
+import { headerjsApi, klassbtn, sdanbtn, tumanapi } from './headerjs/headerjs.js';
+import RangeSlider from './headerjs/header-silder.jsx';
 import vec1 from '../../assets/icons/Vector.svg';
 import vec2 from '../../assets/icons/Union.png';
 import menu from '../../assets/img/header-navbar-responsive/burger-menu.png'
 import './headerresponsive.scss';
-import Main from '../main/main';
+
+import { mainApi } from '../main/mainApi.js';
+import Main from '../main/main.jsx';
+import Slider from '../main/slider.jsx';
+
 function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
     const [klass1, setKlass] = useState(null);
@@ -24,6 +28,27 @@ function Header() {
     const [rubl, setRubl] = useState("от 4,4 млн р")
     const [xona2, setXona2] = useState("1-комнатные")
     const [rub2, setRub2] = useState("от 4,4 млн р")
+    const [backgorunActive, setBackgroundActive] = useState()
+    const [dataRemont, setRemontData] = useState(mainApi)
+    const [mainData, setMainData] = useState(mainApi); // filtered data for display
+
+    // Filter data based on category from mainApi
+    const changeData = () => {
+        const updatedBtn = mainApi.filter(item => item.category === 'Без отделки');
+        setMainData(updatedBtn);
+    };
+
+    const changeData2 = () => {
+        const updateBtn2 = mainApi.filter(item => item.category === 'С отделкой');
+        setMainData(updateBtn2);
+    };
+
+    const changeData3 = () => {
+        const updateBtn3 = mainApi.filter(item => item.category === 'White box');
+        setMainData(updateBtn3);
+    };
+    //  boldimi aka  ha boldi callback functioni o'rniga oddiy ishlatarkansz, shunda fetch boladi hop raxmat aka 
+    // Filter data end 
     const handleButtonClick = (id) => {
         setSelectedImage(id);
     };
@@ -55,16 +80,16 @@ function Header() {
     const handleClick0 = () => {
         // setXona(''); // Birinchi tugma bosilganda
         // setxonali('')
+        setBackgroundActive('button1')
     };
 
     const handleClick1 = () => {
-        setXona('4 377 600'); // Birinchi tugma bosilganda
+        setXona('4 377 600');
         setxonali('1-комнатные')
         setXona2('1-комнатные')
         setRubl('от 4,4 млн р')
         setRub2('от 4,4 млн р')
-
-
+        setBackgroundActive('button2')
     };
 
     const handleClick2 = () => {
@@ -73,6 +98,8 @@ function Header() {
         setXona2('2-комнатные')
         setRubl('от 8,8 млн р')
         setRub2('от 8,8 млн р')
+        setBackgroundActive('button3')
+
     };
 
     const handleClick3 = () => {
@@ -81,6 +108,8 @@ function Header() {
         setXona2('3-комнатные')
         setRubl('от 12,12 млн р')
         setRub2('от 12,12 млн р')
+        setBackgroundActive('button4')
+
     };
 
     const handleClick4 = () => {
@@ -89,11 +118,27 @@ function Header() {
         setXona2('4-комнатные +')
         setRubl('от 16,16 млн р')
         setRub2('от 16,16 млн р')
+        setBackgroundActive('button5')
+
     };
 
     console.log(xona);
 
+
+    const remontClick = () => {
+        console.log("bez remont")
+    }
+
+
+    const [categoryData, setCategoryData] = useState(mainApi);
+
+    const handleCategoryData = (categoryId) => {
+        const filetered = dataRemont.filter((item) => item.category == categoryId);
+        console.log(filetered);
+        setCategoryData(filetered);
+    };
     return (
+
         <div className='header'>
             <div className="header-box">
                 <div className="navbar">
@@ -202,11 +247,26 @@ function Header() {
                     <div className="room-text-div">
                         <p>Комнатность</p>
                         <div className='room-btn'>
-                            <button onClick={handleClick0}>C</button>
-                            <button onClick={handleClick1}>1</button>
-                            <button onClick={handleClick2}>2</button>
-                            <button onClick={handleClick3}>3</button>
-                            <button onClick={handleClick4}>4+</button>
+                            <button onClick={handleClick0} style={{
+                                border: backgorunActive !== 'button1' ? '' : '1px solid rgb(219, 219, 219)',
+
+                            }}>C</button>
+                            <button onClick={handleClick1} style={{
+                                border: backgorunActive !== 'button2' ? '' : '1px solid rgb(219, 219, 219)',
+
+                            }}>1</button>
+                            <button onClick={handleClick2} style={{
+                                border: backgorunActive !== 'button3' ? '' : '1px solid rgb(219, 219, 219)',
+
+                            }}>2</button>
+                            <button onClick={handleClick3} style={{
+                                border: backgorunActive !== 'button4' ? '' : '1px solid rgb(219, 219, 219)',
+
+                            }}>3</button>
+                            <button onClick={handleClick4} style={{
+                                border: backgorunActive !== 'button5' ? '' : '1px solid rgb(219, 219, 219)',
+
+                            }}>4+</button>
                         </div>
                     </div>
                     <div className='room-price'>
@@ -232,11 +292,8 @@ function Header() {
                             <p>Срок сдачи</p>
                             <div className="room-sdan-div">
                                 {sdanbtn.map((sdanbtn) => (
-                                    <button key={sdanbtn.id}
-
-                                    >
+                                    <button key={sdanbtn.id} onClick={remontClick}>
                                         {sdanbtn.text}
-
                                     </button>
                                 ))}
                             </div>
@@ -245,13 +302,13 @@ function Header() {
                     <div className="room-finish">
                         <div className="room-finish-box">
                             <div className='room-finish-box-p-text'>
-                                <p>Отделка </p>
+                                <p onClick={() => handleCategoryData("1")}>Отделка </p>
                                 <p>Меблировка </p>
                             </div>
                             <div className='room-finish-btn'>
-                                {roomFinish.map((romm) => (
-                                    <button key={romm.id}>{romm.text}</button>
-                                ))}
+                                <button onClick={changeData}>Без отделки</button>
+                                <button onClick={changeData2}>С отделкой</button>
+                                <button onClick={changeData3}>White box</button>
                             </div>
                         </div>
                     </div>
@@ -328,8 +385,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <Main xona={xona} xonali={xonali} rubl={rubl} xona2={xona2} rub2={rub2}/>
-
+            <Main mainData={mainData} xona={xona} xonali={xonali} rubl={rubl} xona2={xona2} rub2={rub2} />
         </div>
 
 
@@ -337,112 +393,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-// <div className='main'>
-// <div className="main-box">
-//   <div className="main-box-div">
-//     <Swiper
-//       ref={swiperRef}
-//       grabCursor={true}
-//       centeredSlides={true}
-//       loop={true}
-//       slidesPerView={1.5} // Har bir qatorada uchta kartani ko'rsatish
-//       spaceBetween={10} // Kartalar orasidagi bo'shliq
-//       coverflowEffect={{
-//         rotate: 0,
-//         stretch: 0,
-//         depth: 100,
-//         modifier: 1
-//       }}
-//       modules={[EffectCoverflow, Pagination, Navigation]}
-//     >
-//       {mainApi.map((card) =>
-//         <SwiperSlide>
-
-//           <div className="main-box-card" key={card.id} >
-//             <div className="main-box-card2">
-//               <div className="main-box-card-right">
-//                 <div className='main-card-btn'>
-//                   <button className='main-btn1'><img src={card.right} alt="" /></button>
-//                   <button className='main-btn2'><img src={card.left} alt="" /></button>
-//                 </div>
-//               </div>
-//               <div className="main-box-card-left">
-//                 <div className="main-left-box">
-//                   <div className="main-left-box-text-card">
-//                     <div className="main-left-right-text">
-//                       <p className='main-left-right-p1'>{card.mainTextP1}</p>
-//                       <p className='main-left-right-p2'>{card.mainTextaction}</p>
-//                     </div>
-//                   </div>
-//                   <div className="main-box-text-left-box">
-//                     <div className="main-box-left-bottom-text">
-//                       <div className="bottom-text">
-//                         <p className='bottom-text-p1'>{card.bottomTextP1}</p>
-//                         <p className='bottom-text-p2'>{card.bottomTextP2}</p>
-//                       </div>
-//                       <div className="top-text">
-//                         <p>{card.topText}</p>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//                 <div className='main-center-div'>
-//                   <div className="main-box-center-div">
-//                     <div className="main-right-p">
-//                       <p>{card.mainRigh1text}</p>
-//                       <p>{card.mainRigh2text}</p>
-//                       <p>{card.mainRigh3text}</p>
-//                     </div>
-//                     <div className="main-center-p">
-//                       <p>{card.mainCenterP}</p>
-//                       <p>{card.mainCenterP}</p>
-//                       <p>{card.mainCenterP}</p>
-//                     </div>
-//                     <div className="main-left-p">
-//                       <p>{card.mainleftptext1}</p>
-//                       <p>{card.mainleftptext2}</p>
-//                     </div>
-//                     <div className="main-left-p2">
-//                       <p>{card.mainLeftP1}</p>
-//                       <p>{card.mainLeftP2}</p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//             <div className="main-top">
-//               <div className="main-top-box">
-//                 <div className="main-right-btn">
-//                   {card.mainRightBtn.map((btn, index) =>
-//                     <button key={btn.id}><img src={card.imgbtn[index]} alt={`Button ${index + 1}`} />{btn}</button>
-//                   )}
-//                 </div>
-//                 <div className="main-center-loaction">
-//                   <img src={card.loactionimg} alt="" />
-//                   <Link className='main-center-location-link'>{card.mainCenterLocation}</Link>
-//                 </div>
-//                 <div className="main-center-left">
-//                   <button onClick={Click}>{card.mainCenterLeftbtn}</button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-
-
-//         </SwiperSlide>
-//       )}
-//     </Swiper>
-
-//   </div>
-//   <div className='main-box-button'>
-//     <button>Показать еще</button>
-//       {/* <button onClick={handlePrevClick}><img src={footerImg1} alt="" /></button>
-//       <button onClick={handleNextClick}><img src={footerImg2} alt="" /></button> */}
-//   </div>
-// </div>
-// </div>

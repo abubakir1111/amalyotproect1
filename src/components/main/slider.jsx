@@ -9,7 +9,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import img1 from '../../assets/img/backgorund/main-right-img.png';
 
-export default function Slider({ card }) {
+export default function Slider({ card, mainData }) {
   const swiperRef = useRef(null);
 
   const handlePrevClick = () => {
@@ -25,7 +25,7 @@ export default function Slider({ card }) {
   };
 
   return (
-    <div  className='silder-div-container'>
+    <div className='silder-div-container'>
       <Swiper
         ref={swiperRef}
         grabCursor={true}
@@ -41,28 +41,37 @@ export default function Slider({ card }) {
           slideShadows: false,
         }}
         pagination={{ clickable: true }}
-        navigation={false} // Disable default navigation since you're using custom buttons
+        navigation={false}
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
-         <SwiperSlide>
+        
+        <SwiperSlide>
           <div className="main-box-card-right">
-              <img src={img1} alt="Slide 1" />
+            {mainData && mainData.map((card) =>
+               <img className='main-box-card-right-img' src={card.googleImg} alt="Slide 1" /> 
+             )} 
+            {/* <img src={img1} alt="Slide 1" /> */}
+
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="main-box-card-right">
-              <img src={img1} alt="Slide 1" />
+            {mainData && mainData.map((card) => 
+              <img className='main-box-card-right-img' src={card.googleImg} alt="Slide 1" /> 
+             )}
+
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="main-box-card-right">
-            
-              <img src={img1} alt="Slide 1" />
-            
+            {mainData && mainData.map((card) => 
+              <img className='main-box-card-right-img' src={card.googleImg} alt="Slide 1" />
+            )}
+              {/* <img src={img1} alt="Slide 1" /> */}
           </div>
         </SwiperSlide>
-        {/* Add more SwiperSlides as needed */}
       </Swiper>
+
 
       <div className="main-btn-card-slide">
         <button className="main-btn1" onClick={handlePrevClick}>
