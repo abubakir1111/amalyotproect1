@@ -46,10 +46,11 @@
                             overflow: hidden;
                             gap: 50px;
                             display: flex;
+                            width: 500px;
 
                             .main-box-card-right-img {
                                 border-radius: 30px;
-                                width: 600px;
+                                width: 500px;
                                 height: 400px;
                             }
                         }
@@ -82,7 +83,7 @@
                                 align-items: center;
                                 justify-content: center;
                                 position: absolute;
-                                right: 15px;
+                                right: 55px;
                                 bottom: 170px;
                                 z-index: 4;
 
@@ -2047,6 +2048,7 @@
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
         display: block;
+        border: 10px solid red;
 
         .main-box {
             display: flex;
@@ -2618,7 +2620,7 @@
         display: none;
 
         .main-box {
-            display: flex;
+            display: none;
             flex-direction: column;
             gap: 40px;
 
@@ -2642,13 +2644,14 @@
             }
 
             .main-box-div {
-                display: flex;
+                display: none;
                 flex-direction: row;
                 gap: 32px;
                 margin-top: 40px;
 
 
                 .main-box-card {
+                    display: none;
                     border-radius: 30px;
                     background: rgb(248, 248, 248);
                     padding: 25px;
@@ -3176,7 +3179,6 @@
         margin: 0 auto;
         font-family: "Montserrat", sans-serif;
         display: block;
-
         .main-box {
             display: flex;
             flex-direction: column;

@@ -197,13 +197,27 @@ function Page2header() {
                       grabCursor={true}
                       centeredSlides={true}
                       loop={true}
-                      slidesPerView={1.3} // Har bir qatorada uchta kartani ko'rsatish
+                      // slidesPerView={1.3} // Har bir qatorada uchta kartani ko'rsatish
                       spaceBetween={200} // Kartalar orasidagi bo'shliq
                       coverflowEffect={{
                         rotate: 0,
                         stretch: 0,
                         depth: 100,
                         modifier: 1
+                      }}
+                      breakpoints={{
+                        640: {
+                          slidesPerView: 1, // 1 slide per view on small screens
+                          spaceBetween: 20, // space between slides
+                        },
+                        768: {
+                          slidesPerView: 2, // 2 slides per view on medium screens
+                          spaceBetween: 30,
+                        },
+                        1024: {
+                          slidesPerView: 2.4, // 3 slides per view on large screens
+                          spaceBetween: 40,
+                        },
                       }}
                       modules={[EffectCoverflow, Pagination, Navigation]}
                     >

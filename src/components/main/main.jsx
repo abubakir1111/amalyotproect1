@@ -25,7 +25,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
               <div className="main-box-card" key={card.id} >
                 <div className="main-box-card2">
                   <div className='main-card-btn'>
-                    <Slider card={card} mainData={mainData}/>
+                    <Slider card={card} mainData={mainData} />
                   </div>
                   <div className="main-box-card-left">
                     <div className="main-left-box">
@@ -95,8 +95,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
           </div>
         </div>
       </div>
-
-      <div className='main2'>
+     <div className='main2'>
         <div className="main-box">
           <div className="main-box-div">
             <Swiper
@@ -104,8 +103,8 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
               grabCursor={true}
               centeredSlides={true}
               loop={true}
-              slidesPerView={1.4} // Har bir qatorada uchta kartani ko'rsatish
-              spaceBetween={10} // Kartalar orasidagi bo'shliq
+              slidesPerView={1.4}
+              spaceBetween={10}
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
@@ -191,12 +190,9 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
           </div>
           <div className='main-box-button'>
             <button>Показать еще</button>
-            {/* <button onClick={handlePrevClick}><img src={footerImg1} alt="" /></button>
-      <button onClick={handleNextClick}><img src={footerImg2} alt="" /></button> */}
           </div>
         </div>
       </div>
-
       <div className='main3'>
         <div className="main-box">
           <div className="main-box-div">
@@ -205,8 +201,8 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
               grabCursor={true}
               centeredSlides={true}
               loop={true}
-              slidesPerView={0.6} // Har bir qatorada uchta kartani ko'rsatish
-              spaceBetween={10} // Kartalar orasidagi bo'shliq
+              slidesPerView={0.6}
+              spaceBetween={10}
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
@@ -292,15 +288,10 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
           </div>
           <div className='main-box-button'>
             <button>Показать еще</button>
-            {/* <button onClick={handlePrevClick}><img src={footerImg1} alt="" /></button>
-      <button onClick={handleNextClick}><img src={footerImg2} alt="" /></button> */}
           </div>
         </div>
       </div>
     </Fragment>
-
-
-
   );
 }
 export default Main

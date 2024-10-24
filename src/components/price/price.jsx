@@ -108,6 +108,132 @@ function Price() {
                                 <button>Показать еще</button>
                             </div>
                         </div>
+                            <div className='bank2'>
+                        <Swiper
+                            ref={swiperRef}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            loop={true}
+                            slidesPerView={1.9}
+                            spaceBetween={0}
+                            coverflowEffect={{
+                                rotate: 0,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                            }}
+                            modules={[EffectCoverflow, Pagination, Navigation]}
+                        >
+                                {price.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="bank-box" key={index}>
+                                            <div className="bank-box-text-card">
+                                                <div className="bank-logo">
+                                                    <div className="bank-text-gap">
+                                                        <div className="logo">
+                                                            <img src={item.bankLogo} alt="" />
+                                                        </div>
+                                                        <div className="bank-logo-text">
+                                                            <p className='pro1'>Программа</p>
+                                                            <p className='pro2'>{item.bankLogoText}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bank-text-center">
+                                                        <div className="bank-text-center-div">
+                                                            <div className='bank-text-left'>
+                                                                <p>{item.bankLeftP1}</p>
+                                                                <p>{item.bankLeftP2}</p>
+                                                                <p>{item.bankLeftP3}</p>
+                                                            </div>
+                                                            <div className="bank-left">
+                                                                <p>{item.bankLeftText1}</p>
+                                                                <p>{item.bankLeftText2}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='bank-left-btn'>
+                                                            <button className='bank-left-btn-info'>{item.bankLeftBtn}</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='bank-border-div'>
+                                                <div className="div-border"></div>
+                                            </div>
+                                        </div>
+
+                                    </SwiperSlide>
+
+
+                                ))}
+                                <div className='bank-btn'>
+                                    <button>Показать еще</button>
+                                </div>
+                        </Swiper>
+                            </div>
+
+
+                            <div className='bank3'>
+                        <Swiper
+                            ref={swiperRef}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            loop={true}
+                            slidesPerView={1.2}
+                            spaceBetween={20}
+                            coverflowEffect={{
+                                rotate: 0,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                            }}
+                            modules={[EffectCoverflow, Pagination, Navigation]}
+                        >
+                                {price.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="bank-box" key={index}>
+                                            <div className="bank-box-text-card">
+                                                <div className="bank-logo">
+                                                    <div className="bank-text-gap">
+                                                        <div className="logo">
+                                                            <img src={item.bankLogo} alt="" />
+                                                        </div>
+                                                        <div className="bank-logo-text">
+                                                            <p className='pro1'>Программа</p>
+                                                            <p className='pro2'>{item.bankLogoText}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bank-text-center">
+                                                        <div className="bank-text-center-div">
+                                                            <div className='bank-text-left'>
+                                                                <p>{item.bankLeftP1}</p>
+                                                                <p>{item.bankLeftP2}</p>
+                                                                <p>{item.bankLeftP3}</p>
+                                                            </div>
+                                                            <div className="bank-left">
+                                                                <p>{item.bankLeftText1}</p>
+                                                                <p>{item.bankLeftText2}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='bank-left-btn'>
+                                                            <button className='bank-left-btn-info'>{item.bankLeftBtn}</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='bank-border-div'>
+                                                <div className="div-border"></div>
+                                            </div>
+                                        </div>
+
+                                    </SwiperSlide>
+
+
+                                ))}
+                                <div className='bank-btn'>
+                                    <button>Показать еще</button>
+                                </div>
+                        </Swiper>
+                            </div>
                     </div>
                 </div>
                 <div className="contact">

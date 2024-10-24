@@ -14,13 +14,13 @@ export default function Slider({ card, mainData }) {
 
   const handlePrevClick = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev(); // Correct access to swiper instance
+      swiperRef.current.swiper.slidePrev();
     }
   };
 
   const handleNextClick = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext(); // Correct access to swiper instance
+      swiperRef.current.swiper.slideNext();
     }
   };
 

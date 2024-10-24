@@ -14,7 +14,6 @@ import './headerresponsive.scss';
 
 import { mainApi } from '../main/mainApi.js';
 import Main from '../main/main.jsx';
-import Slider from '../main/slider.jsx';
 
 function Header() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -30,25 +29,27 @@ function Header() {
     const [rub2, setRub2] = useState("от 4,4 млн р")
     const [backgorunActive, setBackgroundActive] = useState()
     const [dataRemont, setRemontData] = useState(mainApi)
-    const [mainData, setMainData] = useState(mainApi); // filtered data for display
-
-    // Filter data based on category from mainApi
+    const [mainData, setMainData] = useState(mainApi);
+    useEffect(() => {
+        const initialData = mainApi.filter(item => item.category === 'All');
+        setMainData(initialData);
+    }, []);
+    const newDataList = () => {
+        const allData = mainData.filter((item) => item.category === "All")
+        setMainData(allData)
+    }
     const changeData = () => {
         const updatedBtn = mainApi.filter(item => item.category === 'Без отделки');
         setMainData(updatedBtn);
     };
-
     const changeData2 = () => {
         const updateBtn2 = mainApi.filter(item => item.category === 'С отделкой');
         setMainData(updateBtn2);
     };
-
     const changeData3 = () => {
         const updateBtn3 = mainApi.filter(item => item.category === 'White box');
         setMainData(updateBtn3);
     };
-    //  boldimi aka  ha boldi callback functioni o'rniga oddiy ishlatarkansz, shunda fetch boladi hop raxmat aka 
-    // Filter data end 
     const handleButtonClick = (id) => {
         setSelectedImage(id);
     };
@@ -62,27 +63,26 @@ function Header() {
     const menuNav = () => {
         setMenuVisible(!menuVisible);
     }
-
     const handleDelete = (id) => {
         const filteredItems = removeBtn.filter((itemss) => itemss.id !== id);
         setRemoveBtn(filteredItems);
+        localStorage.setItem('removeBtn', JSON.stringify(filteredItems));
     };
     const data2Delete = (id) => {
-        const newDataFiltrs = items.filter((itemsfilter) => itemsfilter.id !== id)
-        setItems(newDataFiltrs)
-    }
+        const newDataFiltrs = items.filter((itemsfilter) => itemsfilter.id !== id);
+        setItems(newDataFiltrs);
+        localStorage.setItem('items', JSON.stringify(newDataFiltrs));
+    };
     const tumanDelete = (id) => {
-        const newTumanFilters = tuman.filter((tumanfilter) => tumanfilter.id !== id)
-        setTuman(newTumanFilters)
-    }
+        const newTumanFilters = tuman.filter((tumanfilter) => tumanfilter.id !== id);
+        setTuman(newTumanFilters);
+        localStorage.setItem('tuman', JSON.stringify(newTumanFilters));
+    };
     const [xona, setXona] = useState('4 377 600')
-
     const handleClick0 = () => {
-        // setXona(''); // Birinchi tugma bosilganda
-        // setxonali('')
         setBackgroundActive('button1')
     };
-
+    
     const handleClick1 = () => {
         setXona('4 377 600');
         setxonali('1-комнатные')
@@ -91,9 +91,8 @@ function Header() {
         setRub2('от 4,4 млн р')
         setBackgroundActive('button2')
     };
-
     const handleClick2 = () => {
-        setXona('8 755 200'); // Ikkinchi tugma bosilganda
+        setXona('8 755 200')
         setxonali('2-комнатные')
         setXona2('2-комнатные')
         setRubl('от 8,8 млн р')
@@ -101,9 +100,8 @@ function Header() {
         setBackgroundActive('button3')
 
     };
-
     const handleClick3 = () => {
-        setXona('13 132 800');
+        setXona('13 132 800')
         setxonali('3-комнатные')
         setXona2('3-комнатные')
         setRubl('от 12,12 млн р')
@@ -111,9 +109,8 @@ function Header() {
         setBackgroundActive('button4')
 
     };
-
     const handleClick4 = () => {
-        setXona('17 510 400'); // Ikkinchi tugma bosilganda
+        setXona('17 510 400')
         setxonali('4-комнатные +')
         setXona2('4-комнатные +')
         setRubl('от 16,16 млн р')
@@ -121,24 +118,16 @@ function Header() {
         setBackgroundActive('button5')
 
     };
-
-    console.log(xona);
-
-
     const remontClick = () => {
         console.log("bez remont")
     }
-
-
     const [categoryData, setCategoryData] = useState(mainApi);
-
     const handleCategoryData = (categoryId) => {
         const filetered = dataRemont.filter((item) => item.category == categoryId);
         console.log(filetered);
         setCategoryData(filetered);
     };
     return (
-
         <div className='header'>
             <div className="header-box">
                 <div className="navbar">
@@ -156,7 +145,6 @@ function Header() {
                         <Link className='navbar-left-link'>8 800 000 00 00</Link>
                     </div>
                     <div className="navbar-icon-left">
-
                         <img src={wk} alt="VK" />
                         <img src={wh} alt="WhatsApp" />
                         <img src={tg} alt="Telegram" />
@@ -247,26 +235,11 @@ function Header() {
                     <div className="room-text-div">
                         <p>Комнатность</p>
                         <div className='room-btn'>
-                            <button onClick={handleClick0} style={{
-                                border: backgorunActive !== 'button1' ? '' : '1px solid rgb(219, 219, 219)',
-
-                            }}>C</button>
-                            <button onClick={handleClick1} style={{
-                                border: backgorunActive !== 'button2' ? '' : '1px solid rgb(219, 219, 219)',
-
-                            }}>1</button>
-                            <button onClick={handleClick2} style={{
-                                border: backgorunActive !== 'button3' ? '' : '1px solid rgb(219, 219, 219)',
-
-                            }}>2</button>
-                            <button onClick={handleClick3} style={{
-                                border: backgorunActive !== 'button4' ? '' : '1px solid rgb(219, 219, 219)',
-
-                            }}>3</button>
-                            <button onClick={handleClick4} style={{
-                                border: backgorunActive !== 'button5' ? '' : '1px solid rgb(219, 219, 219)',
-
-                            }}>4+</button>
+                            <button onClick={handleClick0} style={{ border: backgorunActive !== 'button1' ? '' : '1px solid rgb(219, 219, 219)', }}>C</button>
+                            <button onClick={handleClick1} style={{ border: backgorunActive !== 'button2' ? '' : '1px solid rgb(219, 219, 219)', }}>1</button>
+                            <button onClick={handleClick2} style={{ border: backgorunActive !== 'button3' ? '' : '1px solid rgb(219, 219, 219)', }}>2</button>
+                            <button onClick={handleClick3} style={{ border: backgorunActive !== 'button4' ? '' : '1px solid rgb(219, 219, 219)', }}>3</button>
+                            <button onClick={handleClick4} style={{ border: backgorunActive !== 'button5' ? '' : '1px solid rgb(219, 219, 219)', }}>4+</button>
                         </div>
                     </div>
                     <div className='room-price'>
@@ -386,9 +359,8 @@ function Header() {
                 </div>
             </div>
             <Main mainData={mainData} xona={xona} xonali={xonali} rubl={rubl} xona2={xona2} rub2={rub2} />
+            
         </div>
-
-
     );
 }
 
