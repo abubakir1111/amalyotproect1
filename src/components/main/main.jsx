@@ -95,6 +95,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
           </div>
         </div>
       </div>
+
      <div className='main2'>
         <div className="main-box">
           <div className="main-box-div">
@@ -111,9 +112,23 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
                 depth: 100,
                 modifier: 1
               }}
+                breakpoints={{
+                        640: {
+                          slidesPerView: 1, // 1 slide per view on small screens
+                          spaceBetween: 20, // space between slides
+                        },
+                        768: {
+                          slidesPerView: 2, // 2 slides per view on medium screens
+                          spaceBetween: 30,
+                        },
+                        1024: {
+                          slidesPerView: 2.4, // 3 slides per view on large screens
+                          spaceBetween: 40,
+                        },
+                      }}
               modules={[EffectCoverflow, Pagination, Navigation]}
             >
-              {mainApi.map((card) =>
+              {mainData && mainData.map((card) =>
                 <SwiperSlide>
                   <div className="main-box-card" key={card.id} onClick={Click}>
                     <div className="main-box-card2">
@@ -193,6 +208,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
           </div>
         </div>
       </div>
+
       <div className='main3'>
         <div className="main-box">
           <div className="main-box-div">
@@ -209,9 +225,23 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
                 depth: 100,
                 modifier: 1
               }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1, 
+                  spaceBetween: 20, 
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 2.4, 
+                  spaceBetween: 40,
+                },
+              }}
               modules={[EffectCoverflow, Pagination, Navigation]}
             >
-              {mainApi.map((card) =>
+              {mainData && mainData.map((card) =>
                 <SwiperSlide>
                   <div className="main-box-card" key={card.id} onClick={Click}>
                     <div className="main-box-card2">

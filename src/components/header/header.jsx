@@ -82,7 +82,7 @@ function Header() {
     const handleClick0 = () => {
         setBackgroundActive('button1')
     };
-    
+
     const handleClick1 = () => {
         setXona('4 377 600');
         setxonali('1-комнатные')
@@ -359,9 +359,7 @@ function Header() {
                 </div>
             </div>
             <Main mainData={mainData} xona={xona} xonali={xonali} rubl={rubl} xona2={xona2} rub2={rub2} />
-            
         </div>
     );
 }
-
 export default Header;

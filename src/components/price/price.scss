@@ -2806,7 +2806,7 @@
 
 
                 .bank2 {
-                    display: none;
+                    display: flex;
                     align-items: center;
 
                     flex-direction: row;
@@ -2952,145 +2952,7 @@
 
                 }
 
-                .bank3 {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: row;
-                    justify-content: center;
-                    gap: 40px;
-
-                    .bank-box {
-                        width: 964px;
-
-                        .bank-box-text-card {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-
-                            .bank-logo {
-                                display: flex;
-                                align-items: start;
-                                flex-direction: column;
-                                justify-content: center;
-                                gap: 1rem;
-                                // margin: 50px 400px;
-
-                                .bank-text-gap {
-                                    display: flex;
-                                    align-items: start;
-                                    flex-direction: column;
-                                    gap: 0px;
-                                }
-
-                                .bank-logo-text {
-                                    .pro1 {
-                                        display: flex;
-                                        color: rgb(168, 168, 168);
-                                        font-size: 12px;
-                                        font-weight: 400;
-                                        line-height: 150%;
-                                    }
-
-                                    .pro2 {
-                                        color: rgb(34, 34, 34);
-                                        font-size: 18px;
-                                        font-weight: 500;
-                                        line-height: 22px;
-                                    }
-                                }
-
-                                .bank-text-center {
-                                    display: flex;
-                                    align-items: center;
-                                    flex-direction: column;
-                                    justify-content: start;
-                                    gap: 15px;
-
-                                    .bank-text-center-div {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: start;
-                                        gap: 50px;
-
-                                        .bank-text-left {
-                                            display: flex;
-                                            align-items: start;
-                                            flex-direction: column;
-
-                                            gap: 15px;
-
-                                            p {
-                                                color: rgb(34, 34, 34);
-                                                font-size: 18px;
-                                                font-weight: 500;
-                                                line-height: 22px;
-                                            }
-                                        }
-
-                                        .bank-left {
-                                            display: flex;
-                                            align-items: start;
-
-                                            .bank-text-left {
-                                                display: flex;
-                                                align-items: start;
-                                            }
-                                        }
-                                    }
-                                    .bank-left-btn {
-                                        display: flex;
-                                        align-items: start;
-                                        margin-left: 0px;
-
-                                        .bank-left-btn-info {
-                                            width: 135px;
-                                            height: 37px;
-                                            background-color: transparent;
-                                            border-radius: 10px;
-                                            color: rgb(220, 63, 63);
-                                            border: 1px solid rgb(220, 63, 63);
-                                            font-size: 14px;
-                                            font-weight: 500;
-                                            line-height: 17px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .bank-border-div {
-                            // display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            display: none;
-                            .div-border {
-                                width: 700px;
-                                height: 1px;
-                                border: 1px solid rgb(168, 168, 168);
-                                margin-top: 15px;
-                            }
-                        }
-                    }
-                    .bank-btn {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        margin-top: 50px;
-                        button {
-                            width: 153px;
-                            height: 37px;
-                            border-radius: 10px;
-                            background: rgb(220, 63, 63);
-                            color: rgb(255, 255, 255);
-                            font-size: 14px;
-                            font-weight: 500;
-                            line-height: 17px;
-                            border: none;
-
-                        }
-                    }
-                }
+             
             }
         }
         .contact {
