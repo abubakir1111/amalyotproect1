@@ -227,7 +227,7 @@ export const mainApi = [
         loactionimg: loactionImg,
         MainImg: img2,
         googleImg: Remont,
-        category: 'С отделкой'
+        category: 'С отделкой',
     },
     {
         id: 8,
@@ -337,8 +337,6 @@ export const mainApi = [
         googleImg: Remont,
         category: 'С отделкой'
     },
-
-
     {
         id: 12,
         img: img,

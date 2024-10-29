@@ -33,7 +33,7 @@ function Page4() {
             <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
           </div>
           <div className="page4-navbar-center">
-            <Link className='link'> Главная</Link>
+            <Link className='link' to='/'> Главная</Link>
             <Link className='link'>Все ЖК Тюмени</Link>
             <Link className='link'>Карта новостроек</Link>
             <Link to="/page" className='link'>О компа`нии</Link>
@@ -70,7 +70,7 @@ function Page4() {
                   <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                 </div>
                 <div className="menu-navbar-center">
-                  <Link className='link'> Главная</Link>
+                  <Link className='link' to='/'> Главная</Link>
                   <Link className='link'>Все ЖК Тюмени</Link>
                   <Link className='link'>Карта новостроек</Link>
                   <Link to="/page" className='link'>О компании</Link>
@@ -175,10 +175,11 @@ function Page4() {
               </div>
             </div>
             <div className='dom-malumot-img-div'>
-              <div className="main-box-card-right">
-                <div className='main-card-btn'>
-                  <button className='main-btn1'><img src={right} alt="" /></button>
-                  <button className='main-btn2'><img src={left} alt="" /></button>
+              
+              <div className='main-card-btn'>
+                <button className='main-btn1'><img src={right} alt="" /></button>
+                <button className='main-btn2'><img src={left} alt="" /></button>
+                <div className="main-box-card-right">
                 </div>
               </div>
             </div>
@@ -204,7 +205,7 @@ function Page4() {
                       </div>
                       <div className='xarakter-border-div'>
                         <div className="xarakter-border">
-                          
+
                         </div>
 
                       </div>

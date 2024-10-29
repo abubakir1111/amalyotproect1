@@ -27,7 +27,7 @@ function Price() {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'ug9-0QW64JJPnBjKF') // Public Key ni shu yerga joylashtiring
+            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'ug9-0QW64JJPnBjKF') 
             .then(
                 () => {
                     console.log('SUCCESS!');
@@ -108,48 +108,48 @@ function Price() {
                                 <button>Показать еще</button>
                             </div>
                         </div>
-                            <div className='bank2'>
-                        <Swiper
-                            ref={swiperRef}
-                            grabCursor={true}
-                            centeredSlides={true}
-                            loop={true}
-                            slidesPerView={1.9}
-                            spaceBetween={0}
-                            coverflowEffect={{
-                                rotate: 0,
-                                stretch: 0,
-                                depth: 100,
-                                modifier: 1,
-                            }}
-                            breakpoints={{
-                                260: {
-                                    slidesPerView: 1.2, // 1 slide per view on small screens
-                                    spaceBetween: 200, // space between slides
-                                  },
-                                360: {
-                                    slidesPerView: 1.4, // 1 slide per view on small screens
-                                    spaceBetween: 200, // space between slides
-                                  },
-                                440: {
-                                    slidesPerView: 3.3, // 1 slide per view on small screens
-                                    spaceBetween: 200, // space between slides
-                                  },
-                                640: {
-                                  slidesPerView: 1, // 1 slide per view on small screens`
-                                  spaceBetween: 20, // space between slides
-                                },
-                                768: {
-                                  slidesPerView: 2, // 2 slides per view on medium screens
-                                  spaceBetween: 30,
-                                },
-                                1024: {
-                                  slidesPerView: 2.4, // 3 slides per view on large screens
-                                  spaceBetween: 40,
-                                },
-                              }}
-                            modules={[EffectCoverflow, Pagination, Navigation]}
-                        >
+                        <div className='bank2'>
+                            <Swiper
+                                ref={swiperRef}
+                                grabCursor={true}
+                                centeredSlides={true}
+                                loop={true}
+                                slidesPerView={1.9}
+                                spaceBetween={0}
+                                coverflowEffect={{
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                }}
+                                breakpoints={{
+                                    260: {
+                                        slidesPerView: 1.2,
+                                        spaceBetween: 200,
+                                    },
+                                    360: {
+                                        slidesPerView: 1.4,
+                                        spaceBetween: 200,
+                                    },
+                                    440: {
+                                        slidesPerView: 3.3,
+                                        spaceBetween: 200,
+                                    },
+                                    640: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 20,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 30,
+                                    },
+                                    1024: {
+                                        slidesPerView: 2.4,
+                                        spaceBetween: 40,
+                                    },
+                                }}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
+                            >
                                 {price.map((item, index) => (
                                     <SwiperSlide key={index}>
                                         <div className="bank-box" key={index}>
@@ -194,11 +194,11 @@ function Price() {
                                 <div className='bank-btn'>
                                     <button>Показать еще</button>
                                 </div>
-                        </Swiper>
-                            </div>
+                            </Swiper>
+                        </div>
 
 
-                       
+
                     </div>
                 </div>
                 <div className="contact">
@@ -212,7 +212,7 @@ function Price() {
                                     <div className="btn-box-card">
                                         <input type="text" placeholder='Имя' name='from_name' required />
                                         <input type="tel" placeholder='+7 --- -- --' name='from_number' required />
-                                        <button type="submit">Отправить</button>
+                                        <button type="submit" onClick={sendEmail}>Отправить</button>
                                     </div>
                                     <p className='btn-card-p'>Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.</p>
                                 </div>

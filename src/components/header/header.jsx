@@ -136,7 +136,7 @@ function Header() {
                         <Link className='navbar-right-link'>центр новостроек в Тюмени</Link>
                     </div>
                     <div className="navbar-center">
-                        <Link className='link'> Главная</Link>
+                        <Link className='link' to='/'> Главная</Link>
                         <Link className='link'>Все ЖК Тюмени</Link>
                         <Link className='link'>Карта новостроек</Link>
                         <Link to="/page" className='link'>О компании</Link>
@@ -175,7 +175,7 @@ function Header() {
                                 <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                             </div>
                             <div className="menu-navbar-center">
-                                <Link className='link'> Главная</Link>
+                                <Link className='link' to='/'> Главная</Link>
                                 <Link className='link'>Все ЖК Тюмени</Link>
                                 <Link className='link'>Карта новостроек</Link>
                                 <Link to="/page" className='link'>О компании</Link>
@@ -344,7 +344,7 @@ function Header() {
                                 }}
                             >
                                 {tuman.text}
-                                <button
+                            <button
                                     onClick={() => tumanDelete(tuman.id)}
                                     style={{
                                         background: 'none',

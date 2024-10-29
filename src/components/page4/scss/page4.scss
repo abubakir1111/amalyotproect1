@@ -5,6 +5,7 @@
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
 
+
     .page4-header-box {
         display: flex;
         align-items: start;
@@ -335,7 +336,7 @@
             .dom-malumot-text-img-div {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 32px;
+                gap: 100px;
 
                 .dom-malumot-text-div {
                     display: flex;
@@ -350,7 +351,7 @@
                     }
 
                     .dom-malumot-text2 {
-                        width: 568px;
+                        width: 500px;
                         height: 306px;
                         color: rgb(34, 34, 34);
                         font-size: 16px;
@@ -361,44 +362,49 @@
 
                 .dom-malumot-img-div {
 
-                    .main-box-card-right {
-                        background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                        width: 570px;
-                        height: 370px;
-                        border-radius: 30px;
-                        background-repeat: no-repeat;
+
+                    .main-card-btn {
                         position: relative;
+                        left: -50px;
+                        .main-btn1 {
+                            width: 30px;
+                            height: 30px;
+                            background: rgb(220, 63, 63);
+                            border: none;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            left: -15px;
+                            top: 170px;
+                            z-index: 1;
+                        }
 
-                        .main-card-btn {
-                            left: -50px;
+                        .main-btn2 {
+                            width: 30px;
+                            height: 30px;
+                            background: rgb(220, 63, 63);
+                            border: none;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            right: 7px;
+                            top: 170px;
+                            z-index: 1;
+                        }
 
-                            .main-btn1 {
-                                width: 30px;
-                                height: 30px;
-                                background: rgb(220, 63, 63);
-                                border: none;
-                                border-radius: 50%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: absolute;
-                                left: -15px;
-                                top: 170px;
-                            }
+                        .main-box-card-right {
+                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                            width: 570px;
+                            height: 370px;
+                            border-radius: 30px;
+                            background-repeat: no-repeat;
+                            z-index: 2;
 
-                            .main-btn2 {
-                                width: 30px;
-                                height: 30px;
-                                background: rgb(220, 63, 63);
-                                border: none;
-                                border-radius: 50%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: absolute;
-                                right: -15px;
-                                top: 170px;
-                            }
+
 
                         }
                     }

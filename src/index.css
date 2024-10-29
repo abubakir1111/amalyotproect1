@@ -453,9 +453,6 @@ button {
         align-items: center;
         gap: 15px;
     }
-
-
-
     .rec-button-div button {
         width: 182px;
         height: 37px;
@@ -617,15 +614,11 @@ input{
         line-height: 17px;
 
     }
-
     .rec-icon-text-card {
         display: flex;
         align-items: center;
         gap: 15px;
     }
-
-
-
     .rec-button-div button {
         width: 182px;
         height: 37px;
@@ -937,5 +930,12 @@ input{
         width: 400px;
         background-color: transparent;
     }
-    
+    .main-btn1{
+        position: absolute;
+        left: 358px;
+    }
+    .main-btn2{
+        position: absolute;
+        left: 358px;
+    }
 }

@@ -27,7 +27,7 @@ function Page3() {
                         <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                     </div>
                     <div className="page3-navbar-center">
-                        <Link className='link'> Главная</Link>
+                        <Link className='link' to='/'> Главная</Link>
                         <Link className='link'>Все ЖК Тюмени</Link>
                         <Link className='link'>Карта новостроек</Link>
                         <Link to="/page" className='link'>О компа`нии</Link>
@@ -65,7 +65,7 @@ function Page3() {
                                 <Link className="navbar-right-p" to='/'>центр новостроек в Тюмени</Link>
                             </div>
                             <div className="menu-navbar-center">
-                                <Link className='link'> Главная</Link>
+                                <Link className='link' to='/'> Главная</Link>
                                 <Link className='link'>Все ЖК Тюмени</Link>
                                 <Link className='link'>Карта новостроек</Link>
                                 <Link to="/page" className='link'>О компании</Link>
