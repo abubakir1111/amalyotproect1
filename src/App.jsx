@@ -10,9 +10,9 @@ function App() {
             <div className='home-components'>
                 <Routes>
                     <Route path='/' element={<Page1 />} />
-                    <Route path='/page' element={<Page2 />} />
-                    <Route path='/page3' element={<Page3 />} />
-                    <Route path='/page4' element={<Page4 />} />
+                    <Route path='/Окомпании' element={<Page2 />} />
+                    <Route path='/Акции' element={<Page3 />} />
+                    <Route path='/КарточкаЖК' element={<Page4 />} />
                 </Routes>
             </div>
             <Page />

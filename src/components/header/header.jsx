@@ -139,7 +139,7 @@ function Header() {
                         <Link className='link' to='/'> Главная</Link>
                         <Link className='link'>Все ЖК Тюмени</Link>
                         <Link className='link'>Карта новостроек</Link>
-                        <Link to="/page" className='link'>О компании</Link>
+                        <Link to="/Окомпании" className='link'>О компании</Link>
                     </div>
                     <div className="navbar-left">
                         <Link className='navbar-left-link'>8 800 000 00 00</Link>
@@ -178,7 +178,7 @@ function Header() {
                                 <Link className='link' to='/'> Главная</Link>
                                 <Link className='link'>Все ЖК Тюмени</Link>
                                 <Link className='link'>Карта новостроек</Link>
-                                <Link to="/page" className='link'>О компании</Link>
+                                <Link to="/Окомпании" className='link'>О компании</Link>
                             </div>
                             <div className="navbar-left">
                                 <Link className='navbar-left-link'>8 800 000 00 00</Link>

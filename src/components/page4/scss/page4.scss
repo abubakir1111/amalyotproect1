@@ -335,7 +335,7 @@
 
             .dom-malumot-text-img-div {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 gap: 100px;
 
                 .dom-malumot-text-div {
@@ -365,7 +365,8 @@
 
                     .main-card-btn {
                         position: relative;
-                        left: -50px;
+                        // left: 15px;
+
                         .main-btn1 {
                             width: 30px;
                             height: 30px;
@@ -377,8 +378,8 @@
                             justify-content: center;
                             position: absolute;
                             left: -15px;
+                            z-index: 3;
                             top: 170px;
-                            z-index: 1;
                         }
 
                         .main-btn2 {
@@ -391,9 +392,10 @@
                             align-items: center;
                             justify-content: center;
                             position: absolute;
-                            right: 7px;
+                            left: 93%;
                             top: 170px;
-                            z-index: 1;
+                            z-index: 3;
+
                         }
 
                         .main-box-card-right {
@@ -402,9 +404,9 @@
                             height: 370px;
                             border-radius: 30px;
                             background-repeat: no-repeat;
-                            z-index: 2;
-
-
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
                         }
                     }
@@ -1317,46 +1319,56 @@
 
                     .dom-malumot-img-div {
                         display: flex;
-                        align-items: center;
+                        align-items: start;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 570px;
-                            height: 370px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
+                            left: 15px;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 170px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 93%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 170px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 570px;
+                                height: 370px;
+                                border-radius: 30px;
+                                background-repeat: no-repeat;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // left: -50px;
+
 
                             }
                         }
@@ -2290,44 +2302,55 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        border: 1px solid red;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 570px;
-                            height: 370px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
+                            left: 15px;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 170px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 93%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 170px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 570px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // left: -50px;
+                                background-repeat: no-repeat;
+
 
                             }
                         }
@@ -3263,43 +3286,52 @@
                         align-items: center;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 570px;
-                            height: 370px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 170px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 93%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 170px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 570px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // left: -50px;
+                                background-repeat: no-repeat;
+
 
                             }
                         }
@@ -4233,43 +4265,52 @@
                         align-items: center;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 570px;
-                            height: 370px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 170px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 93%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 170px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 570px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // left: -50px;
+                                background-repeat: no-repeat;
+
 
                             }
                         }
@@ -5223,43 +5264,52 @@
                         align-items: center;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 302px;
-                            height: 253px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: -15px;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 100px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 93%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: -15px;
-                                    top: 100px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 570px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                // left: -50px;
+                                background-repeat: no-repeat;
+
 
                             }
                         }
@@ -6241,43 +6291,51 @@
                         align-items: center;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 270px;
-                            height: 253px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
+                            left: 6px;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                right: 95%;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 100px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 95%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: -15px;
-                                    top: 100px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 332px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-repeat: no-repeat;
 
                             }
                         }
@@ -6585,8 +6643,6 @@
         }
     }
 }
-
-
 
 @media (max-width: 360px) {
 
@@ -7271,43 +7327,51 @@
                         align-items: center;
                         justify-content: center;
 
-                        .main-box-card-right {
-                            background-image: url(../../../assets/img/backgorund/main-right-img.png);
-                            width: 270px;
-                            height: 253px;
-                            border-radius: 30px;
+                        .main-card-btn {
                             position: relative;
+                            left: 3px;
 
-                            .main-card-btn {
-                                left: -50px;
+                            .main-btn1 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                right: 95%;
+                                z-index: 3;
+                                top: 170px;
+                            }
 
-                                .main-btn1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    left: -15px;
-                                    top: 100px;
-                                }
+                            .main-btn2 {
+                                width: 30px;
+                                height: 30px;
+                                background: rgb(220, 63, 63);
+                                border: none;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                left: 95%;
+                                top: 170px;
+                                z-index: 3;
 
-                                .main-btn2 {
-                                    width: 30px;
-                                    height: 30px;
-                                    background: rgb(220, 63, 63);
-                                    border: none;
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    position: absolute;
-                                    right: -15px;
-                                    top: 100px;
-                                }
+                            }
+
+                            .main-box-card-right {
+                                background-image: url(../../../assets/img/backgorund/main-right-img.png);
+                                width: 325px;
+                                height: 370px;
+                                border-radius: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-repeat: no-repeat;
 
                             }
                         }

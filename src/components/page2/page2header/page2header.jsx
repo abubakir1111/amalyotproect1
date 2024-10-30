@@ -53,8 +53,8 @@ function Page2header() {
             <Link className='link' to='/'> Главная</Link>
             <Link className='link'>Все ЖК Тюмени</Link>
             <Link className='link'>Карта новостроек</Link>
-            <Link to="/page" className='link'>О компа`нии</Link>
-            <Link to="/page3" className='link'>Акции</Link>
+            <Link to="/Окомпании" className='link'>О компа`нии</Link>
+            <Link to="/Акции" className='link'>Акции</Link>
           </div>
 
           <div className="navbar-icon-left">
@@ -92,8 +92,8 @@ function Page2header() {
                 <Link className='link' to='/'> Главная</Link>
                 <Link className='link'>Все ЖК Тюмени</Link>
                 <Link className='link'>Карта новостроек</Link>
-                <Link to="/page" className='link'>О компании</Link>
-                <Link to="/page3" className='link'>Акции</Link>
+                <Link to="/Окомпании" className='link'>О компании</Link>
+                <Link to="/Акции" className='link'>Акции</Link>
               </div>
               <div className="navbar-left">
                 <Link className='navbar-left-link'>8 800 000 00 00</Link>

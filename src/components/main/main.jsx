@@ -1,7 +1,6 @@
 import React, { Fragment, useRef } from 'react';
 import './main.scss';
 import { Link } from 'react-scroll';
-import { mainApi } from './mainApi.js';
 import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,7 +13,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
   const navigate = useNavigate()
   const swiperRef = useRef(null);
   const Click = () => {
-    navigate('/page4')
+    navigate('/КарточкаЖК')
   }
   return (
     <Fragment>

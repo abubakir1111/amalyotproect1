@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../scss/page4.scss'
 import page1Logo from '../../../assets/img/logo/logo.png'
@@ -10,20 +10,33 @@ import studyimg from '../../../assets/img/page4/Vector.png'
 import right from '../../../assets/icons/mian.icons/main-right-btn-icons.png'
 import left from '../../../assets/icons/mian.icons/main-left-icons.png'
 import backImg from '../../../assets/img/o-Kompany-img/contact/Screenshot-xarita.png'
-// import { PagE2 } from '../../rec/page'
-// import { Card } from '@mui/material'
 import logo from '../../../assets/img/logo/logo.png';
 import wk from '../../../assets/icons/VK.svg';
 import wh from '../../../assets/icons/WhatsApp.svg';
 import tg from '../../../assets/icons/Tg.svg';
 import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
 
-
 function Page4() {
   const [menuVisible, setMenuVisible] = useState(false);
   const menuNav = () => {
-    setMenuVisible(!menuVisible); // Menyuni ko'rinishi o'zgaradi
+    setMenuVisible(!menuVisible);
   }
+
+
+
+  const swiperRef = useRef(null);
+
+  const handlePrevClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
+  const handleNextClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
   return (
     <div className='page4-header'>
       <div className="page4-header-box">
@@ -36,7 +49,7 @@ function Page4() {
             <Link className='link' to='/'> Главная</Link>
             <Link className='link'>Все ЖК Тюмени</Link>
             <Link className='link'>Карта новостроек</Link>
-            <Link to="/page" className='link'>О компа`нии</Link>
+            <Link to="/Окомпании" className='link'>О компа`нии</Link>
           </div>
 
           <div className="navbar-icon-left">
@@ -73,8 +86,7 @@ function Page4() {
                   <Link className='link' to='/'> Главная</Link>
                   <Link className='link'>Все ЖК Тюмени</Link>
                   <Link className='link'>Карта новостроек</Link>
-                  <Link to="/page" className='link'>О компании</Link>
-                  <Link to="/page3" className='link'>Акции</Link>
+                  <Link to="/Окомпании" className='link'>О компании</Link>
                 </div>
                 <div className="navbar-left">
                   <Link className='navbar-left-link'>8 800 000 00 00</Link>
@@ -175,12 +187,11 @@ function Page4() {
               </div>
             </div>
             <div className='dom-malumot-img-div'>
-              
               <div className='main-card-btn'>
-                <button className='main-btn1'><img src={right} alt="" /></button>
-                <button className='main-btn2'><img src={left} alt="" /></button>
-                <div className="main-box-card-right">
-                </div>
+                <button className='main-btn1' onCanPlay={handlePrevClick}><img src={right} alt="" /></button>
+                <button className='main-btn2' onClick={handleNextClick}><img src={left} alt="" /></button>              
+                  <div className="main-box-card-right">
+                  </div>
               </div>
             </div>
           </div>
