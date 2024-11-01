@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './page2header.scss'
 import './page2responsive.scss'
 import page1Logo from '../../../assets/img/logo/logo.png'
 import page1wk from '../../../assets/icons/VK.svg'
@@ -14,15 +13,16 @@ import footerImg1 from '../../../assets/img/footer/Vector1.png'
 import footerImg2 from '../../../assets/img/footer/Vector2.png'
 import { footer } from '../../price/priceApi'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // To'liq Swiper CSS
-import 'swiper/css/effect-coverflow'; // Coverflow effekt CSS
-import 'swiper/css/pagination'; // Pagination CSS
-import 'swiper/css/navigation'; // Navigation CSS
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import logo from '../../../assets/img/logo/logo.png';
 import wk from '../../../assets/icons/VK.svg';
 import wh from '../../../assets/icons/WhatsApp.svg';
 import tg from '../../../assets/icons/Tg.svg';
 import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
+import './page2header.scss'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 function Page2header() {
@@ -183,7 +183,7 @@ function Page2header() {
                       </div>
                     </div>
                     <div className="o-komapny-contact-div-left">
-                      <img src={kompanyLeftImg} alt="" className='o-komapny-contact-div-left-img'/>
+                      <img src={kompanyLeftImg} alt="" className='o-komapny-contact-div-left-img' />
                     </div>
                   </div>
                 </div>

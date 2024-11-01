@@ -4,7 +4,6 @@ import page1Logo from '../../../assets/img/logo/logo.png'
 import page1wk from '../../../assets/icons/VK.svg'
 import page2wh from '../../../assets/icons/WhatsApp.svg'
 import page3tg from '../../../assets/icons/Tg.svg'
-import '../scss/page3.scss'
 import '../scss/page3responsive.scss'
 import { aksiya } from '../js/page3'
 import logo from '../../../assets/img/logo/logo.png';
@@ -12,6 +11,7 @@ import wk from '../../../assets/icons/VK.svg';
 import wh from '../../../assets/icons/WhatsApp.svg';
 import tg from '../../../assets/icons/Tg.svg';
 import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
+import '../scss/page3.scss'
 function Page3() {
     const [menuVisible, setMenuVisible] = useState(false);
     const menuNav = () => {

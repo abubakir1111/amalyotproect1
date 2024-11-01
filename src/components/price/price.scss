@@ -95,7 +95,8 @@
             .bank2 {
                 display: none;
             }
-            .bank3{
+
+            .bank3 {
                 display: none;
             }
 
@@ -754,7 +755,7 @@
                     }
 
                     .bank-btn {
-                    margin-top: 20px;
+                        margin-top: 20px;
 
                         button {
                             width: 153px;
@@ -2563,6 +2564,7 @@
         max-width: 100%;
         margin: 100px auto;
         font-family: "Montserrat", sans-serif;
+
         .price-box {
             display: flex;
             align-items: center;
@@ -2952,15 +2954,18 @@
 
                 }
 
-             
+
             }
         }
+
         .contact {
             margin-top: 100px;
+
             .contact-box {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 .contact-card {
                     width: 380px;
                     height: 354px;
@@ -2974,9 +2979,11 @@
                     background-image: url(../../assets/img/contact/_.png);
                     background-repeat: no-repeat;
                     background-position: top right;
+
                     .contact-box-title {
                         width: 300px;
                         height: 88px;
+
                         p {
                             color: rgb(255, 255, 255);
                             font-size: 30px;
@@ -2984,11 +2991,13 @@
                             line-height: 44px;
                         }
                     }
+
                     .btn-card {
                         .btn-box-card {
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
+
                             input {
                                 width: 266px;
                                 height: 47px;
@@ -3001,10 +3010,12 @@
                                 text-align: center;
                                 border: none;
                             }
+
                             input:focus {
                                 border: none;
                                 outline: none;
                             }
+
                             button {
                                 width: 266px;
                                 height: 47px;
@@ -3017,6 +3028,7 @@
                                 text-align: center;
                             }
                         }
+
                         .btn-card-p {
                             color: rgb(219, 219, 219);
                             font-family: Montserrat, sans-serif;
@@ -3028,8 +3040,10 @@
                     }
                 }
             }
+
             .contact-text {
                 margin: 100px 0 60px 0;
+
                 p {
                     color: rgb(34, 34, 34);
                     font-family: Montserrat, sans-serif;
@@ -3039,13 +3053,16 @@
                 }
             }
         }
+
         .footer-card {
             overflow: hidden;
+
             .footer-box {
                 .footer-card {
                     display: flex;
                     align-items: center;
                     gap: 30px;
+
                     .footer-card1 {
                         padding: 28px 25px;
                         // width: 370px;
@@ -3056,10 +3073,12 @@
                         align-items: start;
                         flex-direction: column;
                         gap: 15px;
+
                         .footer-text-div {
                             display: flex;
                             align-items: center;
                             gap: 20px;
+
                             .footer-text-p {
                                 width: 101px;
                                 height: 48px;
@@ -3069,6 +3088,7 @@
                                 line-height: 24px;
                             }
                         }
+
                         .footer-text-desc {
                             p {
                                 width: 317px;
@@ -3079,6 +3099,7 @@
                                 line-height: 150%;
                             }
                         }
+
                         .footer-card-text-red {
                             p {
                                 color: rgb(220, 63, 63);
@@ -3088,16 +3109,19 @@
                             }
                         }
                     }
+
                     .footer-card2 {
                         width: 370px;
                         height: 401px;
                         border-radius: 30px;
                         background: rgb(248, 248, 248);
                         padding: 28px 25px;
+
                         .footer-text-div {
                             display: flex;
                             align-items: center;
                             gap: 20px;
+
                             .footer-text-p {
                                 width: 101px;
                                 height: 48px;
@@ -3107,6 +3131,7 @@
                                 line-height: 24px;
                             }
                         }
+
                         .footer-text-desc {
                             p {
                                 width: 317px;
@@ -3117,6 +3142,7 @@
                                 line-height: 150%;
                             }
                         }
+
                         .footer-card-text-red {
                             p {
                                 color: rgb(220, 63, 63);
@@ -3126,16 +3152,19 @@
                             }
                         }
                     }
+
                     .footer-card3 {
                         width: 370px;
                         height: 401px;
                         border-radius: 30px;
                         background: rgb(248, 248, 248);
                         padding: 28px 25px;
+
                         .footer-text-div {
                             display: flex;
                             align-items: center;
                             gap: 20px;
+
                             .footer-text-p {
                                 width: 101px;
                                 height: 48px;
@@ -3145,6 +3174,7 @@
                                 line-height: 24px;
                             }
                         }
+
                         .footer-text-desc {
                             p {
                                 width: 317px;
@@ -3155,6 +3185,7 @@
                                 line-height: 150%;
                             }
                         }
+
                         .footer-card-text-red {
                             p {
                                 color: rgb(220, 63, 63);
@@ -3165,17 +3196,20 @@
                         }
                     }
                 }
+
                 .footer-button-div {
                     .footer-button-box {
                         display: flex;
                         align-items: center;
                         justify-content: end;
+
                         .footer-button {
                             padding: 40px 20px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             gap: 30px;
+
                             button {
                                 width: 30px;
                                 height: 30px;
@@ -3189,14 +3223,17 @@
                 }
             }
         }
+
         .footer-card2 {
             overflow: scroll;
             display: block;
+
             .footer-box {
                 .footer-card {
                     display: flex;
                     align-items: center;
                     gap: 30px;
+
                     .footer-card1 {
                         padding: 28px 25px;
                         max-width: 340px;
@@ -3213,6 +3250,7 @@
                             display: flex;
                             align-items: center;
                             gap: 20px;
+
                             .footer-text-p {
                                 width: 101px;
                                 height: 48px;
@@ -3222,6 +3260,7 @@
                                 line-height: 24px;
                             }
                         }
+
                         .footer-text-desc {
                             p {
                                 width: 280px;
@@ -3232,6 +3271,7 @@
                                 line-height: 150%;
                             }
                         }
+
                         .footer-card-text-red {
                             p {
                                 color: rgb(220, 63, 63);
@@ -3241,16 +3281,19 @@
                             }
                         }
                     }
+
                     .footer-card2 {
                         width: 370px;
                         height: 401px;
                         border-radius: 30px;
                         background: rgb(248, 248, 248);
                         padding: 28px 25px;
+
                         .footer-text-div {
                             display: flex;
                             align-items: center;
                             gap: 20px;
+
                             .footer-text-p {
                                 width: 101px;
                                 height: 48px;
@@ -3260,6 +3303,7 @@
                                 line-height: 24px;
                             }
                         }
+
                         .footer-text-desc {
                             p {
                                 width: 317px;
@@ -3270,6 +3314,7 @@
                                 line-height: 150%;
                             }
                         }
+
                         .footer-card-text-red {
                             p {
                                 color: rgb(220, 63, 63);

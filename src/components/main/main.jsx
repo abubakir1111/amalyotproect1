@@ -1,5 +1,4 @@
 import React, { Fragment, useRef } from 'react';
-import './main.scss';
 import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import Slider from './slider.jsx';
+import './main.scss';
 function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
   const navigate = useNavigate()
   const swiperRef = useRef(null);
@@ -110,7 +110,7 @@ function Main({ xona, xonali, rubl, xona2, rub2, mainData }) {
                 250: {
                   slidesPerView: 1,
                   spaceBetween: 100,
-                }, 
+                },
                 340: {
                   slidesPerView: 1,
                   spaceBetween: 50,

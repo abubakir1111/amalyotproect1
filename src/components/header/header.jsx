@@ -344,7 +344,7 @@ function Header() {
                                 }}
                             >
                                 {tuman.text}
-                            <button
+                                <button
                                     onClick={() => tumanDelete(tuman.id)}
                                     style={{
                                         background: 'none',

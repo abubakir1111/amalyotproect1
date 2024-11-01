@@ -27,7 +27,7 @@ function Price() {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'ug9-0QW64JJPnBjKF') 
+            .sendForm('service_7jdl404', 'template_tldzmo5', form.current, 'ug9-0QW64JJPnBjKF')
             .then(
                 () => {
                     console.log('SUCCESS!');

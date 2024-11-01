@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../scss/page4.scss'
 import page1Logo from '../../../assets/img/logo/logo.png'
 import page1wk from '../../../assets/icons/VK.svg'
 import page2wh from '../../../assets/icons/WhatsApp.svg'
@@ -15,14 +14,13 @@ import wk from '../../../assets/icons/VK.svg';
 import wh from '../../../assets/icons/WhatsApp.svg';
 import tg from '../../../assets/icons/Tg.svg';
 import menu from '../../../assets/img/header-navbar-responsive/burger-menu.png'
+import '../scss/page4.scss'
 
 function Page4() {
   const [menuVisible, setMenuVisible] = useState(false);
   const menuNav = () => {
     setMenuVisible(!menuVisible);
   }
-
-
 
   const swiperRef = useRef(null);
 
@@ -189,9 +187,9 @@ function Page4() {
             <div className='dom-malumot-img-div'>
               <div className='main-card-btn'>
                 <button className='main-btn1' onCanPlay={handlePrevClick}><img src={right} alt="" /></button>
-                <button className='main-btn2' onClick={handleNextClick}><img src={left} alt="" /></button>              
-                  <div className="main-box-card-right">
-                  </div>
+                <button className='main-btn2' onClick={handleNextClick}><img src={left} alt="" /></button>
+                <div className="main-box-card-right">
+                </div>
               </div>
             </div>
           </div>

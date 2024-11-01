@@ -28,10 +28,10 @@ export default function Page() {
                 <div className='rec-text-div'>
                   <div className="rec-text-box">
                     <div className="rec-text-card1">
-                        <p>Главная </p>
-                        <p>Все ЖК Тюмени</p>
-                        <p>Карта новостроек</p>
-                        <p>О компании</p>
+                      <p>Главная </p>
+                      <p>Все ЖК Тюмени</p>
+                      <p>Карта новостроек</p>
+                      <p>О компании</p>
                     </div>
                     <div className="rec-text-card2">
                       <p>Пункт меню</p>

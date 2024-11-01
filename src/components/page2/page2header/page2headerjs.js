@@ -5,8 +5,8 @@ import kompanyimg4 from '../../../assets/img/o-Kompany-img/o-kompany-api-icon/ko
 import kompanyimg5 from '../../../assets/img/o-Kompany-img/o-kompany-api-icon/kompany-img5.png'
 import kompanyimg6 from '../../../assets/img/o-Kompany-img/o-kompany-api-icon/kompany-img6.png'
 
- export const  kompanycard = [
-     {
+export const kompanycard = [
+    {
         id: 0,
         img: kompanyimg1,
         text: "Подборку квартир по цене застройщика"
